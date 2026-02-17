@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "4245214463",
+    "Type": "User",
+    "GUID": "{2102CC99-02EC-41A3-8CDB-915F825F309F}",
+    "Language": "SFX",
+    "Hash": "{0579C548-3BBE-9EC6-41C6-8A30E610E7FA}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\sb_placeholders",
+    "ShortName": "sb_placeholders",
+    "Path": "sb_placeholders.bnk",
+    "Media": [
+     {
+      "Id": "925236393",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "mx_gameplay_day_LOOP.wav",
+      "CachePath": "0C/{0CADDC46-8CA1-B5A6-89E3-242EFA62D8E0}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1694637492",
+      "Name": "Play_mx_gameplay_day_LOOP",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_mx_gameplay_day_LOOP",
+      "GUID": "{DB1B052D-CDA0-436F-8A23-F18528312F2D}",
+      "MaxAttenuation": "100",
+      "DurationType": "OneShot",
+      "DurationMin": "85.714294",
+      "DurationMax": "85.714294",
+      "MediaRefs": [
+       {
+        "Id": "925236393"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{77FD21A8-0186-E8EB-213F-E78E46782A5C}"
+ }
+}

@@ -1,0 +1,7 @@
+[gd_resource type="WwiseBank" format=3 uid="uid://bbs8n3pocg234"]
+
+[resource]
+name = "sb_placeholders"
+id = 4245214463
+guid = "{2102CC99-02EC-41A3-8CDB-915F825F309F}"
+dummy = true

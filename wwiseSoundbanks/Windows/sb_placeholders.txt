@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1694637492	Play_mx_gameplay_day_LOOP			\Default Work Unit\Play_mx_gameplay_day_LOOP	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	925236393	mx_gameplay_day_LOOP	.cache\0C\{0CADDC46-8CA1-B5A6-89E3-242EFA62D8E0}.wem		\Containers\Default Work Unit\mx_gameplay_day_LOOP		16457240
+
