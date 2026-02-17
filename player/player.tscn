@@ -1,12 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://bl2anu4u2bbxh"]
+[gd_scene load_steps=5 format=3 uid="uid://bl2anu4u2bbxh"]
 
+[ext_resource type="Script" uid="uid://c003i8seevg4p" path="res://player/player.gd" id="1_g1dw6"]
 [ext_resource type="Script" uid="uid://dc3hs54iqthb1" path="res://player/player_movement.gd" id="1_oul6g"]
+[ext_resource type="PackedScene" uid="uid://bfpsf5d67h84n" path="res://handheld_book.tscn" id="2_rkbax"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_sv4k3"]
 
 [node name="PlayerRoot" type="CharacterBody3D"]
+script = ExtResource("1_g1dw6")
 
 [node name="Movement" type="Node" parent="." node_paths=PackedStringArray("camera_rot", "camera")]
+unique_name_in_owner = true
 script = ExtResource("1_oul6g")
 camera_rot = NodePath("../CameraRotation")
 camera = NodePath("../CameraRotation/Camera3D")
@@ -21,3 +25,10 @@ shape = SubResource("CapsuleShape3D_sv4k3")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7619854, -0.07781178)
 
 [node name="AkListener3D" type="AkListener3D" parent="CameraRotation/Camera3D"]
+
+[node name="HandheldBook" parent="CameraRotation/Camera3D" instance=ExtResource("2_rkbax")]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.13460761)
+max_x = 0.1
+bounds_y = Vector2(0.01, 0.51)
+move_speed = 0.001

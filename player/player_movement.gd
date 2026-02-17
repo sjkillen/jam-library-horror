@@ -1,24 +1,27 @@
 extends Node
+class_name Movement
 
 @onready var char_body: CharacterBody3D = get_parent()
 @export var camera_rot: Node3D
 @export var camera: Camera3D
 
-const SPEED = 5.0
-const MOUSE_SENSITIVITY = 0.1
-const CONTROLLER_SENSITITY = 3.0
+const SPEED := 5.0
 
 var camera_move_event: Vector2 = Vector2.ZERO
 
 var prev_velocity := Vector3.ZERO
 
-func _ready() -> void:
-	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+var examining := false
 
 func _physics_process(delta: float) -> void:
 	camera_move(delta)
 	
-	var input_dir := Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
+	if examining:
+		return
+
+	
+	var input_dir := GlobalInput.keyboard_vector()
+	
 	var direction: Vector3 = (camera_rot.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 	if direction:
 		char_body.velocity.x = direction.x * SPEED
@@ -30,21 +33,15 @@ func _physics_process(delta: float) -> void:
 	prev_velocity = char_body.velocity
 	char_body.move_and_slide()
 
-func _process(_delta: float) -> void:
-	pass
-
 func _input(event: InputEvent) -> void:
-	if event is InputEventMouseMotion:
-		camera_move_event = event.relative * MOUSE_SENSITIVITY
-	if event.is_action("toggle_mouse_capture"):
-		if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
-			Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
-		else:
-			Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
-		
+	if not examining and event is InputEventMouseMotion:
+		camera_move_event = event.relative * GlobalInput.MOUSE_SENSITIVITY
+
 func camera_move(delta: float):
-	var move := Input.get_vector("camera_left", "camera_right", "camera_up", "camera_down") * CONTROLLER_SENSITITY
-	if move == Vector2.ZERO:
+	var move := GlobalInput.camera_joystick() 
+	if examining and move == Vector2.ZERO:
+		move = GlobalInput.keyboard_vector()
+	if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED and move == Vector2.ZERO:
 		move = camera_move_event
 	camera_move_event = Vector2.ZERO
 	camera.global_rotation.x -= move.y*delta
