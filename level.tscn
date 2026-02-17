@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://deirq723s07jr"]
+
+[ext_resource type="PackedScene" uid="uid://x0w6kjpsyaym" path="res://level.glb" id="1_u52ul"]
+[ext_resource type="PackedScene" uid="uid://bl2anu4u2bbxh" path="res://player/player.tscn" id="2_vonw3"]
+
+[sub_resource type="Environment" id="Environment_vonw3"]
+
+[node name="level" instance=ExtResource("1_u52ul")]
+
+[node name="PlayerRoot" parent="." index="3" instance=ExtResource("2_vonw3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10.132515, 8.831269)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." index="4"]
+environment = SubResource("Environment_vonw3")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldEnvironment" index="0"]
+transform = Transform3D(1, 0, 0, 0, -0.7713248, 0.6364417, 0, -0.6364417, -0.7713248, 0, 0, 0)

@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://bl2anu4u2bbxh"]
+
+[ext_resource type="Script" uid="uid://dc3hs54iqthb1" path="res://player/player_movement.gd" id="1_oul6g"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_sv4k3"]
+
+[node name="PlayerRoot" type="CharacterBody3D"]
+
+[node name="Movement" type="Node" parent="." node_paths=PackedStringArray("camera_rot", "camera")]
+script = ExtResource("1_oul6g")
+camera_rot = NodePath("../CameraRotation")
+camera = NodePath("../CameraRotation/Camera3D")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0883716, 0)
+shape = SubResource("CapsuleShape3D_sv4k3")
+
+[node name="CameraRotation" type="Node3D" parent="."]
+
+[node name="Camera3D" type="Camera3D" parent="CameraRotation"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7619854, -0.07781178)
