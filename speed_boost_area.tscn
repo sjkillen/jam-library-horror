@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://dptwf8lkjq20u"]
+
+[ext_resource type="Script" uid="uid://vhqkpoeyufx4" path="res://speed_boost_area.gd" id="1_k7bxo"]
+
+[node name="SpeedBoostArea" type="Area3D"]
+script = ExtResource("1_k7bxo")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

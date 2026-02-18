@@ -30,7 +30,6 @@ func move_book(where: Vector2):
 
 func equip():
 	enabled = true
-	print("foo")
 	%AnimationPlayer.play("equip")
 
 func unequip():

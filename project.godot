@@ -17,6 +17,7 @@ config/features=PackedStringArray("4.5")
 
 WwiseRuntimeManager="*res://addons/Wwise/runtime/wwise_runtime_manager.gd"
 GlobalInput="*res://global_input.tscn"
+GlobalEvents="*res://GlobalEvents.tscn"
 
 [input]
 
@@ -114,7 +115,8 @@ enable_mouse_capture={
 
 [physics]
 
-3d/physics_engine="Jolt Physics"
+3d/physics_engine="GodotPhysics3D"
+3d/default_gravity=3.0
 
 [rendering]
 

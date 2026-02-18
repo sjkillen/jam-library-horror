@@ -1,28 +1,53 @@
-[gd_scene load_steps=6 format=3 uid="uid://deirq723s07jr"]
+[gd_scene load_steps=8 format=3 uid="uid://deirq723s07jr"]
 
 [ext_resource type="PackedScene" uid="uid://x0w6kjpsyaym" path="res://level.glb" id="1_u52ul"]
 [ext_resource type="PackedScene" uid="uid://bl2anu4u2bbxh" path="res://player/player.tscn" id="2_vonw3"]
 [ext_resource type="WwiseBank" uid="uid://bbs8n3pocg234" path="res://Wwise/resources/SoundBank/{2102CC99-02EC-41A3-8CDB-915F825F309F}.tres" id="3_0b4ue"]
 [ext_resource type="WwiseEvent" uid="uid://cc7a5fcned36b" path="res://Wwise/resources/Event/{DB1B052D-CDA0-436F-8A23-F18528312F2D}.tres" id="4_f2txt"]
+[ext_resource type="PackedScene" uid="uid://dptwf8lkjq20u" path="res://speed_boost_area.tscn" id="5_f2txt"]
 
 [sub_resource type="Environment" id="Environment_vonw3"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_1ainy"]
+size = Vector3(1.1465454, 1, 1.1860352)
+
 [node name="level" instance=ExtResource("1_u52ul")]
 
-[node name="PlayerRoot" parent="." index="3" instance=ExtResource("2_vonw3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10.132515, 8.831269)
+[node name="PlayerRoot" parent="." index="1" instance=ExtResource("2_vonw3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9215078, 0.10083935, -2.0831172)
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="." index="4"]
+[node name="CollisionShape3D" parent="PlayerRoot" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.07210505, 0)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." index="2"]
 environment = SubResource("Environment_vonw3")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldEnvironment" index="0"]
 transform = Transform3D(1, 0, 0, 0, -0.7713248, 0.6364417, 0, -0.6364417, -0.7713248, 0, 0, 0)
 
-[node name="AkBank" type="AkBank" parent="." index="5"]
+[node name="AkBank" type="AkBank" parent="." index="3"]
 bank = ExtResource("3_0b4ue")
 load_on = 2
 
-[node name="AkEvent3D" type="AkEvent3D" parent="." index="6"]
+[node name="AkEvent3D" type="AkEvent3D" parent="." index="4"]
 event = ExtResource("4_f2txt")
 trigger_on = 2
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 14.743269, -12.73933)
+
+[node name="emergency_stairs_lower" parent="." index="5"]
+visible = false
+
+[node name="emergency_stairs_upper" parent="." index="6"]
+visible = false
+
+[node name="emergency_stairs_landing" parent="." index="8"]
+visible = false
+
+[node name="SpeedBoostArea" parent="." index="9" instance=ExtResource("5_f2txt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.944631, -0.00864923, -1.896202)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SpeedBoostArea" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.021392822, 0, -0.65893567)
+shape = SubResource("BoxShape3D_1ainy")
+
+[editable path="PlayerRoot"]

@@ -5,13 +5,25 @@ class_name Movement
 @export var camera_rot: Node3D
 @export var camera: Camera3D
 
-const SPEED := 5.0
+var SPEED := 1.
 
 var camera_move_event: Vector2 = Vector2.ZERO
 
 var prev_velocity := Vector3.ZERO
 
 var examining := false
+
+func _ready() -> void:
+	GlobalEvents.player_entered_speed_boost_area.connect(player_entered_speed_boost_area)
+	GlobalEvents.player_left_speed_boost_area.connect(player_left_speed_boost_area)
+
+func player_entered_speed_boost_area():
+	SPEED = 1.5
+	print("1.5")
+	
+func player_left_speed_boost_area():
+	SPEED = 1.	
+	print("1.")
 
 func _physics_process(delta: float) -> void:
 	camera_move(delta)
@@ -29,7 +41,7 @@ func _physics_process(delta: float) -> void:
 	else:
 		char_body.velocity.x = move_toward(char_body.velocity.x, 0, SPEED)
 		char_body.velocity.z = move_toward(char_body.velocity.z, 0, SPEED)
-
+	char_body.velocity.y = char_body.get_gravity().y
 	prev_velocity = char_body.velocity
 	char_body.move_and_slide()
 
