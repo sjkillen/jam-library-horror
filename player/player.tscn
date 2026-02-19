@@ -34,7 +34,8 @@ fov = 50.0
 
 [node name="HandheldBook" parent="CameraRotation/Camera3D" instance=ExtResource("2_rkbax")]
 unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.13460761)
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, 0, -0.08674534, -0.18509783)
 max_x = 0.1
-bounds_y = Vector2(0.01, 0.51)
+min_y = -0.15
+max_y = -0.087
 move_speed = 0.001

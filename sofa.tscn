@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://1s7kdmdhxiyh"]
+
+[ext_resource type="PackedScene" uid="uid://bfe5x7l5ajcsn" path="res://sofa.glb" id="1_64a6s"]
+
+[node name="sofa" instance=ExtResource("1_64a6s")]

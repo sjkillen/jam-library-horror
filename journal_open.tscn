@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://drudwxb6g7y2d"]
+
+[ext_resource type="PackedScene" uid="uid://d560hieow0w" path="res://journal_open.glb" id="1_4ypg7"]
+
+[node name="journal_open" instance=ExtResource("1_4ypg7")]

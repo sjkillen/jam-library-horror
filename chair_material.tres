@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://86mqp68jljn8"]
+
+[ext_resource type="Texture2D" uid="uid://dfokj15esnj5a" path="res://chair_bake.png" id="1_xwq3l"]
+[ext_resource type="Texture2D" uid="uid://3yl7x6l45e87" path="res://chair_normal_bake.png" id="2_yyqbl"]
+
+[resource]
+albedo_texture = ExtResource("1_xwq3l")
+normal_enabled = true
+normal_texture = ExtResource("2_yyqbl")

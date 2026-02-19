@@ -1,13 +1,15 @@
 extends Node3D
 
 @export var max_x: float
-@export var bounds_y: Vector2
+@export var min_y: float
+@export var max_y: float
+@export var max_rotate: float
 @export var move_speed: float
 
 var enabled := false
 
 func _ready() -> void:
-	%MeshInstance3D.visible = false
+	%book.visible = false
 
 func _input(event: InputEvent) -> void:
 	if not enabled:
@@ -23,10 +25,11 @@ func _process(delta: float) -> void:
 
 func move_book(where: Vector2):
 	where *= move_speed * 0.1
-	where.y *= -1.
-	position += Vector3(where.x, where.y, 0.0)
-	position.x = clamp(position.x, -max_x, max_x)
-	position.y = clamp(position.y, -bounds_y.y, bounds_y.x)
+	position.x = clamp(position.x + where.x, -max_x, max_x)
+	position.y = clamp(position.y - where.y, min_y, max_y)
+	rotation.x = clamp(rotation.x - where.y * 5., -max_rotate, 0.0)
+	
+	print(position.y)
 
 func equip():
 	enabled = true

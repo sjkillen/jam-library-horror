@@ -1,9 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://bfpsf5d67h84n"]
 
 [ext_resource type="Script" uid="uid://v3ndgr0o3g4n" path="res://handheld_book.gd" id="1_jfomr"]
-
-[sub_resource type="BoxMesh" id="BoxMesh_f7pey"]
-size = Vector3(0.25, 0.013, 0.25)
+[ext_resource type="PackedScene" uid="uid://drudwxb6g7y2d" path="res://journal_open.tscn" id="2_tcoxo"]
 
 [sub_resource type="Animation" id="Animation_jfomr"]
 length = 0.001
@@ -67,12 +65,11 @@ _data = {
 transform = Transform3D(1, 0, 0, 0, 0.9999999, 0, 0, 0, 0.9999999, 0, 0, 0)
 script = ExtResource("1_jfomr")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+[node name="book" parent="." instance=ExtResource("2_tcoxo")]
 unique_name_in_owner = true
-transform = Transform3D(0.9999999, 0, 0, 0, 0.0871558, -0.99619466, 0, 0.99619466, 0.0871558, 0, 0, 0)
-mesh = SubResource("BoxMesh_f7pey")
+transform = Transform3D(0.001, 0, 0, 0, 8.715581e-05, -0.0009961948, 0, 0.0009961948, 8.715581e-05, 0, 0, 0)
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="MeshInstance3D"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="book"]
 unique_name_in_owner = true
 libraries = {
 &"": SubResource("AnimationLibrary_tcoxo")

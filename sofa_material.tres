@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://038vfxm5eno3"]
+
+[ext_resource type="Texture2D" uid="uid://dsm2jrjpk5mfs" path="res://sofa_bake.png" id="1_cud8k"]
+[ext_resource type="Texture2D" uid="uid://c1dagl8rr7ijk" path="res://sofa_normals.png" id="2_82q6x"]
+
+[resource]
+resource_name = "Material_0.001"
+albedo_texture = ExtResource("1_cud8k")
+roughness = 0.5
+normal_enabled = true
+normal_texture = ExtResource("2_82q6x")

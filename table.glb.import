@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cp26lqskuw06k"
-path="res://.godot/imported/chair.glb-9e99cb75401d7550d1ba7c74bc96a416.scn"
+uid="uid://bp1xr5ayeo220"
+path="res://.godot/imported/table.glb-3476bb16449cfd04c8c3210d50a7a3d2.scn"
 
 [deps]
 
-source_file="res://chair.glb"
-dest_files=["res://.godot/imported/chair.glb-9e99cb75401d7550d1ba7c74bc96a416.scn"]
+source_file="res://table.glb"
+dest_files=["res://.godot/imported/table.glb-3476bb16449cfd04c8c3210d50a7a3d2.scn"]
 
 [params]
 
@@ -41,8 +41,8 @@ _subresources={
 "materials": {
 "Material_0.001": {
 "use_external/enabled": true,
-"use_external/fallback_path": "res://chair_material.tres",
-"use_external/path": "uid://86mqp68jljn8"
+"use_external/fallback_path": "res://table_material.tres",
+"use_external/path": "uid://hn51cdu02bmy"
 }
 }
 }
