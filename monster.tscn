@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://c7x2v6hgj430c"]
+
+[ext_resource type="Script" uid="uid://cm6cepsdpemi2" path="res://monster.gd" id="1_s3gyj"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_c5q2p"]
+radius = 0.095
+height = 0.29763672
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s3gyj"]
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_mrqeg"]
+radius = 0.05
+height = 0.1
+
+[node name="Monster" type="CharacterBody3D"]
+script = ExtResource("1_s3gyj")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.14787762, 0)
+shape = SubResource("CapsuleShape3D_c5q2p")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.14494497, 0)
+material_override = SubResource("StandardMaterial3D_s3gyj")
+mesh = SubResource("SphereMesh_mrqeg")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
