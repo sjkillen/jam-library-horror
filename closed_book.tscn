@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://c3ixx8rip7wgc"]
+
+[ext_resource type="Script" uid="uid://xj8vhbg2rhd" path="res://closed_book.gd" id="1_iviqa"]
+[ext_resource type="PackedScene" uid="uid://ddrd33e1gpsvy" path="res://journal_closed.tscn" id="2_8iawc"]
+
+[node name="ClosedBook" type="Node3D"]
+script = ExtResource("1_iviqa")
+
+[node name="book" parent="." instance=ExtResource("2_8iawc")]
+unique_name_in_owner = true
+collision_layer = 10
+collision_mask = 10
+freeze = false

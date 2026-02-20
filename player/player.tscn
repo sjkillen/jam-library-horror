@@ -5,8 +5,8 @@
 [ext_resource type="PackedScene" uid="uid://bfpsf5d67h84n" path="res://handheld_book.tscn" id="2_rkbax"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_g1dw6"]
-radius = 0.05
-height = 0.15263672
+radius = 0.08203125
+height = 0.1640625
 
 [node name="PlayerRoot" type="CharacterBody3D"]
 floor_constant_speed = true
@@ -36,8 +36,18 @@ near = 0.01
 [node name="HandheldBook" parent="CameraRotation/Camera3D" instance=ExtResource("2_rkbax")]
 unique_name_in_owner = true
 transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, 0, -0.08674534, -0.18509783)
+visible = false
 max_x = 0.1
 min_y = -0.15
 max_y = -0.087
 max_rotate = 1.0
 move_speed = 0.001
+
+[node name="RayCast3D" type="RayCast3D" parent="CameraRotation/Camera3D"]
+unique_name_in_owner = true
+target_position = Vector3(0, 0, -0.46)
+collision_mask = 2
+
+[node name="AttachPoint" type="Marker3D" parent="CameraRotation/Camera3D"]
+unique_name_in_owner = true
+transform = Transform3D(-3.2783543e-08, 0, 0.75000006, 0, 0.75, 0, -0.75000006, 0, -3.2783543e-08, 0, -0.021229088, -0.06993188)

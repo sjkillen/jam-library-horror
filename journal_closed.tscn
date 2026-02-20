@@ -1,5 +1,18 @@
-[gd_scene load_steps=2 format=3 uid="uid://ddrd33e1gpsvy"]
+[gd_scene load_steps=3 format=3 uid="uid://ddrd33e1gpsvy"]
 
 [ext_resource type="PackedScene" uid="uid://dxegwewibo2qc" path="res://journal_closed.glb" id="1_xxosa"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_xxosa"]
+size = Vector3(0.022, 0.01, 0.017)
+
 [node name="journal_closed" instance=ExtResource("1_xxosa")]
+transform = Transform3D(-0.002146763, -0.9999977, 0, 0.9999977, -0.002146763, 0, 0, 0, 1, 0, 0, 0)
+collision_layer = 3
+collision_mask = 3
+
+[node name="Mesh_0_002" parent="." index="0"]
+transform = Transform3D(0.9994801, 0.02885675, 0.014376346, 0.032239594, -0.8946078, -0.44568774, 9.126961e-08, 0.44591954, -0.89507306, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1"]
+transform = Transform3D(1.0000024, -7.3807314e-08, 0, 7.3807314e-08, 1.0000024, 0, 0, 0, 1, 6.224911e-05, -0.00085327355, -0.00052001956)
+shape = SubResource("BoxShape3D_xxosa")

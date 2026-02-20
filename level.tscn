@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://deirq723s07jr"]
+[gd_scene load_steps=12 format=3 uid="uid://deirq723s07jr"]
 
 [ext_resource type="PackedScene" uid="uid://x0w6kjpsyaym" path="res://level.glb" id="1_u52ul"]
 [ext_resource type="PackedScene" uid="uid://bl2anu4u2bbxh" path="res://player/player.tscn" id="2_vonw3"]
@@ -6,6 +6,7 @@
 [ext_resource type="WwiseEvent" uid="uid://cc7a5fcned36b" path="res://Wwise/resources/Event/{DB1B052D-CDA0-436F-8A23-F18528312F2D}.tres" id="4_f2txt"]
 [ext_resource type="PackedScene" uid="uid://dptwf8lkjq20u" path="res://speed_boost_area.tscn" id="5_f2txt"]
 [ext_resource type="PackedScene" uid="uid://c7x2v6hgj430c" path="res://monster.tscn" id="6_1ainy"]
+[ext_resource type="PackedScene" uid="uid://c3ixx8rip7wgc" path="res://closed_book.tscn" id="7_n6hdu"]
 
 [sub_resource type="Environment" id="Environment_vonw3"]
 
@@ -27,6 +28,10 @@ _data = {
 point_count = 109
 
 [node name="level" instance=ExtResource("1_u52ul")]
+
+[node name="StaticBody3D" parent="MainWallsAndFloors" index="0"]
+collision_layer = 9
+collision_mask = 9
 
 [node name="PlayerRoot" parent="." index="1" instance=ExtResource("2_vonw3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9215078, 0.10083935, -2.0831172)
@@ -51,6 +56,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 14.743269, -12.73933)
 
 [node name="emergency_stairs_collision" parent="." index="7"]
 visible = false
+
+[node name="StaticBody3D" parent="emergency_stairs_collision" index="0"]
+collision_layer = 9
+collision_mask = 9
 
 [node name="SpeedBoostArea" parent="." index="9" instance=ExtResource("5_f2txt")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.944631, -0.00864923, -1.896202)
@@ -78,7 +87,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.433861, 0.4847928, -2.1225
 curve = SubResource("Curve3D_n6hdu")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="perimeter_upper" index="0"]
-transform = Transform3D(-0.9994276, -0.0010905793, -0.033808425, 5.8207644e-11, 0.9994801, -0.032240853, 0.033826005, -0.0322224, -0.99890816, 5.2338023, -0.00050047686, -0.532769)
+transform = Transform3D(-0.99942744, -0.0010905793, -0.033808425, 5.8207633e-11, 0.9994801, -0.032240853, 0.033825997, -0.0322224, -0.99890816, 5.2338023, -0.00050047686, -0.532769)
 tilt_enabled = false
 
 [node name="perimiter_lower" type="Path3D" parent="." index="17"]
@@ -93,5 +102,8 @@ visible = false
 
 [node name="NurbsPath_001" parent="." index="19"]
 visible = false
+
+[node name="ClosedBook" parent="." index="20" instance=ExtResource("7_n6hdu")]
+transform = Transform3D(0.41956297, -0.9077262, 0, 0.9077262, 0.41956297, 0, 0, 0, 1, -0.057418637, 0.26367128, 0)
 
 [editable path="PlayerRoot"]
