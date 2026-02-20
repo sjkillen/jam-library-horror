@@ -19,11 +19,9 @@ func _ready() -> void:
 
 func player_entered_speed_boost_area():
 	SPEED = 1.5
-	print("1.5")
 	
 func player_left_speed_boost_area():
 	SPEED = 1.	
-	print("1.")
 
 func _physics_process(delta: float) -> void:
 	camera_move(delta)
