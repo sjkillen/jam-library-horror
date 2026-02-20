@@ -2,14 +2,14 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cmyme4wrd38mn"
+uid="uid://id8tq6sgw3re"
 path.s3tc="res://.godot/imported/journal_closed_chair_normal_bake.png-d2369d20d78d152f594841199df60400.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "269d4c81945ad64c415c05aa2beb6804"
+"md5": "1c5e76168d9f91b0a8e14de8ac23fee4"
 }
 
 [deps]

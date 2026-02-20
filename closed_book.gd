@@ -3,16 +3,26 @@ class_name ClosedBook
 
 var player = weakref(null)
 
+var tween: Tween = null
+var w = 0.0
+
+@onready var playback: AnimationNodeStateMachinePlayback = %AnimationTree.get("parameters/playback")
+
 func attach_to_player(p: Player):
 	player = weakref(p)
+	tween = create_tween()
+	tween.tween_property(self, "w", 1.0, 1.0)
+	
 
-func _physics_process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	var p = player.get_ref()
 	if p is not Player:
 		return
-	#global_position = p.get_attach_point()
-	#global_rotation = p.get_attach_rot()
+	global_position = lerp(global_position, p.get_attach_point(), w)
+	global_rotation = lerp(global_rotation, p.get_attach_rot(), w)
+	if GlobalInput.keyboard_vector() != Vector2.ZERO:
+		playback.travel("bobble")
+	else:
+		playback.travel("RESET")
 	
-	var target: Vector3 = p.get_attach_point()
-	print("grab")
-	%book.apply_force((target - global_position).normalized())
+	

@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cjyou6ilgqktn"
-path.s3tc="res://.godot/imported/journal_closed_normal_bake.png-03ea303667ab94bfe673f14581eb76f0.s3tc.ctex"
+uid="uid://rwqhxg7sst45"
+path.s3tc="res://.godot/imported/journal_closed_normal_bake2.png-dd4eb4290cba49f69a8a4456e6285c2e.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "b1cb2c16c8d94acfb4e094378dea8585"
+"md5": "cd3a5f921e9a3a6a0f59d08de1fbcb68"
 }
 
 [deps]
 
-source_file="res://journal_closed_normal_bake.png"
-dest_files=["res://.godot/imported/journal_closed_normal_bake.png-03ea303667ab94bfe673f14581eb76f0.s3tc.ctex"]
+source_file="res://journal_closed_normal_bake2.png"
+dest_files=["res://.godot/imported/journal_closed_normal_bake2.png-dd4eb4290cba49f69a8a4456e6285c2e.s3tc.ctex"]
 
 [params]
 

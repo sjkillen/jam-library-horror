@@ -1,10 +1,15 @@
 extends CharacterBody3D
 class_name Player
 
+var holding = null
+
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("interact"):
-		query_interact_pickup()
+		if holding == null:
+			query_interact_pickup()
+		else:
+			interact_equip()
 
 func query_interact_pickup():
 	%RayCast3D.force_raycast_update()
@@ -13,15 +18,24 @@ func query_interact_pickup():
 		var col_p = col.get_parent()
 		if col_p is ClosedBook:
 			col_p.attach_to_player(self)
+			holding = col_p
+			return
+	return
 		
 		
 
 func interact_equip():
 	if %Movement.examining:
 		%Movement.examining = false
-		%HandheldBook.unequip()
 		%Movement.enable_keyboard_look = false
+		await %HandheldBook.unequip()
+		if holding:
+			holding.visible = true
+		%HandheldBook.visible = true		
 	else:
+		if holding:
+			holding.visible = false
+		%HandheldBook.visible = true
 		%Movement.examining = true
 		%HandheldBook.equip()
 		await GlobalInput.move_neutral

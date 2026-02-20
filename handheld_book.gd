@@ -6,6 +6,11 @@ extends Node3D
 @export var max_rotate: float
 @export var move_speed: float
 
+signal reading
+signal unreading
+
+var _reading := false
+
 var enabled := false
 
 func _ready() -> void:
@@ -31,11 +36,20 @@ func move_book(where: Vector2):
 	position.y = clamp(position.y - where.y, min_y, max_y)
 	var w := (position.y - min_y) / (max_y - min_y)
 	rotation.x = lerp(-max_rotate, 0.0, w)
+	if rotation.x > -0.01:
+		if not _reading:
+			_reading = true
+			reading.emit()
+	else:
+		_reading = false
+		unreading.emit()
 
 func equip():
 	enabled = true
 	%AnimationPlayer.play("equip")
+	await %AnimationPlayer.animation_finished
 
 func unequip():
 	enabled = false
 	%AnimationPlayer.play_backwards("equip")
+	await %AnimationPlayer.animation_finished

@@ -104,6 +104,6 @@ visible = false
 visible = false
 
 [node name="ClosedBook" parent="." index="20" instance=ExtResource("7_n6hdu")]
-transform = Transform3D(0.41956297, -0.9077262, 0, 0.9077262, 0.41956297, 0, 0, 0, 1, -0.057418637, 0.26367128, 0)
+transform = Transform3D(-0.99924135, -0.038945884, 0, 0.038945884, -0.99924135, 0, 0, 0, 1, -2.4112258, 0.13722908, -1.4822823)
 
 [editable path="PlayerRoot"]

@@ -1,13 +1,81 @@
-[gd_scene load_steps=3 format=3 uid="uid://c3ixx8rip7wgc"]
+[gd_scene load_steps=12 format=3 uid="uid://c3ixx8rip7wgc"]
 
 [ext_resource type="Script" uid="uid://xj8vhbg2rhd" path="res://closed_book.gd" id="1_iviqa"]
 [ext_resource type="PackedScene" uid="uid://ddrd33e1gpsvy" path="res://journal_closed.tscn" id="2_8iawc"]
+
+[sub_resource type="Animation" id="Animation_8iawc"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_iviqa"]
+resource_name = "bobble"
+length = 0.5
+loop_mode = 1
+step = 0.0333333
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, -0.0019284412, -0.048333332, 0.00032140687, 0, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.23333333, 0.5)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_kfox0"]
+_data = {
+&"RESET": SubResource("Animation_8iawc"),
+&"bobble": SubResource("Animation_iviqa")
+}
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_iviqa"]
+animation = &"RESET"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_8iawc"]
+animation = &"bobble"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_kfox0"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_a2ruu"]
+xfade_time = 0.1
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_b2ycv"]
+xfade_time = 0.1
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_1nfgy"]
+states/RESET/node = SubResource("AnimationNodeAnimation_iviqa")
+states/RESET/position = Vector2(388, 174)
+states/bobble/node = SubResource("AnimationNodeAnimation_8iawc")
+states/bobble/position = Vector2(376, 75.333336)
+transitions = ["Start", "RESET", SubResource("AnimationNodeStateMachineTransition_kfox0"), "RESET", "bobble", SubResource("AnimationNodeStateMachineTransition_a2ruu"), "bobble", "RESET", SubResource("AnimationNodeStateMachineTransition_b2ycv")]
 
 [node name="ClosedBook" type="Node3D"]
 script = ExtResource("1_iviqa")
 
 [node name="book" parent="." instance=ExtResource("2_8iawc")]
 unique_name_in_owner = true
-collision_layer = 10
-collision_mask = 10
-freeze = false
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="book"]
+libraries = {
+&"": SubResource("AnimationLibrary_kfox0")
+}
+autoplay = "bobble"
+
+[node name="AnimationTree" type="AnimationTree" parent="book"]
+unique_name_in_owner = true
+root_node = NodePath("%AnimationTree/..")
+tree_root = SubResource("AnimationNodeStateMachine_1nfgy")
+anim_player = NodePath("../AnimationPlayer")

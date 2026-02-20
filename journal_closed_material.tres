@@ -1,7 +1,7 @@
 [gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://crcdqdd3rxj2x"]
 
-[ext_resource type="Texture2D" uid="uid://cmyme4wrd38mn" path="res://journal_closed_chair_normal_bake.png" id="1_a0xlg"]
-[ext_resource type="Texture2D" uid="uid://rwqhxg7sst45" path="res://journal_closed_normal_bake.png" id="2_lnjdu"]
+[ext_resource type="Texture2D" uid="uid://cmyme4wrd38mn" path="res://journal_closed_chair_normal_bake2.png" id="1_a0xlg"]
+[ext_resource type="Texture2D" uid="uid://rwqhxg7sst45" path="res://journal_closed_normal_bake2.png" id="2_lnjdu"]
 
 [resource]
 resource_name = "Material_0.001"
