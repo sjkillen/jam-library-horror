@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://io41cro0ofag"]
+
+[ext_resource type="PackedScene" uid="uid://1mcudnixaxwr" path="res://shelf.tscn" id="1_nj5ui"]
+[ext_resource type="Script" uid="uid://btipxl4u7kll3" path="res://shelves/fill/random_fill.gd" id="2_x4beg"]
+
+[node name="shelf" instance=ExtResource("1_nj5ui")]
+script = ExtResource("2_x4beg")

@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://kcjo1lbntmng"]
+
+[ext_resource type="PackedScene" uid="uid://io41cro0ofag" path="res://shelves/fill/random_fill.tscn" id="1_e5wbj"]
+
+[node name="stack" type="Node3D"]
+
+[node name="shelf" parent="." instance=ExtResource("1_e5wbj")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
+
+[node name="shelf2" parent="." instance=ExtResource("1_e5wbj")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 2.9022975, 0)
+
+[node name="shelf3" parent="." instance=ExtResource("1_e5wbj")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 5.8654833, 0)
+
+[node name="shelf4" parent="." instance=ExtResource("1_e5wbj")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 8.876172, 0)
+
+[node name="shelf5" parent="." instance=ExtResource("1_e5wbj")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 11.763545, 0)
+
+[node name="shelf6" parent="." instance=ExtResource("1_e5wbj")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 14.726536, 0)
+
+[node name="shelf7" parent="." instance=ExtResource("1_e5wbj")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 17.623983, 0)

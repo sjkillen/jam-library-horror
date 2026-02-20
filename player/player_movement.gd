@@ -5,7 +5,7 @@ class_name Movement
 @export var camera_rot: Node3D
 @export var camera: Camera3D
 
-var SPEED := 1.
+var SPEED := 60
 
 var camera_move_event: Vector2 = Vector2.ZERO
 
@@ -19,10 +19,10 @@ func _ready() -> void:
 	GlobalEvents.player_left_speed_boost_area.connect(player_left_speed_boost_area)
 
 func player_entered_speed_boost_area():
-	SPEED = 1.5
+	SPEED = 60
 	
 func player_left_speed_boost_area():
-	SPEED = 1.	
+	SPEED = 60
 
 func _physics_process(delta: float) -> void:
 	camera_move(delta)

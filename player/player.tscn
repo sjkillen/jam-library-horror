@@ -6,8 +6,8 @@
 [ext_resource type="Script" uid="uid://diuqkxux4k2h1" path="res://player/canvas_layer.gd" id="4_yw30f"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_g1dw6"]
-radius = 0.08203125
-height = 0.1640625
+radius = 5.0
+height = 16.4
 
 [node name="PlayerRoot" type="CharacterBody3D"]
 floor_constant_speed = true
@@ -21,14 +21,13 @@ camera_rot = NodePath("../CameraRotation")
 camera = NodePath("../CameraRotation/Camera3D")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.11453668, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8.143148, 0)
 shape = SubResource("CapsuleShape3D_g1dw6")
 
 [node name="CameraRotation" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.6059269, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.357747, 0)
 
 [node name="Camera3D" type="Camera3D" parent="CameraRotation"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7619854, 0.0010965168)
 fov = 50.0
 near = 0.01
 
@@ -45,12 +44,12 @@ move_speed = 0.001
 
 [node name="RayCast3D" type="RayCast3D" parent="CameraRotation/Camera3D"]
 unique_name_in_owner = true
-target_position = Vector3(0, 0, -0.46)
+target_position = Vector3(0, 0, -16)
 collision_mask = 2
 
 [node name="AttachPoint" type="Marker3D" parent="CameraRotation/Camera3D"]
 unique_name_in_owner = true
-transform = Transform3D(-3.2783543e-08, 0, 0.75000006, 0, 0.75, 0, -0.75000006, 0, -3.2783543e-08, 0, -0.021229088, -0.06993188)
+transform = Transform3D(0.118829116, 0, -0.41845506, 0, 0.435, 0, 0.41845506, 0, 0.118829116, 0, -1.08674, -3.11077)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 script = ExtResource("4_yw30f")

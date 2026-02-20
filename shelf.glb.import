@@ -3,17 +3,17 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dxegwewibo2qc"
-path="res://.godot/imported/journal_closed.glb-16efc766596c32bd0b1d6f52b977e9b8.scn"
+uid="uid://0jn8pj1vs887"
+path="res://.godot/imported/shelf.glb-56c7c2e32dd7eb3e23a97654c965f299.scn"
 
 [deps]
 
-source_file="res://journal_closed.glb"
-dest_files=["res://.godot/imported/journal_closed.glb-16efc766596c32bd0b1d6f52b977e9b8.scn"]
+source_file="res://shelf.glb"
+dest_files=["res://.godot/imported/shelf.glb-56c7c2e32dd7eb3e23a97654c965f299.scn"]
 
 [params]
 
-nodes/root_type="StaticBody3D"
+nodes/root_type=""
 nodes/root_name=""
 nodes/root_script=null
 nodes/apply_root_scale=true
@@ -39,15 +39,10 @@ materials/extract_format=0
 materials/extract_path=""
 _subresources={
 "materials": {
-"Material_0.001": {
+"shelf_material": {
 "use_external/enabled": true,
-"use_external/fallback_path": "res://journal_closed_material.tres",
-"use_external/path": "uid://crcdqdd3rxj2x"
-}
-},
-"nodes": {
-"PATH:Mesh_0_002": {
-"physics/shape_type": 3
+"use_external/fallback_path": "res://shelf_material.tres",
+"use_external/path": "uid://cy7yko8ukd7qu"
 }
 }
 }

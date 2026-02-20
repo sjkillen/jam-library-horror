@@ -1,0 +1,110 @@
+[gd_scene load_steps=3 format=3 uid="uid://5ckexukvv7bt"]
+
+[ext_resource type="PackedScene" uid="uid://kcjo1lbntmng" path="res://shelves/stacks/stack.tscn" id="1_y684a"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_y684a"]
+size = Vector3(60.712402, 21.47876, 5.2089844)
+
+[node name="Aisle" type="Node3D"]
+
+[node name="stack" parent="." instance=ExtResource("1_y684a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06878005, 0, 0)
+
+[node name="stack2" parent="." instance=ExtResource("1_y684a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.7639322, 0, 0)
+
+[node name="stack3" parent="." instance=ExtResource("1_y684a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.512807, 0, 0)
+
+[node name="stack4" parent="." instance=ExtResource("1_y684a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.207959, 0, 0)
+
+[node name="stack5" parent="." instance=ExtResource("1_y684a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.936231, 0, 0)
+
+[node name="stack6" parent="." instance=ExtResource("1_y684a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.631382, 0, 0)
+
+[node name="stack7" parent="." instance=ExtResource("1_y684a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.380257, 0, 0)
+
+[node name="stack8" parent="." instance=ExtResource("1_y684a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.075409, 0, 0)
+
+[node name="stack9" parent="." instance=ExtResource("1_y684a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.733297, 0, 0)
+
+[node name="stack10" parent="." instance=ExtResource("1_y684a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.428448, 0, 0)
+
+[node name="stack11" parent="." instance=ExtResource("1_y684a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.177322, 0, 0)
+
+[node name="stack12" parent="." instance=ExtResource("1_y684a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.872475, 0, 0)
+
+[node name="stack13" parent="." instance=ExtResource("1_y684a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.600746, 0, 0)
+
+[node name="stack14" parent="." instance=ExtResource("1_y684a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48.2959, 0, 0)
+
+[node name="stack15" parent="." instance=ExtResource("1_y684a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 52.044773, 0, 0)
+
+[node name="stack16" parent="." instance=ExtResource("1_y684a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55.739925, 0, 0)
+
+[node name="stack17" parent="." instance=ExtResource("1_y684a")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0.06878005, 0, -0.5411167)
+
+[node name="stack18" parent="." instance=ExtResource("1_y684a")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 3.7639322, 0, -0.5411167)
+
+[node name="stack19" parent="." instance=ExtResource("1_y684a")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 7.512807, 0, -0.5411167)
+
+[node name="stack20" parent="." instance=ExtResource("1_y684a")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 11.207959, 0, -0.5411167)
+
+[node name="stack21" parent="." instance=ExtResource("1_y684a")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 14.936231, 0, -0.5411167)
+
+[node name="stack22" parent="." instance=ExtResource("1_y684a")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 18.631382, 0, -0.5411167)
+
+[node name="stack23" parent="." instance=ExtResource("1_y684a")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 22.380257, 0, -0.5411167)
+
+[node name="stack24" parent="." instance=ExtResource("1_y684a")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 26.075409, 0, -0.5411167)
+
+[node name="stack25" parent="." instance=ExtResource("1_y684a")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 29.733297, 0, -0.5411167)
+
+[node name="stack26" parent="." instance=ExtResource("1_y684a")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 33.428448, 0, -0.5411167)
+
+[node name="stack27" parent="." instance=ExtResource("1_y684a")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 37.177322, 0, -0.5411167)
+
+[node name="stack28" parent="." instance=ExtResource("1_y684a")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 40.872475, 0, -0.5411167)
+
+[node name="stack29" parent="." instance=ExtResource("1_y684a")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 44.600746, 0, -0.5411167)
+
+[node name="stack30" parent="." instance=ExtResource("1_y684a")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 48.2959, 0, -0.5411167)
+
+[node name="stack31" parent="." instance=ExtResource("1_y684a")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 52.044773, 0, -0.5411167)
+
+[node name="stack32" parent="." instance=ExtResource("1_y684a")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 55.739925, 0, -0.5411167)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.699009, 10.353901, -0.40133667)
+shape = SubResource("BoxShape3D_y684a")

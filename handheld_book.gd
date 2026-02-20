@@ -45,6 +45,9 @@ func move_book(where: Vector2):
 		unreading.emit()
 
 func equip():
+	position.y = min_y
+	rotation.x = -max_rotate
+	
 	enabled = true
 	%AnimationPlayer.play("equip")
 	await %AnimationPlayer.animation_finished

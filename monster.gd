@@ -1,6 +1,6 @@
 extends CharacterBody3D
 
-var SPEED: float = 5
+var SPEED: float = 100000
 
 @export var player: Player
 @export var path: Path3D
@@ -8,6 +8,7 @@ var SPEED: float = 5
 func _physics_process(delta: float) -> void:
 	var dest := walk_path(delta)
 	velocity = (dest - global_position).normalized() 
+	print(velocity)
 	move_and_slide()
 
 

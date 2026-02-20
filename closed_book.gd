@@ -20,6 +20,7 @@ func _process(_delta: float) -> void:
 		return
 	global_position = lerp(global_position, p.get_attach_point(), w)
 	global_rotation = lerp(global_rotation, p.get_attach_rot(), w)
+	#scale = lerp(scale, p.get_attach_scale(), w)
 	if GlobalInput.keyboard_vector() != Vector2.ZERO:
 		playback.travel("bobble")
 	else:

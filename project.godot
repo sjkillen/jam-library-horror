@@ -113,10 +113,6 @@ enable_mouse_capture={
 ]
 }
 
-[physics]
-
-3d/default_gravity=3.0
-
 [rendering]
 
 rendering_device/driver.windows="d3d12"

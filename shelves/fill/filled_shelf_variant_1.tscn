@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://cx57o7dyhavv5"]
+
+[ext_resource type="PackedScene" uid="uid://1mcudnixaxwr" path="res://shelf.tscn" id="1_f61sh"]
+
+[node name="shelf" instance=ExtResource("1_f61sh")]

@@ -28,6 +28,7 @@ func interact_equip():
 	if %Movement.examining:
 		%Movement.examining = false
 		%Movement.enable_keyboard_look = false
+		%HandheldBook.unreading.emit()
 		await %HandheldBook.unequip()
 		if holding:
 			holding.visible = true
@@ -46,4 +47,7 @@ func get_attach_point() -> Vector3:
 	return %AttachPoint.global_position
 
 func get_attach_rot() -> Vector3:
+	return %AttachPoint.global_rotation
+
+func get_attach_scale() -> Vector3:
 	return %AttachPoint.global_rotation

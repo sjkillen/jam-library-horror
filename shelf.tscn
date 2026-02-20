@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://1mcudnixaxwr"]
+
+[ext_resource type="PackedScene" uid="uid://0jn8pj1vs887" path="res://shelf.glb" id="1_0edba"]
+
+[node name="shelf" instance=ExtResource("1_0edba")]
+
+[node name="books" type="Node3D" parent="." index="1"]

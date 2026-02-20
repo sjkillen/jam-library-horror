@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://deirq723s07jr"]
+[gd_scene load_steps=14 format=3 uid="uid://deirq723s07jr"]
 
 [ext_resource type="PackedScene" uid="uid://x0w6kjpsyaym" path="res://level.glb" id="1_u52ul"]
 [ext_resource type="PackedScene" uid="uid://bl2anu4u2bbxh" path="res://player/player.tscn" id="2_vonw3"]
@@ -7,11 +7,13 @@
 [ext_resource type="PackedScene" uid="uid://dptwf8lkjq20u" path="res://speed_boost_area.tscn" id="5_f2txt"]
 [ext_resource type="PackedScene" uid="uid://c7x2v6hgj430c" path="res://monster.tscn" id="6_1ainy"]
 [ext_resource type="PackedScene" uid="uid://c3ixx8rip7wgc" path="res://closed_book.tscn" id="7_n6hdu"]
+[ext_resource type="PackedScene" uid="uid://5ckexukvv7bt" path="res://shelves/aisle.tscn" id="8_km5ld"]
+[ext_resource type="PackedScene" uid="uid://d0d6dwt0efus5" path="res://chair.tscn" id="9_i2t4f"]
 
 [sub_resource type="Environment" id="Environment_vonw3"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_1ainy"]
-size = Vector3(1.1465454, 1, 1.1860352)
+size = Vector3(1.2792053, 1.4882813, 1.4475098)
 
 [sub_resource type="Curve3D" id="Curve3D_n6hdu"]
 _data = {
@@ -34,7 +36,7 @@ collision_layer = 9
 collision_mask = 9
 
 [node name="PlayerRoot" parent="." index="1" instance=ExtResource("2_vonw3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9215078, 0.10083935, -2.0831172)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -56.48461, 17.00748, -0.34786117)
 
 [node name="CollisionShape3D" parent="PlayerRoot" index="1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.07210505, 0)
@@ -65,10 +67,11 @@ collision_mask = 9
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.944631, -0.00864923, -1.896202)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="SpeedBoostArea" index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.021392822, 0, -0.65893567)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0590885, -0.24414063, 0.7850398)
 shape = SubResource("BoxShape3D_1ainy")
 
 [node name="Monster" parent="." index="10" node_paths=PackedStringArray("player", "path") instance=ExtResource("6_1ainy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -30.775356, 0)
 player = NodePath("../PlayerRoot")
 path = NodePath("../perimiter_lower")
 
@@ -83,7 +86,7 @@ start_position = Vector3(0.0533185, 0.07332018, -0.4867785)
 end_position = Vector3(0.040441036, 0.016889766, -0.07071245)
 
 [node name="perimeter_upper" type="Path3D" parent="." index="16"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.433861, 0.4847928, -2.1225448)
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -96.4925, 12.919038, -2.1225448)
 curve = SubResource("Curve3D_n6hdu")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="perimeter_upper" index="0"]
@@ -91,7 +94,7 @@ transform = Transform3D(-0.99942744, -0.0010905793, -0.033808425, 5.8207633e-11,
 tilt_enabled = false
 
 [node name="perimiter_lower" type="Path3D" parent="." index="17"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.433861, 0.4847928, -2.1225448)
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -80.24299, 6.9203777, -85.88002)
 curve = SubResource("Curve3D_km5ld")
 
 [node name="PathFollow3D2" type="PathFollow3D" parent="perimiter_lower" index="0"]
@@ -105,5 +108,26 @@ visible = false
 
 [node name="ClosedBook" parent="." index="20" instance=ExtResource("7_n6hdu")]
 transform = Transform3D(-0.99924135, -0.038945884, 0, 0.038945884, -0.99924135, 0, 0, 0, 1, -2.4112258, 0.13722908, -1.4822823)
+
+[node name="chair" parent="." index="21" instance=ExtResource("9_i2t4f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5676394, 0.00039584097, -0.42181924)
+
+[node name="chair2" parent="." index="22" instance=ExtResource("9_i2t4f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.511419, 0.00039584097, -0.14577384)
+
+[node name="Aisle" parent="." index="23" instance=ExtResource("8_km5ld")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 113.19052, 2.407486, -138.7131)
+
+[node name="Aisle2" parent="." index="24" instance=ExtResource("8_km5ld")]
+transform = Transform3D(-0.031061813, 0, 0.9995175, 0, 1, 0, -0.9995175, 0, -0.031061813, 330.98126, 2.407486, 44.18508)
+
+[node name="Aisle3" parent="." index="25" instance=ExtResource("8_km5ld")]
+transform = Transform3D(-0.013508402, 0, 0.99990875, 0, 1, 0, -0.99990875, 0, -0.013508402, 330.98126, 2.407486, 203.37491)
+
+[node name="Aisle4" parent="." index="26" instance=ExtResource("8_km5ld")]
+transform = Transform3D(-0.9997281, 0, -0.023315419, 0, 1, 0, 0.023315419, 0, -0.9997281, 142.2717, -46.551132, 244.48422)
+
+[node name="Aisle5" parent="." index="27" instance=ExtResource("8_km5ld")]
+transform = Transform3D(-0.9999835, 0, -0.005759506, 0, 1, 0, 0.005759506, 0, -0.9999835, 301.45676, -46.551132, 245.71783)
 
 [editable path="PlayerRoot"]

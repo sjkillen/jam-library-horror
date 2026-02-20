@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://cbldqdmpqwmt8"]
+
+[ext_resource type="PackedScene" uid="uid://1mcudnixaxwr" path="res://shelf.tscn" id="1_hecix"]
+[ext_resource type="PackedScene" uid="uid://c3ixx8rip7wgc" path="res://closed_book.tscn" id="2_qctyf"]
+
+[node name="shelf" instance=ExtResource("1_hecix")]
+
+[node name="ClosedBook3" parent="books" index="0" instance=ExtResource("2_qctyf")]
+transform = Transform3D(-0.93927413, 0, 0.34316784, 0, 1, 0, -0.34316784, 0, -0.93927413, 0.060739815, 0.13719255, 0.009532537)
