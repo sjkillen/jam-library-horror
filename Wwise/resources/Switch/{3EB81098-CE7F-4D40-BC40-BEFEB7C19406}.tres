@@ -1,0 +1,11 @@
+[gd_resource type="WwiseSwitch" load_steps=2 format=3 uid="uid://c0f1r8u5t1bl4"]
+
+[ext_resource type="WwiseSwitchGroup" uid="uid://c86s3eyvn08vm" path="res://Wwise/resources/Switch Group/{8E7C6447-2354-49B8-9776-FAEB44C15846}.tres" id="1_r4w0t"]
+
+[resource]
+group_ref = ExtResource("1_r4w0t")
+group_id = 628798615
+name = "ghost"
+id = 4023194814
+guid = "{3EB81098-CE7F-4D40-BC40-BEFEB7C19406}"
+dummy = true

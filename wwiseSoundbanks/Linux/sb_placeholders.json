@@ -1,0 +1,618 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Linux",
+  "BasePlatform": "Linux",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "4245214463",
+    "Type": "User",
+    "GUID": "{2102CC99-02EC-41A3-8CDB-915F825F309F}",
+    "Language": "SFX",
+    "Hash": "{3F7056CC-9A69-4E57-1171-93AFDC8FDA98}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\sb_placeholders",
+    "ShortName": "sb_placeholders",
+    "Path": "sb_placeholders.bnk",
+    "Media": [
+     {
+      "Id": "13650685",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "fx_monster_speech_jonathanExample_02.wav",
+      "CachePath": "8D/{8D71E9EA-843C-AAFA-1FFE-31A0C23FE132}.wem"
+     },
+     {
+      "Id": "37225274",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "370936__inspectorj__horror-violin-tremolo-cluster-a.wav",
+      "CachePath": "93/{93BFD30E-8612-414F-EC4E-FBA2E7A5AB41}.wem"
+     },
+     {
+      "Id": "51125169",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "587357__janefield1337__scratch.wav",
+      "CachePath": "15/{15884F9D-3B80-42C5-486D-F7DEBEA8EAA1}.wem"
+     },
+     {
+      "Id": "60417407",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "amb_roomTone_01.wav",
+      "CachePath": "B9/{B972D343-FC62-16F6-D47C-A0F13C2C73B2}.wem"
+     },
+     {
+      "Id": "139225385",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "fx_monster_singing_03.wav",
+      "CachePath": "D7/{D7FEF903-306B-7139-8337-75F57F8E4F58}.wem"
+     },
+     {
+      "Id": "265965776",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "231296__puniho__grinding-glass.wav",
+      "CachePath": "18/{18C95E30-E962-515B-6FEB-0D194DF78C89}.wem"
+     },
+     {
+      "Id": "332642241",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "fx_monster_speech_jonathanExample_02.wav",
+      "CachePath": "17/{17DE0D3B-F4EA-5AC2-5C3B-A6478FAFF783}.wem"
+     },
+     {
+      "Id": "333091615",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "fx_monster_singing_05.wav",
+      "CachePath": "8A/{8AD998E7-DEBA-585C-0E92-9DA3835C1B43}.wem"
+     },
+     {
+      "Id": "334109604",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "630592__vinni_r__bone-break_2.wav",
+      "CachePath": "E3/{E3E35235-AF34-7A52-2EBF-A9310F6EF6BD}.wem"
+     },
+     {
+      "Id": "414201430",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "fx_monster_singing_04.wav",
+      "CachePath": "E4/{E4982957-B6F9-5111-4EC4-09B030D8C43A}.wem"
+     },
+     {
+      "Id": "453441135",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "fx_monster_speech_jonathanExample_02.wav",
+      "CachePath": "96/{96A90540-C77C-E4CC-C740-E343DF5B4DAF}.wem"
+     },
+     {
+      "Id": "516737740",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "fx_monster_singing_02.wav",
+      "CachePath": "A0/{A08B5055-F642-113A-2BA1-8D09C2FF3594}.wem"
+     },
+     {
+      "Id": "598179146",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "476585__relenzo2__person-sliding-on-carpet.wav",
+      "CachePath": "E6/{E60D756C-B337-D470-0A20-DEA2F8D9C643}.wem"
+     },
+     {
+      "Id": "670914415",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "369837__splicesound__01-32-footsteps-wood-socks-slow-pace.wav",
+      "CachePath": "04/{0439C95F-6175-BB44-FD26-F328F047FC44}.wem"
+     },
+     {
+      "Id": "827718180",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "403498__lamamakesmusic__water_bubbly_tab_dissolve.wav",
+      "CachePath": "C8/{C8F123F6-3C16-BEFB-B30C-1B708798B6D4}.wem"
+     },
+     {
+      "Id": "843678803",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "fx_monsterRoar_01_TEST.wav",
+      "CachePath": "9E/{9E8AF8B8-D182-3E9E-D3BF-7AA982F39DB0}.wem"
+     },
+     {
+      "Id": "885174260",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "180959__psionicgames__stretch01.wav",
+      "CachePath": "66/{66D00D38-1D0D-B681-73BA-A4E161D5B8DE}.wem"
+     },
+     {
+      "Id": "890970707",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "751099__puzzleandy__fast_rumbling_scratch_4.wav",
+      "CachePath": "4E/{4E680E4F-8AFE-726D-4639-728BA484A392}.wem"
+     },
+     {
+      "Id": "1043201617",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "fx_monster_singing_01.wav",
+      "CachePath": "DA/{DAA13D79-E3D9-A7CC-E82C-68949EF69170}.wem"
+     }
+    ],
+    "Plugins": {
+     "Custom": [
+      {
+       "Id": "10725770",
+       "Name": "Silence",
+       "ObjectPath": "\\Containers\\Default Work Unit\\monster_sounds\\monster_ambience\\randomize\\monster_sound\\none\\Silence",
+       "GUID": "{39600C38-532A-44C6-A1A1-783EBD189B87}",
+       "LibName": "Wwise Silence",
+       "LibId": "6619138"
+      },
+      {
+       "Id": "127604191",
+       "Name": "Silence",
+       "ObjectPath": "\\Containers\\Default Work Unit\\monster_sounds\\monster_ambience\\randomize\\monster_movement\\none\\Silence",
+       "GUID": "{7D2ADB3D-6976-43E1-A38A-90982DB0C6CC}",
+       "LibName": "Wwise Silence",
+       "LibId": "6619138"
+      },
+      {
+       "Id": "827886686",
+       "Name": "Silence",
+       "ObjectPath": "\\Containers\\Default Work Unit\\monster_sounds\\monster_ambience\\randomize\\monster_feeding\\none\\Silence",
+       "GUID": "{8B9103B6-AE77-480D-A2BA-7ED8BBBB70A9}",
+       "LibName": "Wwise Silence",
+       "LibId": "6619138"
+      },
+      {
+       "Id": "833798543",
+       "Name": "Silence",
+       "ObjectPath": "\\Containers\\Default Work Unit\\monster_sounds\\monster_ambience\\delay\\Silence",
+       "GUID": "{A467551B-05AA-4D1F-8DEC-75539E5BE738}",
+       "LibName": "Wwise Silence",
+       "LibId": "6619138"
+      }
+     ]
+    },
+    "Events": [
+     {
+      "Id": "3409423522",
+      "Name": "Play_amb_roomTone_01",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_amb_roomTone_01",
+      "GUID": "{50106D98-049D-43D1-8134-2A27BD6794BB}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "60417407"
+       }
+      ]
+     },
+     {
+      "Id": "182044926",
+      "Name": "Play_fx_ithunts",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_fx_ithunts",
+      "GUID": "{8B1737FF-D91E-4103-B0E1-91C5CB9F3602}",
+      "MaxAttenuation": "1000",
+      "DurationType": "OneShot",
+      "DurationMin": "2.2313125",
+      "DurationMax": "2.2313125",
+      "MediaRefs": [
+       {
+        "Id": "843678803"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3881977292",
+        "Name": "verb_room",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\verb_room",
+        "GUID": "{7FCFABF3-F681-45A3-9D09-F7F9D92E243B}"
+       }
+      ]
+     },
+     {
+      "Id": "2841926335",
+      "Name": "Play_monster_ambience",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_monster_ambience",
+      "GUID": "{E7CDE3F4-B2BA-4EAF-8282-03A0737B36F2}",
+      "MaxAttenuation": "1000",
+      "DurationType": "Infinite",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "833798543"
+        }
+       ]
+      },
+      "AuxBusRefs": [
+       {
+        "Id": "3881977292",
+        "Name": "verb_room",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\verb_room",
+        "GUID": "{7FCFABF3-F681-45A3-9D09-F7F9D92E243B}"
+       }
+      ],
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "74444390",
+         "Id": "3554728690",
+         "GUID": "{DF23940B-3EFD-478B-842B-1D7C9ACCA53E}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "827718180"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "74444390",
+         "Id": "941442534",
+         "GUID": "{524FCE54-61D0-4603-BEB4-5C34DA8C7B1B}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "334109604"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "74444390",
+         "Id": "782826392",
+         "GUID": "{DEFAF39D-946A-4701-BCEB-4B216D075C11}",
+         "Default": "true"
+        },
+        "PluginRefs": {
+         "Custom": [
+          {
+           "Id": "827886686"
+          }
+         ]
+        }
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "74444390",
+         "Id": "3794369557",
+         "GUID": "{330245E9-3CD7-4881-BCC1-09A088109B47}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "265965776"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "62399725",
+         "Id": "146520385",
+         "GUID": "{A2B97801-D2A4-4F77-8A5C-33F3CEC7CC65}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "51125169"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "62399725",
+         "Id": "3238454324",
+         "GUID": "{B151F30A-7156-4674-A00E-7869BAC0C191}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "885174260"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "62399725",
+         "Id": "3841889844",
+         "GUID": "{3803DF1F-F688-4DE4-9560-4DDB7E442C6C}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "598179146"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "62399725",
+         "Id": "782826392",
+         "GUID": "{D3D37D4D-DDC8-440A-B639-4556009DBA0B}",
+         "Default": "true"
+        },
+        "PluginRefs": {
+         "Custom": [
+          {
+           "Id": "127604191"
+          }
+         ]
+        }
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "628798615",
+         "Id": "3887404748",
+         "GUID": "{533DC110-E4BC-49C2-923F-BCB36C46D7A2}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "13650685"
+         },
+         {
+          "Id": "332642241"
+         },
+         {
+          "Id": "453441135"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "628798615",
+         "Id": "48807190",
+         "GUID": "{5ED3CA11-F810-408B-9D84-C252C2685CD3}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "843678803"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "628798615",
+         "Id": "782826392",
+         "GUID": "{AF4A4469-5201-4AC4-9768-82812CCA341B}",
+         "Default": "true"
+        },
+        "PluginRefs": {
+         "Custom": [
+          {
+           "Id": "10725770"
+          }
+         ]
+        }
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "628798615",
+         "Id": "4023194814",
+         "GUID": "{3EB81098-CE7F-4D40-BC40-BEFEB7C19406}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "139225385"
+         },
+         {
+          "Id": "333091615"
+         },
+         {
+          "Id": "414201430"
+         },
+         {
+          "Id": "516737740"
+         },
+         {
+          "Id": "1043201617"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "Id": "1805011878",
+      "Name": "Play_playerFootsteps",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_playerFootsteps",
+      "GUID": "{FCAAD741-B1D9-4DE0-8BCF-921368F211A1}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "670914415"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3881977292",
+        "Name": "verb_room",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\verb_room",
+        "GUID": "{7FCFABF3-F681-45A3-9D09-F7F9D92E243B}"
+       }
+      ]
+     },
+     {
+      "Id": "3499808837",
+      "Name": "Play_randomAmb",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_randomAmb",
+      "GUID": "{248B9D10-8124-43A2-9872-912B623CEBFB}",
+      "MaxAttenuation": "1000",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "51125169"
+       },
+       {
+        "Id": "890970707"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3881977292",
+        "Name": "verb_room",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\verb_room",
+        "GUID": "{7FCFABF3-F681-45A3-9D09-F7F9D92E243B}"
+       }
+      ]
+     },
+     {
+      "Id": "176160403",
+      "Name": "Play_tensionLayer",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_tensionLayer",
+      "GUID": "{5784F630-542D-4E70-8AAE-2E8F9DD9BB76}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "37225274"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "2470328564",
+      "Name": "intensity",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\intensity",
+      "GUID": "{A48C96B5-025A-4D7C-A227-79F204159E1D}"
+     }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "62399725",
+      "Name": "enemy_movement",
+      "ObjectPath": "\\Switches\\Default Work Unit\\enemy_movement",
+      "GUID": "{2947B7A8-7552-4887-96D8-82E5469CC726}",
+      "Switches": [
+       {
+        "Id": "146520385",
+        "Name": "climb_shelves",
+        "ObjectPath": "\\Switches\\Default Work Unit\\enemy_movement\\climb_shelves",
+        "GUID": "{A2B97801-D2A4-4F77-8A5C-33F3CEC7CC65}"
+       },
+       {
+        "Id": "782826392",
+        "Name": "default",
+        "ObjectPath": "\\Switches\\Default Work Unit\\enemy_movement\\default",
+        "GUID": "{D3D37D4D-DDC8-440A-B639-4556009DBA0B}"
+       },
+       {
+        "Id": "3238454324",
+        "Name": "stretch",
+        "ObjectPath": "\\Switches\\Default Work Unit\\enemy_movement\\stretch",
+        "GUID": "{B151F30A-7156-4674-A00E-7869BAC0C191}"
+       },
+       {
+        "Id": "3841889844",
+        "Name": "slither",
+        "ObjectPath": "\\Switches\\Default Work Unit\\enemy_movement\\slither",
+        "GUID": "{3803DF1F-F688-4DE4-9560-4DDB7E442C6C}"
+       }
+      ]
+     },
+     {
+      "Id": "74444390",
+      "Name": "enemy_feeding",
+      "ObjectPath": "\\Switches\\Default Work Unit\\enemy_feeding",
+      "GUID": "{D87D68BA-0E09-4DFE-856C-7A348AFD3991}",
+      "Switches": [
+       {
+        "Id": "782826392",
+        "Name": "default",
+        "ObjectPath": "\\Switches\\Default Work Unit\\enemy_feeding\\default",
+        "GUID": "{DEFAF39D-946A-4701-BCEB-4B216D075C11}"
+       },
+       {
+        "Id": "941442534",
+        "Name": "break",
+        "ObjectPath": "\\Switches\\Default Work Unit\\enemy_feeding\\break",
+        "GUID": "{524FCE54-61D0-4603-BEB4-5C34DA8C7B1B}"
+       },
+       {
+        "Id": "3554728690",
+        "Name": "acid",
+        "ObjectPath": "\\Switches\\Default Work Unit\\enemy_feeding\\acid",
+        "GUID": "{DF23940B-3EFD-478B-842B-1D7C9ACCA53E}"
+       },
+       {
+        "Id": "3794369557",
+        "Name": "grind",
+        "ObjectPath": "\\Switches\\Default Work Unit\\enemy_feeding\\grind",
+        "GUID": "{330245E9-3CD7-4881-BCC1-09A088109B47}"
+       }
+      ]
+     },
+     {
+      "Id": "628798615",
+      "Name": "enemy_sound",
+      "ObjectPath": "\\Switches\\Default Work Unit\\enemy_sound",
+      "GUID": "{8E7C6447-2354-49B8-9776-FAEB44C15846}",
+      "Switches": [
+       {
+        "Id": "48807190",
+        "Name": "beast",
+        "ObjectPath": "\\Switches\\Default Work Unit\\enemy_sound\\beast",
+        "GUID": "{5ED3CA11-F810-408B-9D84-C252C2685CD3}"
+       },
+       {
+        "Id": "782826392",
+        "Name": "default",
+        "ObjectPath": "\\Switches\\Default Work Unit\\enemy_sound\\default",
+        "GUID": "{AF4A4469-5201-4AC4-9768-82812CCA341B}"
+       },
+       {
+        "Id": "3887404748",
+        "Name": "human",
+        "ObjectPath": "\\Switches\\Default Work Unit\\enemy_sound\\human",
+        "GUID": "{533DC110-E4BC-49C2-923F-BCB36C46D7A2}"
+       },
+       {
+        "Id": "4023194814",
+        "Name": "ghost",
+        "ObjectPath": "\\Switches\\Default Work Unit\\enemy_sound\\ghost",
+        "GUID": "{3EB81098-CE7F-4D40-BC40-BEFEB7C19406}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{82477DF1-4346-2B6F-C9E3-6B432E45D022}"
+ }
+}

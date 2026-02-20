@@ -1,0 +1,11 @@
+[gd_resource type="WwiseSwitch" load_steps=2 format=3 uid="uid://wqkoks8mknpv"]
+
+[ext_resource type="WwiseSwitchGroup" uid="uid://bpqw7a07kwii0" path="res://Wwise/resources/Switch Group/{D87D68BA-0E09-4DFE-856C-7A348AFD3991}.tres" id="1_2huou"]
+
+[resource]
+group_ref = ExtResource("1_2huou")
+group_id = 74444390
+name = "grind"
+id = 3794369557
+guid = "{330245E9-3CD7-4881-BCC1-09A088109B47}"
+dummy = true

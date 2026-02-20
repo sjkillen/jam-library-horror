@@ -1,0 +1,8 @@
+[gd_resource type="WwiseAuxBus" format=3 uid="uid://cfmgx4e7a07e8"]
+
+[resource]
+is_in_user_defined_sound_bank = true
+name = "verb_room"
+id = 3881977292
+guid = "{7FCFABF3-F681-45A3-9D09-F7F9D92E243B}"
+dummy = true

@@ -1,0 +1,7 @@
+[gd_resource type="WwiseStateGroup" format=3 uid="uid://bqv8bdwx7rivc"]
+
+[resource]
+name = "is_walking"
+id = 499154297
+guid = "{57308A05-5958-4790-8AC6-F6D790E86379}"
+dummy = true

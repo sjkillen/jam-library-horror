@@ -5,6 +5,10 @@ class_name Movement
 @export var camera_rot: Node3D
 @export var camera: Camera3D
 
+@export var wwise_walking_true: WwiseState
+@export var wwise_walking_false: WwiseState
+var is_walking = false
+
 var SPEED := 60
 
 var camera_move_event: Vector2 = Vector2.ZERO
@@ -43,6 +47,15 @@ func _physics_process(delta: float) -> void:
 	char_body.velocity.y = char_body.get_gravity().y
 	prev_velocity = char_body.velocity
 	char_body.move_and_slide()
+	
+	if char_body.velocity.x != 0 or char_body.velocity.y != 0:
+		if is_walking == false:
+			wwise_walking_true.set_value()
+		is_walking = true
+	else:
+		if is_walking == true:
+			wwise_walking_false.set_value()
+		is_walking = false
 
 func _input(event: InputEvent) -> void:
 	if not examining and event is InputEventMouseMotion:

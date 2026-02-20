@@ -1,5 +1,30 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	499154297	is_walking			\Default Work Unit\is_walking	
+	1865477056	is_reading			\Default Work Unit\is_reading	
+	2170747458	is_watched			\Default Work Unit\is_watched	
+
+State	ID	Name	State Group			Notes
+	748895195	None	is_walking			
+	2452206122	false	is_walking			
+	3053630529	true	is_walking			
+	748895195	None	is_reading			
+	2452206122	false	is_reading			
+	3053630529	true	is_reading			
+	748895195	None	is_watched			
+	2452206122	false	is_watched			
+	3053630529	true	is_watched			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	2246998526	Main Audio Bus			\Default Work Unit\Main Audio Bus	
+	2544162710	bus_binaural			\Default Work Unit\Main Audio Bus\bus_binaural	
+	2623433044	bus_stereo			\Default Work Unit\Main Audio Bus\bus_stereo	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	3881977292	verb_room			\Default Work Unit\Main Audio Bus\verb_room	
+
+Effect plug-ins	ID	Name	Type				Notes
+	641421391	Hall_Medium_Dark (Custom)	Wwise RoomVerb			
+	792719139	New_Resonance_Audio_Renderer	Resonance Audio Renderer			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

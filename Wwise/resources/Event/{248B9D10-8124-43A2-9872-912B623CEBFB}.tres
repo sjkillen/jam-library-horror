@@ -1,0 +1,8 @@
+[gd_resource type="WwiseEvent" format=3 uid="uid://drekfeecrfeqi"]
+
+[resource]
+is_in_user_defined_sound_bank = true
+name = "Play_randomAmb"
+id = 3499808837
+guid = "{248B9D10-8124-43A2-9872-912B623CEBFB}"
+dummy = true

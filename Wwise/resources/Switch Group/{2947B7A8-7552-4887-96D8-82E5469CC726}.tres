@@ -1,0 +1,7 @@
+[gd_resource type="WwiseSwitchGroup" format=3 uid="uid://fyqw2l25nxgf"]
+
+[resource]
+name = "enemy_movement"
+id = 62399725
+guid = "{2947B7A8-7552-4887-96D8-82E5469CC726}"
+dummy = true

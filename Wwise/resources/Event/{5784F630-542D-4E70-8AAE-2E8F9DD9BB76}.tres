@@ -1,0 +1,8 @@
+[gd_resource type="WwiseEvent" format=3 uid="uid://dual3ag3gsod3"]
+
+[resource]
+is_in_user_defined_sound_bank = true
+name = "Play_tensionLayer"
+id = 176160403
+guid = "{5784F630-542D-4E70-8AAE-2E8F9DD9BB76}"
+dummy = true

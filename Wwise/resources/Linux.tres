@@ -1,0 +1,12 @@
+[gd_resource type="WwisePlatformInfo" load_steps=2 format=3 uid="uid://cjk4kvwus8m6y"]
+
+[sub_resource type="WwisePluginInfo" id="WwisePluginInfo_qyypo"]
+plugin_name = "Resonance Audio Renderer"
+plugin_id = 6557955
+dll_name = "ResonanceAudio"
+static_lib_name = "ResonanceAudioFX"
+
+[resource]
+platform_name = "Linux"
+platform_path = "Linux"
+plugin_info = Array[WwisePluginInfo]([SubResource("WwisePluginInfo_qyypo")])

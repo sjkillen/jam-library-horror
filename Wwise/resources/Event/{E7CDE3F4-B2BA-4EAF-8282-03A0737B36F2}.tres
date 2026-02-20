@@ -1,0 +1,8 @@
+[gd_resource type="WwiseEvent" format=3 uid="uid://rpt34ybncl0b"]
+
+[resource]
+is_in_user_defined_sound_bank = true
+name = "Play_monster_ambience"
+id = 2841926335
+guid = "{E7CDE3F4-B2BA-4EAF-8282-03A0737B36F2}"
+dummy = true

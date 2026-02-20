@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://5ckexukvv7bt"]
+[gd_scene load_steps=4 format=3 uid="uid://5ckexukvv7bt"]
 
 [ext_resource type="PackedScene" uid="uid://kcjo1lbntmng" path="res://shelves/stacks/stack.tscn" id="1_y684a"]
+[ext_resource type="WwiseAcousticTexture" uid="uid://clbqs5vbxflgs" path="res://Wwise/resources/Acoustic Texture/{8B0AC232-02E2-4EDE-BEAC-FDD1A900E3ED}.tres" id="2_de88l"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_y684a"]
 size = Vector3(60.712402, 21.47876, 5.2089844)
@@ -108,3 +109,9 @@ transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 55.7
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.699009, 10.353901, -0.40133667)
 shape = SubResource("BoxShape3D_y684a")
+
+[node name="AkGeometry" type="AkGeometry" parent="StaticBody3D"]
+is_solid = true
+acoustic_texture = ExtResource("2_de88l")
+transmission_loss_value = 100.0
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.699009, 10.353901, -0.40133667)

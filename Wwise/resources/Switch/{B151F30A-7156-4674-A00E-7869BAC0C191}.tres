@@ -1,0 +1,11 @@
+[gd_resource type="WwiseSwitch" load_steps=2 format=3 uid="uid://dquhje4ori6fn"]
+
+[ext_resource type="WwiseSwitchGroup" uid="uid://fyqw2l25nxgf" path="res://Wwise/resources/Switch Group/{2947B7A8-7552-4887-96D8-82E5469CC726}.tres" id="1_5ei45"]
+
+[resource]
+group_ref = ExtResource("1_5ei45")
+group_id = 62399725
+name = "stretch"
+id = 3238454324
+guid = "{B151F30A-7156-4674-A00E-7869BAC0C191}"
+dummy = true

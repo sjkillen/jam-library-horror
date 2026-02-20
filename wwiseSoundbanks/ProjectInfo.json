@@ -8,6 +8,13 @@
   "CacheRoot": "../../WwiseProjects/libraryHorror/.cache",
   "Platforms": [
    {
+    "Name": "Linux",
+    "GUID": "{3E9978CC-BCF8-46FE-9978-77A1ADF8F641}",
+    "BasePlatform": "Linux",
+    "BasePlatformGUID": "{BD0BDF13-3125-454F-8BFD-319537169F81}",
+    "Path": "Linux"
+   },
+   {
     "Name": "Windows",
     "GUID": "{84833C43-C591-4442-A4A5-1D9615322CAB}",
     "BasePlatform": "Windows",
@@ -24,6 +31,6 @@
     "UseAsStandIn": "true"
    }
   ],
-  "FileHash": "{E25216A0-2849-4AB5-A21D-96C6E1089B48}"
+  "FileHash": "{B8A5A961-EFCC-8417-423D-5262466889FB}"
  }
 }

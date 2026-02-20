@@ -1,6 +1,69 @@
 Event	ID	Name			Wwise Object Path	Notes
-	1694637492	Play_mx_gameplay_day_LOOP			\Default Work Unit\Play_mx_gameplay_day_LOOP	
+	176160403	Play_tensionLayer			\Default Work Unit\Play_tensionLayer	
+	182044926	Play_fx_ithunts			\Default Work Unit\Play_fx_ithunts	
+	1805011878	Play_playerFootsteps			\Default Work Unit\Play_playerFootsteps	
+	2841926335	Play_monster_ambience			\Default Work Unit\Play_monster_ambience	
+	3409423522	Play_amb_roomTone_01			\Default Work Unit\Play_amb_roomTone_01	
+	3499808837	Play_randomAmb			\Default Work Unit\Play_randomAmb	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	62399725	enemy_movement			\Default Work Unit\enemy_movement	
+	74444390	enemy_feeding			\Default Work Unit\enemy_feeding	
+	628798615	enemy_sound			\Default Work Unit\enemy_sound	
+
+Switch	ID	Name	Switch Group			Notes
+	146520385	climb_shelves	enemy_movement			
+	782826392	default	enemy_movement			
+	3238454324	stretch	enemy_movement			
+	3841889844	slither	enemy_movement			
+	782826392	default	enemy_feeding			
+	941442534	break	enemy_feeding			
+	3554728690	acid	enemy_feeding			
+	3794369557	grind	enemy_feeding			
+	48807190	beast	enemy_sound			
+	782826392	default	enemy_sound			
+	3887404748	human	enemy_sound			
+	4023194814	ghost	enemy_sound			
+
+State Group	ID	Name			Wwise Object Path	Notes
+	499154297	is_walking			\Default Work Unit\is_walking	
+	2170747458	is_watched			\Default Work Unit\is_watched	
+
+State	ID	Name	State Group			Notes
+	748895195	None	is_walking			
+	2452206122	false	is_walking			
+	3053630529	true	is_walking			
+	748895195	None	is_watched			
+	2452206122	false	is_watched			
+	3053630529	true	is_watched			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2470328564	intensity			\Default Work Unit\intensity	
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	10725770	Silence	Wwise Silence		\Containers\Default Work Unit\monster_sounds\monster_ambience\randomize\monster_sound\none\Silence	
+	127604191	Silence	Wwise Silence		\Containers\Default Work Unit\monster_sounds\monster_ambience\randomize\monster_movement\none\Silence	
+	827886686	Silence	Wwise Silence		\Containers\Default Work Unit\monster_sounds\monster_ambience\randomize\monster_feeding\none\Silence	
+	833798543	Silence	Wwise Silence		\Containers\Default Work Unit\monster_sounds\monster_ambience\delay\Silence	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	925236393	mx_gameplay_day_LOOP	.cache\0C\{0CADDC46-8CA1-B5A6-89E3-242EFA62D8E0}.wem		\Containers\Default Work Unit\mx_gameplay_day_LOOP		16457240
+	13650685	fx_monster_speech_jonathanExample_03	.cache\8D\{8D71E9EA-843C-AAFA-1FFE-31A0C23FE132}.wem		\Containers\Default Work Unit\monster_sounds\monster_ambience\randomize\monster_sound\human\fx_monster_speech_jonathanExample_03		873212
+	37225274	tensionLayer	.cache\93\{93BFD30E-8612-414F-EC4E-FBA2E7A5AB41}.wem		\Containers\Default Work Unit\oneshots\tensionLayer		7408944
+	51125169	fx_monster_scratching_01	.cache\15\{15884F9D-3B80-42C5-486D-F7DEBEA8EAA1}.wem		\Containers\Default Work Unit\monster_sounds\monster_ambience\randomize\monster_movement\shelves\fx_monster_scratching_01		358220
+	60417407	amb_roomTone_01	.cache\B9\{B972D343-FC62-16F6-D47C-A0F13C2C73B2}.wem		\Containers\Default Work Unit\oneshots\amb_roomTone_01		7382804
+	139225385	fx_monster_singing_03	.cache\D7\{D7FEF903-306B-7139-8337-75F57F8E4F58}.wem		\Containers\Default Work Unit\monster_sounds\monster_ambience\randomize\monster_sound\ghost\fx_monster_singing_03		1904736
+	265965776	231296__puniho__grinding-glass	.cache\18\{18C95E30-E962-515B-6FEB-0D194DF78C89}.wem		\Containers\Default Work Unit\monster_sounds\monster_ambience\randomize\monster_feeding\grind\231296__puniho__grinding-glass		395032
+	332642241	fx_monster_speech_jonathanExample_01	.cache\17\{17DE0D3B-F4EA-5AC2-5C3B-A6478FAFF783}.wem		\Containers\Default Work Unit\monster_sounds\monster_ambience\randomize\monster_sound\human\fx_monster_speech_jonathanExample_01		1216884
+	333091615	fx_monster_singing_05	.cache\8A\{8AD998E7-DEBA-585C-0E92-9DA3835C1B43}.wem		\Containers\Default Work Unit\monster_sounds\monster_ambience\randomize\monster_sound\ghost\fx_monster_singing_05		2048096
+	334109604	630592__vinni_r__bone-break_2	.cache\E3\{E3E35235-AF34-7A52-2EBF-A9310F6EF6BD}.wem		\Containers\Default Work Unit\monster_sounds\monster_ambience\randomize\monster_feeding\break\630592__vinni_r__bone-break_2		56968
+	414201430	fx_monster_singing_04	.cache\E4\{E4982957-B6F9-5111-4EC4-09B030D8C43A}.wem		\Containers\Default Work Unit\monster_sounds\monster_ambience\randomize\monster_sound\ghost\fx_monster_singing_04		1925216
+	453441135	fx_monster_speech_jonathanExample_02	.cache\96\{96A90540-C77C-E4CC-C740-E343DF5B4DAF}.wem		\Containers\Default Work Unit\monster_sounds\monster_ambience\randomize\monster_sound\human\fx_monster_speech_jonathanExample_02		863924
+	516737740	fx_monster_singing_02	.cache\A0\{A08B5055-F642-113A-2BA1-8D09C2FF3594}.wem		\Containers\Default Work Unit\monster_sounds\monster_ambience\randomize\monster_sound\ghost\fx_monster_singing_02		1876064
+	598179146	476585__relenzo2__person-sliding-on-carpet	.cache\E6\{E60D756C-B337-D470-0A20-DEA2F8D9C643}.wem		\Containers\Default Work Unit\monster_sounds\monster_ambience\randomize\monster_movement\slither\476585__relenzo2__person-sliding-on-carpet		2044280
+	670914415	369837__splicesound__01-32-footsteps-wood-socks-slow-pace	.cache\04\{0439C95F-6175-BB44-FD26-F328F047FC44}.wem		\Containers\Default Work Unit\player_sounds\369837__splicesound__01-32-footsteps-wood-socks-slow-pace		1333460
+	827718180	fx_monster_acid_01	.cache\C8\{C8F123F6-3C16-BEFB-B30C-1B708798B6D4}.wem		\Containers\Default Work Unit\monster_sounds\monster_ambience\randomize\monster_feeding\acid\fx_monster_acid_01		359298
+	843678803	fx_monsterRoar_01_TEST	.cache\9E\{9E8AF8B8-D182-3E9E-D3BF-7AA982F39DB0}.wem		\Containers\Default Work Unit\monster_sounds\monster_ambience\randomize\monster_sound\beast\fx_monsterRoar_01_TEST		428508
+	885174260	180959__psionicgames__stretch01	.cache\66\{66D00D38-1D0D-B681-73BA-A4E161D5B8DE}.wem		\Containers\Default Work Unit\monster_sounds\monster_ambience\randomize\monster_movement\stretch\180959__psionicgames__stretch01		297032
+	890970707	amb_dragging	.cache\4E\{4E680E4F-8AFE-726D-4639-728BA484A392}.wem		\Containers\Default Work Unit\spatialized_ambience\randomizer\amb_dragging		218456
+	1043201617	fx_monster_singing_01	.cache\DA\{DAA13D79-E3D9-A7CC-E82C-68949EF69170}.wem		\Containers\Default Work Unit\monster_sounds\monster_ambience\randomize\monster_sound\ghost\fx_monster_singing_01		2513552
 

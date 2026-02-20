@@ -1,14 +1,16 @@
-[gd_scene load_steps=14 format=3 uid="uid://deirq723s07jr"]
+[gd_scene load_steps=16 format=3 uid="uid://deirq723s07jr"]
 
 [ext_resource type="PackedScene" uid="uid://x0w6kjpsyaym" path="res://level.glb" id="1_u52ul"]
+[ext_resource type="WwiseAcousticTexture" uid="uid://wxasufpeyms2" path="res://Wwise/resources/Acoustic Texture/{5246478E-C5DA-4E0C-A0DE-C98D1479529A}.tres" id="2_8cye3"]
 [ext_resource type="PackedScene" uid="uid://bl2anu4u2bbxh" path="res://player/player.tscn" id="2_vonw3"]
 [ext_resource type="WwiseBank" uid="uid://bbs8n3pocg234" path="res://Wwise/resources/SoundBank/{2102CC99-02EC-41A3-8CDB-915F825F309F}.tres" id="3_0b4ue"]
-[ext_resource type="WwiseEvent" uid="uid://cc7a5fcned36b" path="res://Wwise/resources/Event/{DB1B052D-CDA0-436F-8A23-F18528312F2D}.tres" id="4_f2txt"]
+[ext_resource type="WwiseEvent" uid="uid://drekfeecrfeqi" path="res://Wwise/resources/Event/{248B9D10-8124-43A2-9872-912B623CEBFB}.tres" id="4_i2t4f"]
 [ext_resource type="PackedScene" uid="uid://dptwf8lkjq20u" path="res://speed_boost_area.tscn" id="5_f2txt"]
 [ext_resource type="PackedScene" uid="uid://c7x2v6hgj430c" path="res://monster.tscn" id="6_1ainy"]
 [ext_resource type="PackedScene" uid="uid://c3ixx8rip7wgc" path="res://closed_book.tscn" id="7_n6hdu"]
 [ext_resource type="PackedScene" uid="uid://5ckexukvv7bt" path="res://shelves/aisle.tscn" id="8_km5ld"]
 [ext_resource type="PackedScene" uid="uid://d0d6dwt0efus5" path="res://chair.tscn" id="9_i2t4f"]
+[ext_resource type="WwiseEvent" uid="uid://cv3ns164g5ab" path="res://Wwise/resources/Event/{FCAAD741-B1D9-4DE0-8BCF-921368F211A1}.tres" id="11_2orkt"]
 
 [sub_resource type="Environment" id="Environment_vonw3"]
 
@@ -35,6 +37,10 @@ point_count = 109
 collision_layer = 9
 collision_mask = 9
 
+[node name="AkGeometry" type="AkGeometry" parent="MainWallsAndFloors/StaticBody3D" index="1"]
+enable_diffraction_on_boundary_edges = true
+acoustic_texture = ExtResource("2_8cye3")
+
 [node name="PlayerRoot" parent="." index="1" instance=ExtResource("2_vonw3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -56.48461, 17.00748, -0.34786117)
 
@@ -52,9 +58,10 @@ bank = ExtResource("3_0b4ue")
 load_on = 2
 
 [node name="AkEvent3D" type="AkEvent3D" parent="." index="4"]
-event = ExtResource("4_f2txt")
+event = ExtResource("4_i2t4f")
 trigger_on = 2
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 14.743269, -12.73933)
+is_environment_aware = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 138.0567, 8.207129, -152.24309)
 
 [node name="emergency_stairs_collision" parent="." index="7"]
 visible = false
@@ -71,7 +78,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0590885, -0.24414063, 0.785
 shape = SubResource("BoxShape3D_1ainy")
 
 [node name="Monster" parent="." index="10" node_paths=PackedStringArray("player", "path") instance=ExtResource("6_1ainy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -30.775356, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 115.29297, -34.831673, 263.05307)
 player = NodePath("../PlayerRoot")
 path = NodePath("../perimiter_lower")
 
@@ -129,5 +136,9 @@ transform = Transform3D(-0.9997281, 0, -0.023315419, 0, 1, 0, 0.023315419, 0, -0
 
 [node name="Aisle5" parent="." index="27" instance=ExtResource("8_km5ld")]
 transform = Transform3D(-0.9999835, 0, -0.005759506, 0, 1, 0, 0.005759506, 0, -0.9999835, 301.45676, -46.551132, 245.71783)
+
+[node name="AkEvent3D2" type="AkEvent3D" parent="." index="28"]
+event = ExtResource("11_2orkt")
+trigger_on = 2
 
 [editable path="PlayerRoot"]

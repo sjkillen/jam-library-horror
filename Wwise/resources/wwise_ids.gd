@@ -2,16 +2,80 @@ class_name AK
 
 class EVENTS:
 
-	const PLAY_MX_GAMEPLAY_DAY_LOOP : int = 1694637492
+	const PLAY_AMB_ROOMTONE_01 : int = 3409423522
+	const PLAY_FX_ITHUNTS : int = 182044926
+	const PLAY_MONSTER_AMBIENCE : int = 2841926335
+	const PLAY_RANDOMAMB : int = 3499808837
+	const PLAY_TENSIONLAYER : int = 176160403
 
 class STATES:
-	pass
+
+	class IS_READING:
+		const GROUP : int = 1865477056
+	
+		class STATE:
+			const NONE : int = 748895195
+			const FALSE : int = 2452206122
+			const TRUE : int = 3053630529
+
+	class IS_WATCHED:
+		const GROUP : int = 2170747458
+	
+		class STATE:
+			const NONE : int = 748895195
+			const FALSE : int = 2452206122
+			const TRUE : int = 3053630529
+
 
 class SWITCHES:
-	pass
+
+	class ENEMY_FEEDING:
+		const GROUP : int = 74444390
+	
+		class SWITCH:
+			const ACID : int = 3554728690
+			const BREAK : int = 941442534
+			const DEFAULT : int = 782826392
+			const GRIND : int = 3794369557
+
+	class ENEMY_GROUND:
+		const GROUP : int = 1991716675
+	
+		class SWITCH:
+			const CARPET : int = 2412606308
+			const CONCRETE : int = 841620460
+			const WOOD : int = 2058049674
+
+	class ENEMY_MOVEMENT:
+		const GROUP : int = 62399725
+	
+		class SWITCH:
+			const CLIMB_SHELVES : int = 146520385
+			const DEFAULT : int = 782826392
+			const SLITHER : int = 3841889844
+			const STRETCH : int = 3238454324
+
+	class ENEMY_SOUND:
+		const GROUP : int = 628798615
+	
+		class SWITCH:
+			const BEAST : int = 48807190
+			const DEFAULT : int = 782826392
+			const GHOST : int = 4023194814
+			const HUMAN : int = 3887404748
+
+	class PLAYER_GROUND:
+		const GROUP : int = 2333762356
+	
+		class SWITCH:
+			const CARPET : int = 2412606308
+			const CONCRETE : int = 841620460
+			const WOOD : int = 2058049674
+
 
 class GAME_PARAMETERS:
-	pass
+
+	const INTENSITY : int = 2470328564
 
 class TRIGGERS:
 	pass
@@ -21,7 +85,8 @@ class BANKS:
 	const SB_PLACEHOLDERS : int = 4245214463
 
 class AUX_BUSSES:
-	pass
+
+	const VERB_ROOM : int = 3881977292
 
 class ACOUSTIC_TEXTURES:
 

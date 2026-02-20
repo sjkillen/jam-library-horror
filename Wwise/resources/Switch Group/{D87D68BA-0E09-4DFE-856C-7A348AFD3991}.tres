@@ -1,0 +1,7 @@
+[gd_resource type="WwiseSwitchGroup" format=3 uid="uid://bpqw7a07kwii0"]
+
+[resource]
+name = "enemy_feeding"
+id = 74444390
+guid = "{D87D68BA-0E09-4DFE-856C-7A348AFD3991}"
+dummy = true

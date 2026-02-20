@@ -1,8 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://bl2anu4u2bbxh"]
+[gd_scene load_steps=8 format=3 uid="uid://bl2anu4u2bbxh"]
 
 [ext_resource type="Script" uid="uid://c003i8seevg4p" path="res://player/player.gd" id="1_g1dw6"]
 [ext_resource type="Script" uid="uid://dc3hs54iqthb1" path="res://player/player_movement.gd" id="1_oul6g"]
 [ext_resource type="PackedScene" uid="uid://bfpsf5d67h84n" path="res://handheld_book.tscn" id="2_rkbax"]
+[ext_resource type="WwiseState" uid="uid://da210vnal4bip" path="res://Wwise/resources/State/{4194EA2F-71F8-460C-B695-20EBCAB7095C}.tres" id="3_g6k8r"]
+[ext_resource type="WwiseState" path="res://Wwise/resources/State/{F4E5B0CB-4B45-437A-B57D-9D8A9F586D30}.tres" id="4_boad6"]
 [ext_resource type="Script" uid="uid://diuqkxux4k2h1" path="res://player/canvas_layer.gd" id="4_yw30f"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_g1dw6"]
@@ -19,6 +21,8 @@ unique_name_in_owner = true
 script = ExtResource("1_oul6g")
 camera_rot = NodePath("../CameraRotation")
 camera = NodePath("../CameraRotation/Camera3D")
+wwise_walking_true = ExtResource("3_g6k8r")
+wwise_walking_false = ExtResource("4_boad6")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8.143148, 0)

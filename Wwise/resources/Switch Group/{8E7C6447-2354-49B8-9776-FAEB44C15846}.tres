@@ -1,0 +1,7 @@
+[gd_resource type="WwiseSwitchGroup" format=3 uid="uid://c86s3eyvn08vm"]
+
+[resource]
+name = "enemy_sound"
+id = 628798615
+guid = "{8E7C6447-2354-49B8-9776-FAEB44C15846}"
+dummy = true
