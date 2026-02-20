@@ -24,12 +24,13 @@ func _process(delta: float) -> void:
 		
 
 func move_book(where: Vector2):
+	if not enabled:
+		return
 	where *= move_speed * 0.1
 	position.x = clamp(position.x + where.x, -max_x, max_x)
 	position.y = clamp(position.y - where.y, min_y, max_y)
-	rotation.x = clamp(rotation.x - where.y * 5., -max_rotate, 0.0)
-	
-	print(position.y)
+	var w := (position.y - min_y) / (max_y - min_y)
+	rotation.x = lerp(-max_rotate, 0.0, w)
 
 func equip():
 	enabled = true

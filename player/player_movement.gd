@@ -12,6 +12,7 @@ var camera_move_event: Vector2 = Vector2.ZERO
 var prev_velocity := Vector3.ZERO
 
 var examining := false
+var enable_keyboard_look := false
 
 func _ready() -> void:
 	GlobalEvents.player_entered_speed_boost_area.connect(player_entered_speed_boost_area)
@@ -49,9 +50,9 @@ func _input(event: InputEvent) -> void:
 
 func camera_move(delta: float):
 	var move := GlobalInput.camera_joystick() 
-	if examining and move == Vector2.ZERO:
+	if enable_keyboard_look and move == Vector2.ZERO:
 		move = GlobalInput.keyboard_vector()
-	if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED and move == Vector2.ZERO:
+	if not examining and Input.mouse_mode == Input.MOUSE_MODE_CAPTURED and move == Vector2.ZERO:
 		move = camera_move_event
 	camera_move_event = Vector2.ZERO
 	camera.global_rotation.x -= move.y*delta

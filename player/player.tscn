@@ -29,6 +29,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.6059269, 0)
 [node name="Camera3D" type="Camera3D" parent="CameraRotation"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7619854, 0.0010965168)
 fov = 50.0
+near = 0.01
 
 [node name="AkListener3D" type="AkListener3D" parent="CameraRotation/Camera3D"]
 
@@ -38,4 +39,5 @@ transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, 0, -0.08674534, -0.1
 max_x = 0.1
 min_y = -0.15
 max_y = -0.087
+max_rotate = 1.0
 move_speed = 0.001
