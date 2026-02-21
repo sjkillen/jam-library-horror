@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://dp5soq4aotmnr"]
+
+[ext_resource type="PackedScene" uid="uid://7djjrcyqyplu" path="res://book_effect.tscn" id="1_p074r"]
+
+[node name="BookEffect" instance=ExtResource("1_p074r")]

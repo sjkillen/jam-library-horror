@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="BookChain" load_steps=7 format=3 uid="uid://c72pfgmtqcacc"]
+
+[ext_resource type="Script" uid="uid://cvfmp86jdm3sj" path="res://book_data.gd" id="1_hxtmr"]
+[ext_resource type="PackedScene" uid="uid://iufakrpprkf7" path="res://book_data/grind_effect.tscn" id="2_hxtmr"]
+[ext_resource type="Script" uid="uid://crsxl06xww705" path="res://book_chain.gd" id="3_wew4u"]
+
+[sub_resource type="Resource" id="Resource_ofoy5"]
+script = ExtResource("1_hxtmr")
+title = "Understanding Evolution"
+body = "Looking at the teeth of big herbivores like a cow or moose, we can see a good resemblance with our molar teeth. They're big and flat, which helps with grinding down tough plant fibers."
+metadata/_custom_type_script = "uid://cvfmp86jdm3sj"
+
+[sub_resource type="Resource" id="Resource_8nje7"]
+script = ExtResource("1_hxtmr")
+title = "A history of Dirken Notices"
+body = "A large number of books have been going missing recently. So only 2 books can be taken out at a time until the person who has been taking all these books can be found. On a separate note please do not eat while reading the books, drool can damage the pages if left uncleaned"
+metadata/_custom_type_script = "uid://cvfmp86jdm3sj"
+
+[sub_resource type="Resource" id="Resource_vjrc7"]
+script = ExtResource("1_hxtmr")
+title = "a book with a bite taken out of it"
+body = "I’ve noticed that several of my journals have gone missing recently. I eventually found it but there was quite a lot missing after what looked like a bite mark. This one on the other hand will not be found and will be good to look back on in the times to come."
+effect = ExtResource("2_hxtmr")
+metadata/_custom_type_script = "uid://cvfmp86jdm3sj"
+
+[resource]
+script = ExtResource("3_wew4u")
+book = Array[ExtResource("1_hxtmr")]([SubResource("Resource_ofoy5"), SubResource("Resource_8nje7"), SubResource("Resource_vjrc7")])
+metadata/_custom_type_script = "uid://crsxl06xww705"

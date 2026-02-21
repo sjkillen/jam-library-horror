@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="BookChain" load_steps=5 format=3 uid="uid://bdkgk1vylnyph"]
+
+[ext_resource type="Script" uid="uid://cvfmp86jdm3sj" path="res://book_data.gd" id="1_0pdnm"]
+[ext_resource type="PackedScene" uid="uid://dnkqi67xpjgjl" path="res://book_data/core_intro_effect.tscn" id="2_b8leb"]
+[ext_resource type="Script" uid="uid://crsxl06xww705" path="res://book_chain.gd" id="2_gckkm"]
+
+[sub_resource type="Resource" id="Resource_y5isc"]
+script = ExtResource("1_0pdnm")
+title = "The Town of Dirken: Monsters Made Real"
+body = "Have you heard about the case of the Furley family? Over the course of 9 Weeks in 1976 they all went missing in different incidents surrounding the town of Dirken and its library. Some think it was a series of tragic accidents but I reckon it’s actually something in the library. (The Town of Dirken: Monsters Made Real)"
+effect = ExtResource("2_b8leb")
+metadata/_custom_type_script = "uid://cvfmp86jdm3sj"
+
+[resource]
+script = ExtResource("2_gckkm")
+book = Array[ExtResource("1_0pdnm")]([SubResource("Resource_y5isc")])
+metadata/_custom_type_script = "uid://crsxl06xww705"

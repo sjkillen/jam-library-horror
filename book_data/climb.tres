@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="BookChain" load_steps=7 format=3 uid="uid://dlodsxm74pmym"]
+
+[ext_resource type="Script" uid="uid://cvfmp86jdm3sj" path="res://book_data.gd" id="1_im06a"]
+[ext_resource type="PackedScene" uid="uid://bs8tmlt6qabf1" path="res://book_data/climb_effect.tscn" id="2_4uyn5"]
+[ext_resource type="Script" uid="uid://crsxl06xww705" path="res://book_chain.gd" id="3_rbbh3"]
+
+[sub_resource type="Resource" id="Resource_l3wns"]
+script = ExtResource("1_im06a")
+title = "(a note from library maintenance)"
+body = "The scratches keep appearing on books near the top of the shelving units. Some kids are probably climbing up there"
+metadata/_custom_type_script = "uid://cvfmp86jdm3sj"
+
+[sub_resource type="Resource" id="Resource_5ps75"]
+script = ExtResource("1_im06a")
+title = "Wood Spiders Urbanization in relation to climate change"
+body = "In the case of the wood spider we’ve seen marks and webs being left and those markings are a close match to the ones seen in the Dirken public library. Though we have yet to find the creature making these marks we are hoping to find it at our next outing."
+metadata/_custom_type_script = "uid://cvfmp86jdm3sj"
+
+[sub_resource type="Resource" id="Resource_emn6j"]
+script = ExtResource("1_im06a")
+title = "(a scrap of paper inside a book)"
+body = "If you hear its chittering voice calling for “her” above you run. Don't let it get you, I’m writing this as I pass out but don’t fall for it… that thing is not human"
+effect = ExtResource("2_4uyn5")
+metadata/_custom_type_script = "uid://cvfmp86jdm3sj"
+
+[resource]
+script = ExtResource("3_rbbh3")
+book = Array[ExtResource("1_im06a")]([SubResource("Resource_l3wns"), SubResource("Resource_5ps75"), SubResource("Resource_emn6j")])
+metadata/_custom_type_script = "uid://crsxl06xww705"

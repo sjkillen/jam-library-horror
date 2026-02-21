@@ -26,7 +26,7 @@ func _input(event: InputEvent) -> void:
 func _process(delta: float) -> void:
 	var joy := GlobalInput.move_joystick() * 600. * delta
 	move_book(joy)
-		
+	
 
 func move_book(where: Vector2):
 	if not enabled:
@@ -56,3 +56,7 @@ func unequip():
 	enabled = false
 	%AnimationPlayer.play_backwards("equip")
 	await %AnimationPlayer.animation_finished
+	
+func finish():
+	_reading = false
+	enabled = false

@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="BookChain" load_steps=7 format=3 uid="uid://cks8pwh1hvx3t"]
+
+[ext_resource type="Script" uid="uid://cvfmp86jdm3sj" path="res://book_data.gd" id="1_i5cmk"]
+[ext_resource type="PackedScene" uid="uid://bluoiukv0h10i" path="res://book_data/doors_effect.tscn" id="2_i5cmk"]
+[ext_resource type="Script" uid="uid://crsxl06xww705" path="res://book_chain.gd" id="3_12a8i"]
+
+[sub_resource type="Resource" id="Resource_l3wns"]
+script = ExtResource("1_i5cmk")
+title = "Rare and Cool Reptiles! - Second Edition"
+body = "Prepared to be shocked when you get to know this crazy Reptile. It’s called the Floor-Aconda. It can be found in cities and likes to slither under floors. {side bubble: That’s where it gets its name!!!}"
+metadata/_custom_type_script = "uid://cvfmp86jdm3sj"
+
+[sub_resource type="Resource" id="Resource_5ps75"]
+script = ExtResource("1_i5cmk")
+title = "Library Records 1970 - 1990"
+body = "We are sorry to announce that the Dirken Public Library is temporarily being closed for repairs. Recently it was found that a mass of black mold was found under the carpets and floor board. We expect it to be open again by April once all the mold has been removed and the floors replaced. {Date: March 16, 1976} 
+"
+metadata/_custom_type_script = "uid://cvfmp86jdm3sj"
+
+[sub_resource type="Resource" id="Resource_emn6j"]
+script = ExtResource("1_i5cmk")
+title = "(a scrap of paper inside a book)"
+body = "I can see it pulsing, the ground is moving and shifting. It explains why there's always that smell it lives under the carpet. If you found a note anywhere saying it’s safe in the Study rooms disregard it. If it can get under the floor it can get under doors."
+effect = ExtResource("2_i5cmk")
+metadata/_custom_type_script = "uid://cvfmp86jdm3sj"
+
+[resource]
+script = ExtResource("3_12a8i")
+book = Array[ExtResource("1_i5cmk")]([SubResource("Resource_l3wns"), SubResource("Resource_5ps75"), SubResource("Resource_emn6j")])
+metadata/_custom_type_script = "uid://crsxl06xww705"

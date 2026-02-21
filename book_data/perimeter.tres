@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="BookChain" load_steps=7 format=3 uid="uid://cl26m86j3ht1y"]
+
+[ext_resource type="Script" uid="uid://cvfmp86jdm3sj" path="res://book_data.gd" id="1_xb47x"]
+[ext_resource type="PackedScene" uid="uid://iv1ke13o7u3g" path="res://book_data/perimeter_effect.tscn" id="2_xb47x"]
+[ext_resource type="Script" uid="uid://crsxl06xww705" path="res://book_chain.gd" id="3_w42r1"]
+
+[sub_resource type="Resource" id="Resource_l3wns"]
+script = ExtResource("1_xb47x")
+title = "Monster Paths"
+body = "It slinks around the path set out by its designer for ever following the red line carved in the ground "
+metadata/_custom_type_script = "uid://cvfmp86jdm3sj"
+
+[sub_resource type="Resource" id="Resource_5ps75"]
+script = ExtResource("1_xb47x")
+title = "Observations of Dirken Library post 1976"
+body = "From our initial observations it appears to only walk around a specific range at the edge of the library. It does this on both floors but never crosses the stairs. "
+metadata/_custom_type_script = "uid://cvfmp86jdm3sj"
+
+[sub_resource type="Resource" id="Resource_emn6j"]
+script = ExtResource("1_xb47x")
+title = "(a scrap of paper inside a book)"
+body = "Avoid the walls. It will find you there. That’s where it lies in wait until… "
+effect = ExtResource("2_xb47x")
+metadata/_custom_type_script = "uid://cvfmp86jdm3sj"
+
+[resource]
+script = ExtResource("3_w42r1")
+book = Array[ExtResource("1_xb47x")]([SubResource("Resource_l3wns"), SubResource("Resource_5ps75"), SubResource("Resource_emn6j")])
+metadata/_custom_type_script = "uid://crsxl06xww705"

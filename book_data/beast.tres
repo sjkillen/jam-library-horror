@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="BookChain" load_steps=7 format=3 uid="uid://belr20xlvj0vb"]
+
+[ext_resource type="Script" uid="uid://cvfmp86jdm3sj" path="res://book_data.gd" id="1_mtkj0"]
+[ext_resource type="PackedScene" uid="uid://c8owk8hc3s33e" path="res://book_data/beast_effect.tscn" id="2_mtkj0"]
+[ext_resource type="Script" uid="uid://crsxl06xww705" path="res://book_chain.gd" id="3_eycvb"]
+
+[sub_resource type="Resource" id="Resource_ofoy5"]
+script = ExtResource("1_mtkj0")
+title = "Dirken Wild Life"
+body = "The natural wildlife of this area is host to many large mammals. One of the most well known is Dirken’s own Howling Bear. Its name sake howl was first recorded in 1976 when wildlife documentarian Terry Umar was recording the animal from the distance assuming it was a black bear but then its distinct howl was caught on tape and led to it being reclassified."
+metadata/_custom_type_script = "uid://cvfmp86jdm3sj"
+
+[sub_resource type="Resource" id="Resource_8nje7"]
+script = ExtResource("1_mtkj0")
+title = "Local Geographic Vol: 23"
+body = "How loud is loud? If you think a bear is loud then what about a jet engine? in comparison a jet engine is far louder but that doesn't stop people from thinking that a bear or other animals are loud. Imagine a Bear that could make a sound as loud as a jet plane, how scary would that be? a roar as loud as a jet engine"
+metadata/_custom_type_script = "uid://cvfmp86jdm3sj"
+
+[sub_resource type="Resource" id="Resource_vjrc7"]
+script = ExtResource("1_mtkj0")
+title = "(Notes written in the margin of a book)"
+body = "I don’t know what i did but it got so angry was it what i said? It doesn't even sound like an animal any more, it sounds more mechanical than alive."
+effect = ExtResource("2_mtkj0")
+metadata/_custom_type_script = "uid://cvfmp86jdm3sj"
+
+[resource]
+script = ExtResource("3_eycvb")
+book = Array[ExtResource("1_mtkj0")]([SubResource("Resource_ofoy5"), SubResource("Resource_8nje7"), SubResource("Resource_vjrc7")])
+metadata/_custom_type_script = "uid://crsxl06xww705"

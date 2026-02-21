@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="BookChain" load_steps=7 format=3 uid="uid://do8wbvrqb2sxk"]
+
+[ext_resource type="Script" uid="uid://cvfmp86jdm3sj" path="res://book_data.gd" id="1_635kl"]
+[ext_resource type="Script" uid="uid://crsxl06xww705" path="res://book_chain.gd" id="2_b6j8n"]
+[ext_resource type="PackedScene" uid="uid://dbp2fl36ns5te" path="res://book_data/stretch_effect.tscn" id="2_r66tx"]
+
+[sub_resource type="Resource" id="Resource_ofoy5"]
+script = ExtResource("1_635kl")
+title = "Myths of Dirken"
+body = "Have you ever heard of the stretchy man? It’s said to live in Dirken, a small town just outside Poplar. It stretches to get people who spend too much time hanging on the rooftops of buildings."
+metadata/_custom_type_script = "uid://cvfmp86jdm3sj"
+
+[sub_resource type="Resource" id="Resource_8nje7"]
+script = ExtResource("1_635kl")
+title = "An Archive of formal complaints at Dirken Public Library"
+body = "Stress marks on the railings show a large amount of force being put on to the railing on a regular basis. There are also finger prints that we have been able to collect, these two things put together help us show that there is something in this library that uses these railings regularly. "
+metadata/_custom_type_script = "uid://cvfmp86jdm3sj"
+
+[sub_resource type="Resource" id="Resource_vjrc7"]
+script = ExtResource("1_635kl")
+title = "(Notes written in the margin of a book)"
+body = "When you hear the sounds of bones breaking, muscles stretching and breaking under the strain. Jump. Jump from the closest railings back down to the first floor it should buy you some time."
+effect = ExtResource("2_r66tx")
+metadata/_custom_type_script = "uid://cvfmp86jdm3sj"
+
+[resource]
+script = ExtResource("2_b6j8n")
+book = Array[ExtResource("1_635kl")]([SubResource("Resource_ofoy5"), SubResource("Resource_8nje7"), SubResource("Resource_vjrc7")])
+metadata/_custom_type_script = "uid://crsxl06xww705"

@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="BookChain" load_steps=7 format=3 uid="uid://gd18t7gwfmog"]
+
+[ext_resource type="Script" uid="uid://cvfmp86jdm3sj" path="res://book_data.gd" id="1_tlfoh"]
+[ext_resource type="PackedScene" uid="uid://bn2vp1cy8f66q" path="res://book_data/quiet_effect.tscn" id="2_tlfoh"]
+[ext_resource type="Script" uid="uid://crsxl06xww705" path="res://book_chain.gd" id="3_r8fls"]
+
+[sub_resource type="Resource" id="Resource_ofoy5"]
+script = ExtResource("1_tlfoh")
+title = "(Notes scrawled in a Philosophy 101 textbook)"
+body = "I’ve really enjoyed the music the library has been playing recently, it gives this really cool and dark vibe. I can’t seem to find the speaker system playing and whenever I ask the librarian they say there's no music allowed in the library. "
+metadata/_custom_type_script = "uid://cvfmp86jdm3sj"
+
+[sub_resource type="Resource" id="Resource_8nje7"]
+script = ExtResource("1_tlfoh")
+title = "Debunking folk tales around the town of Dirken"
+body = "We've found sound waves emanating from the walls are actually coming from something we can’t see. This could be signs of ghost activity. That's what one source of a so-called ghost expert was claiming but after looking at the blue prints we can see that this sound is most likely being made by a loose bookshelf hitting the wall behind. That explains the source of the sound but how it’s so musical is still up to debate."
+metadata/_custom_type_script = "uid://cvfmp86jdm3sj"
+
+[sub_resource type="Resource" id="Resource_vjrc7"]
+script = ExtResource("1_tlfoh")
+title = "(Notes written in the margin of a book)"
+body = "After spending a lot of time in the Dirken Public Library I have come to enjoy the sound it makes. The haunting sound calms me down. It’s almost as if there's something here living with me or maybe the actual library is alive."
+effect = ExtResource("2_tlfoh")
+metadata/_custom_type_script = "uid://cvfmp86jdm3sj"
+
+[resource]
+script = ExtResource("3_r8fls")
+book = Array[ExtResource("1_tlfoh")]([SubResource("Resource_ofoy5"), SubResource("Resource_8nje7"), SubResource("Resource_vjrc7")])
+metadata/_custom_type_script = "uid://crsxl06xww705"

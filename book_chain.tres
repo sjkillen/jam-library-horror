@@ -1,0 +1,6 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://bhlg7oy0t78mh"]
+
+[ext_resource type="Script" uid="uid://crsxl06xww705" path="res://book_chain.gd" id="1_hpahg"]
+
+[resource]
+script = ExtResource("1_hpahg")

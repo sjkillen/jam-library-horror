@@ -1,0 +1,12 @@
+[gd_scene load_steps=7 format=3 uid="uid://dylbqlcsgknd8"]
+
+[ext_resource type="Script" uid="uid://bdo3lifdu04wh" path="res://global_books.gd" id="1_837n6"]
+[ext_resource type="Script" uid="uid://crsxl06xww705" path="res://book_chain.gd" id="2_req0x"]
+[ext_resource type="Resource" uid="uid://bdkgk1vylnyph" path="res://book_data/core_intro.tres" id="3_0u0nl"]
+[ext_resource type="Resource" uid="uid://cl26m86j3ht1y" path="res://book_data/perimeter.tres" id="3_1oh4m"]
+[ext_resource type="Resource" uid="uid://dlodsxm74pmym" path="res://book_data/climb.tres" id="4_0u0nl"]
+[ext_resource type="Resource" uid="uid://b47q0jmjehm2l" path="res://book_data/origins.tres" id="5_fc10h"]
+
+[node name="GlobalBooks" type="Node3D"]
+script = ExtResource("1_837n6")
+story = Array[ExtResource("2_req0x")]([ExtResource("3_0u0nl"), ExtResource("3_1oh4m"), ExtResource("4_0u0nl"), ExtResource("5_fc10h")])

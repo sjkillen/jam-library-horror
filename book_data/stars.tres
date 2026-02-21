@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="BookChain" load_steps=7 format=3 uid="uid://my71jq2fwvu4"]
+
+[ext_resource type="Script" uid="uid://cvfmp86jdm3sj" path="res://book_data.gd" id="1_bu2ra"]
+[ext_resource type="PackedScene" uid="uid://cg4837pyvcvw7" path="res://book_data/stars_effect.tscn" id="2_bu2ra"]
+[ext_resource type="Script" uid="uid://crsxl06xww705" path="res://book_chain.gd" id="3_b6gw0"]
+
+[sub_resource type="Resource" id="Resource_ofoy5"]
+script = ExtResource("1_bu2ra")
+title = "Are We the Aliens?!?"
+body = "One theory on how life came to exist on earth was that an asteroid carrying frozen bacteria crashed into the oceans. Then it began to change and evolve as we can see in the fossil record stretching back 100s of millions years ago. "
+metadata/_custom_type_script = "uid://cvfmp86jdm3sj"
+
+[sub_resource type="Resource" id="Resource_8nje7"]
+script = ExtResource("1_bu2ra")
+title = "The History of Dirken"
+body = "In the Dirken area there have been many sightings of Astronomical events. One famous one is where an asteroid the size of a baseball crashed into the Dirken Public Library. The asteroid was never found so it is believed to have burned up after impact but some local residents believe the library has it in storage in the basement. "
+metadata/_custom_type_script = "uid://cvfmp86jdm3sj"
+
+[sub_resource type="Resource" id="Resource_vjrc7"]
+script = ExtResource("1_bu2ra")
+title = "(A journal with many ripped out pages)"
+body = "I found the asteroid in the basement along with what seems to be some creature that has made a nest around it. After taking a DNA sample i can’t find any match to it because instead of using DNA like most complex organisms on earth it uses RNA. So either this is a genetic miracle or it's from a separate evolutionary lineage seen on earth. "
+effect = ExtResource("2_bu2ra")
+metadata/_custom_type_script = "uid://cvfmp86jdm3sj"
+
+[resource]
+script = ExtResource("3_b6gw0")
+book = Array[ExtResource("1_bu2ra")]([SubResource("Resource_ofoy5"), SubResource("Resource_8nje7"), SubResource("Resource_vjrc7")])
+metadata/_custom_type_script = "uid://crsxl06xww705"

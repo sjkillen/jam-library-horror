@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="BookChain" load_steps=7 format=3 uid="uid://y53bo4hs7oo7"]
+
+[ext_resource type="Script" uid="uid://cvfmp86jdm3sj" path="res://book_data.gd" id="1_u1jam"]
+[ext_resource type="PackedScene" uid="uid://ek1tyj1jw6lm" path="res://book_data/human_effect.tscn" id="2_u1jam"]
+[ext_resource type="Script" uid="uid://crsxl06xww705" path="res://book_chain.gd" id="3_ngs5f"]
+
+[sub_resource type="Resource" id="Resource_ofoy5"]
+script = ExtResource("1_u1jam")
+title = "Learn to Hear your Own Voice: a Motivational Book for Kids"
+body = "All things have their own unique voice. You have a voice, your parents have a voice and even the birds have a voice it’s just different from ours."
+metadata/_custom_type_script = "uid://cvfmp86jdm3sj"
+
+[sub_resource type="Resource" id="Resource_8nje7"]
+script = ExtResource("1_u1jam")
+title = "Library Records 1970s"
+body = "In the town of Dirken recently Johanna Furley has gone missing after dropping her kid Nathan Furley at the library. It has been 3 weeks since she went missing and now Nathan has disappeared as well. If you have seen ether please contact Michael Furley at XXX - XXX - XXXX.  {Date: April 5, 1976}"
+metadata/_custom_type_script = "uid://cvfmp86jdm3sj"
+
+[sub_resource type="Resource" id="Resource_vjrc7"]
+script = ExtResource("1_u1jam")
+title = "(Notes written in the margin of a book)"
+body = "Don’t be fooled by the voice. It is not human, don’t think for one second that your apprehension is misplaced when you hear it cry and beg for it’s “mommy” that thing is not human."
+effect = ExtResource("2_u1jam")
+metadata/_custom_type_script = "uid://cvfmp86jdm3sj"
+
+[resource]
+script = ExtResource("3_ngs5f")
+book = Array[ExtResource("1_u1jam")]([SubResource("Resource_ofoy5"), SubResource("Resource_8nje7"), SubResource("Resource_vjrc7")])
+metadata/_custom_type_script = "uid://crsxl06xww705"

@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="BookChain" load_steps=7 format=3 uid="uid://73mt7qlh825o"]
+
+[ext_resource type="Script" uid="uid://cvfmp86jdm3sj" path="res://book_data.gd" id="1_solq6"]
+[ext_resource type="PackedScene" uid="uid://dp5soq4aotmnr" path="res://book_data/evolution_effect.tscn" id="2_solq6"]
+[ext_resource type="Script" uid="uid://crsxl06xww705" path="res://book_chain.gd" id="3_qeh7h"]
+
+[sub_resource type="Resource" id="Resource_ofoy5"]
+script = ExtResource("1_solq6")
+title = "Evolution: Mutations and Life 4th edition"
+body = "Deep sea environments are quite stable, that's why we see very little change in mutation between modern deep sea fish and fossil evidence of their ancestors. But some lineages have adapted to this to have less protections that stop mutations that allow for a greater rate of mutation, some have even evolved the ability to change their DNA during their lifetime. 
+"
+metadata/_custom_type_script = "uid://cvfmp86jdm3sj"
+
+[sub_resource type="Resource" id="Resource_8nje7"]
+script = ExtResource("1_solq6")
+title = "Library Record Logbook"
+body = "Recently uncovered a mass of what seems to be biomass of some kind growing in the library. We believe three weeks should be enough time to remove it and hide the evidence in the basement until transport can be arranged for permanent removal. We will bring in Dr. Furley in the meantime to identify the mass as well.
+"
+metadata/_custom_type_script = "uid://cvfmp86jdm3sj"
+
+[sub_resource type="Resource" id="Resource_vjrc7"]
+script = ExtResource("1_solq6")
+title = "(A journal with many ripped out pages)"
+body = "After seeing the growth myself it resembles a blobfish brought out of the ocean floor. But as I have been studying the dissected parts I've noticed signs that the tissue is still mutating and growing. I will keep a section to study and test even after the majority of it is removed, who knows this could be a breakthrough in evolutionary biology as we know it. 
+"
+effect = ExtResource("2_solq6")
+metadata/_custom_type_script = "uid://cvfmp86jdm3sj"
+
+[resource]
+script = ExtResource("3_qeh7h")
+book = Array[ExtResource("1_solq6")]([SubResource("Resource_ofoy5"), SubResource("Resource_8nje7"), SubResource("Resource_vjrc7")])
+metadata/_custom_type_script = "uid://crsxl06xww705"

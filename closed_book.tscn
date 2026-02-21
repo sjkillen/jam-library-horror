@@ -79,3 +79,5 @@ unique_name_in_owner = true
 root_node = NodePath("%AnimationTree/..")
 tree_root = SubResource("AnimationNodeStateMachine_1nfgy")
 anim_player = NodePath("../AnimationPlayer")
+
+[editable path="book"]

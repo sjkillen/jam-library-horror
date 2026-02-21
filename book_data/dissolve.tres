@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="BookChain" load_steps=7 format=3 uid="uid://bij00x4dplhl1"]
+
+[ext_resource type="Script" uid="uid://cvfmp86jdm3sj" path="res://book_data.gd" id="1_k7ss3"]
+[ext_resource type="PackedScene" uid="uid://bpa6xc8jnn3s2" path="res://book_data/dissolve_effect.tscn" id="2_k7ss3"]
+[ext_resource type="Script" uid="uid://crsxl06xww705" path="res://book_chain.gd" id="3_1ib23"]
+
+[sub_resource type="Resource" id="Resource_ofoy5"]
+script = ExtResource("1_k7ss3")
+title = "Weird and wonderful plant life"
+body = "e:
+The term \"pitcher plant\" generally refers to members of the Nepenthaceae and Sarraceniaceae families, but similar pitfall traps are employed by the monotypic Cephalotaceae and some members of the Bromeliaceae. The families Nepenthaceae and Sarraceniaceae are the most species-rich families of pitcher plants.
+"
+metadata/_custom_type_script = "uid://cvfmp86jdm3sj"
+
+[sub_resource type="Resource" id="Resource_8nje7"]
+script = ExtResource("1_k7ss3")
+title = "New carnivorous plant cold weather adaptations"
+body = "There have been sightings of pitcher plants way outside of their normal habitats. They have had new sightings in southern parts of Canada. Most of these sightings come from the town of Dirken and now abandoned town Poplar. Where these plants shouldn't be able to last in the wild but have been able to persist through multiple winters."
+metadata/_custom_type_script = "uid://cvfmp86jdm3sj"
+
+[sub_resource type="Resource" id="Resource_vjrc7"]
+script = ExtResource("1_k7ss3")
+title = "(Notes written in the margin of a book)"
+body = "As I have been raising it it has grown more volatile. It started off just eating what it was fed but it has “learnt” to flip outside its pitcher and start digesting its food outside of itself. I'm going to be ending my experiments soon but I feel like I'm so close to its origin."
+effect = ExtResource("2_k7ss3")
+metadata/_custom_type_script = "uid://cvfmp86jdm3sj"
+
+[resource]
+script = ExtResource("3_1ib23")
+book = Array[ExtResource("1_k7ss3")]([SubResource("Resource_ofoy5"), SubResource("Resource_8nje7"), SubResource("Resource_vjrc7")])
+metadata/_custom_type_script = "uid://crsxl06xww705"

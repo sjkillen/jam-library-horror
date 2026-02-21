@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://dc3hs54iqthb1" path="res://player/player_movement.gd" id="1_oul6g"]
 [ext_resource type="PackedScene" uid="uid://bfpsf5d67h84n" path="res://handheld_book.tscn" id="2_rkbax"]
 [ext_resource type="WwiseState" uid="uid://da210vnal4bip" path="res://Wwise/resources/State/{4194EA2F-71F8-460C-B695-20EBCAB7095C}.tres" id="3_g6k8r"]
-[ext_resource type="WwiseState" path="res://Wwise/resources/State/{F4E5B0CB-4B45-437A-B57D-9D8A9F586D30}.tres" id="4_boad6"]
+[ext_resource type="WwiseState" uid="uid://cphdfnv6a0vr3" path="res://Wwise/resources/State/{F4E5B0CB-4B45-437A-B57D-9D8A9F586D30}.tres" id="4_boad6"]
 [ext_resource type="Script" uid="uid://diuqkxux4k2h1" path="res://player/canvas_layer.gd" id="4_yw30f"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_g1dw6"]
@@ -108,5 +108,10 @@ theme_override_font_sizes/font_size = 22
 text = "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum "
 autowrap_mode = 3
 
+[node name="WordTimer" type="Timer" parent="CanvasLayer"]
+wait_time = 0.1
+
 [connection signal="reading" from="CameraRotation/Camera3D/HandheldBook" to="CanvasLayer" method="_on_handheld_book_reading"]
 [connection signal="unreading" from="CameraRotation/Camera3D/HandheldBook" to="CanvasLayer" method="_on_handheld_book_unreading"]
+[connection signal="finished_book" from="CanvasLayer" to="." method="_on_canvas_layer_finished_book"]
+[connection signal="timeout" from="CanvasLayer/WordTimer" to="CanvasLayer" method="_on_word_timer_timeout"]

@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="BookChain" load_steps=7 format=3 uid="uid://b47q0jmjehm2l"]
+
+[ext_resource type="Script" uid="uid://cvfmp86jdm3sj" path="res://book_data.gd" id="1_tjc80"]
+[ext_resource type="PackedScene" uid="uid://bqyocth3pxso1" path="res://book_data/origin_effect.tscn" id="2_tjc80"]
+[ext_resource type="Script" uid="uid://crsxl06xww705" path="res://book_chain.gd" id="3_nlc5q"]
+
+[sub_resource type="Resource" id="Resource_ofoy5"]
+script = ExtResource("1_tjc80")
+title = "The Disappearance of Dr. Furley"
+body = "In 1976 Dr. Michael Furley went missing soon after his son’s disappearance case was closed. Which leads many of the town folk to believe that he took his own life or couldn't live in the town after all that had happened.
+"
+metadata/_custom_type_script = "uid://cvfmp86jdm3sj"
+
+[sub_resource type="Resource" id="Resource_8nje7"]
+script = ExtResource("1_tjc80")
+title = "An Argument for Cancerous tissue transplant - BY: Dr. Furley"
+body = "There is evidence to believe that by replacing the organs necessary to live you can keep a human alive, but what if you replace the missing organs with cancerous tissue that can self replicate as long as sufficient material is provided could you live for ever?
+"
+metadata/_custom_type_script = "uid://cvfmp86jdm3sj"
+
+[sub_resource type="Resource" id="Resource_vjrc7"]
+script = ExtResource("1_tjc80")
+title = "(A journal with many ripped out pages)"
+body = "He has come back to me. My son has come back all i had to do was replace the missing organs with those from “it” now i just need to find the ones for my wife
+"
+effect = ExtResource("2_tjc80")
+metadata/_custom_type_script = "uid://cvfmp86jdm3sj"
+
+[resource]
+script = ExtResource("3_nlc5q")
+book = Array[ExtResource("1_tjc80")]([SubResource("Resource_ofoy5"), SubResource("Resource_8nje7"), SubResource("Resource_vjrc7")])
+metadata/_custom_type_script = "uid://crsxl06xww705"

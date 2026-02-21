@@ -1,0 +1,6 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://xmti3gdbhkxm"]
+
+[ext_resource type="Script" uid="uid://cvfmp86jdm3sj" path="res://book_data.gd" id="1_bs3sp"]
+
+[resource]
+script = ExtResource("1_bs3sp")

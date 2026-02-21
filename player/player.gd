@@ -2,6 +2,7 @@ extends CharacterBody3D
 class_name Player
 
 var holding = null
+var finished := false
 
 
 func _input(event: InputEvent) -> void:
@@ -26,6 +27,8 @@ func query_interact_pickup():
 
 func interact_equip():
 	if %Movement.examining:
+		if finished:
+			finish()
 		%Movement.examining = false
 		%Movement.enable_keyboard_look = false
 		%HandheldBook.unreading.emit()
@@ -51,3 +54,15 @@ func get_attach_rot() -> Vector3:
 
 func get_attach_scale() -> Vector3:
 	return %AttachPoint.global_rotation
+
+func finish():
+	holding.queue_free()
+	holding = null
+	%HandheldBook.finish()
+	finished = false
+	$CanvasLayer.clear()
+	GlobalBooks.finish()
+
+func _on_canvas_layer_finished_book() -> void:
+	finished = true
+	

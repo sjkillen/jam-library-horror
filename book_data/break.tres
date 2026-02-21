@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="BookChain" load_steps=7 format=3 uid="uid://dnohs7cdw1skf"]
+
+[ext_resource type="Script" uid="uid://cvfmp86jdm3sj" path="res://book_data.gd" id="1_4x5rr"]
+[ext_resource type="PackedScene" uid="uid://b82u3ig10xhu2" path="res://book_data/break_effect.tscn" id="2_4x5rr"]
+[ext_resource type="Script" uid="uid://crsxl06xww705" path="res://book_chain.gd" id="3_ib7oh"]
+
+[sub_resource type="Resource" id="Resource_ofoy5"]
+script = ExtResource("1_4x5rr")
+title = "Study of Childhood lies and their causes"
+body = "New railings have been installed after a record breaking 10 kids breaking at least 1 bone in the Dirken Public Library in the last month. A faulty railing was found and most of the kids refused to comment on how they had hurt themselves. 1 Nathan Furley said a monster broke the railing."
+metadata/_custom_type_script = "uid://cvfmp86jdm3sj"
+
+[sub_resource type="Resource" id="Resource_8nje7"]
+script = ExtResource("1_4x5rr")
+title = "How to find a psychopath"
+body = "A common sign that someone is a psychopath is a lack of empathy. In the case of kids this can be seen as taking play fighting too hard and injuring friends and feeling apathetic about the harm they caused. In the case of two residents of the town of Dirken this was seen in a series of injuries that was caused by [Blank] in April of 1976."
+metadata/_custom_type_script = "uid://cvfmp86jdm3sj"
+
+[sub_resource type="Resource" id="Resource_vjrc7"]
+script = ExtResource("1_4x5rr")
+title = "(A note in the margin of a book)"
+body = "It has learnt to enjoy giving out pain. It likes to break and toy with its food. Slowly it seems to be getting stronger. I fear it will break out soon. So this will be my last report on the monster. Signing off, Dr. Michael "
+effect = ExtResource("2_4x5rr")
+metadata/_custom_type_script = "uid://cvfmp86jdm3sj"
+
+[resource]
+script = ExtResource("3_ib7oh")
+book = Array[ExtResource("1_4x5rr")]([SubResource("Resource_ofoy5"), SubResource("Resource_8nje7"), SubResource("Resource_vjrc7")])
+metadata/_custom_type_script = "uid://crsxl06xww705"
