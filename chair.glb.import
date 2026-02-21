@@ -39,7 +39,7 @@ materials/extract_format=0
 materials/extract_path=""
 _subresources={
 "materials": {
-"Material_0.001": {
+"Material": {
 "use_external/enabled": true,
 "use_external/fallback_path": "res://chair_material.tres",
 "use_external/path": "uid://86mqp68jljn8"

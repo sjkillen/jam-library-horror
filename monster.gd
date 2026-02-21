@@ -5,14 +5,14 @@ var SPEED: float = 1000.
 @export var player: Player
 @export var path: Path3D
 
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 	$NavigationAgent3D.target_position = follow_player()
 	var dest: Vector3 = $NavigationAgent3D.get_next_path_position() 
 	
 	velocity = (dest - global_position)
 	velocity.y = 0.0
 	velocity = velocity.normalized() * SPEED
-	print(velocity)
+	#print(velocity)
 	velocity.y = get_gravity().y
 	move_and_slide()
 

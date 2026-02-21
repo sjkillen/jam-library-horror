@@ -1,5 +1,19 @@
-[gd_scene load_steps=2 format=3 uid="uid://1s7kdmdhxiyh"]
+[gd_scene load_steps=3 format=3 uid="uid://1s7kdmdhxiyh"]
 
 [ext_resource type="PackedScene" uid="uid://bfe5x7l5ajcsn" path="res://sofa.glb" id="1_64a6s"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_64a6s"]
+size = Vector3(14.94, 11.345, 7.74)
+
 [node name="sofa" instance=ExtResource("1_64a6s")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.7495518, 0)
+shape = SubResource("BoxShape3D_64a6s")
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="." index="2"]
+radius = 18.5
+height = 11.9
+vertices = PackedVector3Array(11.451859, 0, 5.005911, 11.144174, 0, -6.095234, -10.582914, 0, -5.9837065, -10.726057, 0, 5.3643303, 9.549893, 0, 5.3899193, 9.549893, 0, 5.3899193, 9.549893, 0, 5.3899193, 9.72276, 0, 5.3909807, 11.6987, 0, 5.081609)

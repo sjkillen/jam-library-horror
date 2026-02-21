@@ -1,5 +1,20 @@
-[gd_scene load_steps=2 format=3 uid="uid://2fc5tkev27lx"]
+[gd_scene load_steps=3 format=3 uid="uid://2fc5tkev27lx"]
 
 [ext_resource type="PackedScene" uid="uid://bp1xr5ayeo220" path="res://table.glb" id="1_jd0nb"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_jd0nb"]
+size = Vector3(10, 10, 10)
+
 [node name="table" instance=ExtResource("1_jd0nb")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="ShapeCast3D" type="ShapeCast3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.294148, 0)
+shape = SubResource("BoxShape3D_jd0nb")
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="StaticBody3D/ShapeCast3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6.591733, 0)
+radius = 15.15
+height = 7.95
+vertices = PackedVector3Array(-5.704494, 0, 4.7035785, 5.758501, 0, 4.679904, 4.7411814, 0, -3.5946574, -4.9779634, 0, -3.7293983)

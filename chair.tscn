@@ -3,16 +3,18 @@
 [ext_resource type="PackedScene" uid="uid://cp26lqskuw06k" path="res://chair.glb" id="1_knj3a"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_knj3a"]
-size = Vector3(1, 1.3276978, 1)
+size = Vector3(52.421814, 88.3992, 42.25708)
 
 [node name="chair" instance=ExtResource("1_knj3a")]
-
-[node name="Mesh_0" parent="." index="0"]
-transform = Transform3D(0.001, 0, 0, 0, 0.001, 0, 0, 0, 0.001, 0, 0, 0)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0.049797256, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1563896, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3926702, 42.310406, 7.321167)
 shape = SubResource("BoxShape3D_knj3a")
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="." index="2"]
+radius = 13.3
+height = 12.55
+vertices = PackedVector3Array(-2.9773898, 0, 3.069851, 2.476809, 0, 3.0169115, 2.7712827, 0, -1.893198, -2.980678, 0, -1.876646)
