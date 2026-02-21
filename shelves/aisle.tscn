@@ -115,3 +115,6 @@ is_solid = true
 acoustic_texture = ExtResource("2_de88l")
 transmission_loss_value = 100.0
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.699009, 10.353901, -0.40133667)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="StaticBody3D"]
+vertices = PackedVector3Array(-3, 0, 3, 58.900444, 0, 3.829618, 58.174892, 0, -4.3505454, -3, 0, -3)

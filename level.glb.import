@@ -13,7 +13,7 @@ dest_files=["res://.godot/imported/level.glb-3927a4728b5c291a9e5c9b208a052984.sc
 
 [params]
 
-nodes/root_type="Node3D"
+nodes/root_type="NavigationRegion3D"
 nodes/root_name=""
 nodes/root_script=null
 nodes/apply_root_scale=true
@@ -44,15 +44,6 @@ _subresources={
 },
 "PATH:emergency_stairs_collision": {
 "generate/physics": true
-},
-"PATH:nav_emergency_stairs_collision": {
-"generate/navmesh": 2
-},
-"PATH:nav_lower": {
-"generate/navmesh": 2
-},
-"PATH:nav_upper": {
-"generate/navmesh": 2
 }
 }
 }
