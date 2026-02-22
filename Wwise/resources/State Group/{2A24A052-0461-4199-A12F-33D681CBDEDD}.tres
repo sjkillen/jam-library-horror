@@ -1,0 +1,7 @@
+[gd_resource type="WwiseStateGroup" format=3 uid="uid://c2dhg6yscf6nd"]
+
+[resource]
+name = "is_close"
+id = 2535049496
+guid = "{2A24A052-0461-4199-A12F-33D681CBDEDD}"
+dummy = true

@@ -2,6 +2,7 @@ State Group	ID	Name			Wwise Object Path	Notes
 	499154297	is_walking			\Default Work Unit\is_walking	
 	1865477056	is_reading			\Default Work Unit\is_reading	
 	2170747458	is_watched			\Default Work Unit\is_watched	
+	2535049496	is_close			\Default Work Unit\is_close	
 
 State	ID	Name	State Group			Notes
 	748895195	None	is_walking			
@@ -13,6 +14,9 @@ State	ID	Name	State Group			Notes
 	748895195	None	is_watched			
 	2452206122	false	is_watched			
 	3053630529	true	is_watched			
+	748895195	None	is_close			
+	2452206122	false	is_close			
+	3053630529	true	is_close			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	2246998526	Main Audio Bus			\Default Work Unit\Main Audio Bus	

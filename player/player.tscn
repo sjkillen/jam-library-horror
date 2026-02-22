@@ -1,11 +1,13 @@
-[gd_scene load_steps=8 format=3 uid="uid://bl2anu4u2bbxh"]
+[gd_scene load_steps=10 format=3 uid="uid://bl2anu4u2bbxh"]
 
 [ext_resource type="Script" uid="uid://c003i8seevg4p" path="res://player/player.gd" id="1_g1dw6"]
 [ext_resource type="Script" uid="uid://dc3hs54iqthb1" path="res://player/player_movement.gd" id="1_oul6g"]
 [ext_resource type="PackedScene" uid="uid://bfpsf5d67h84n" path="res://handheld_book.tscn" id="2_rkbax"]
 [ext_resource type="WwiseState" uid="uid://da210vnal4bip" path="res://Wwise/resources/State/{4194EA2F-71F8-460C-B695-20EBCAB7095C}.tres" id="3_g6k8r"]
-[ext_resource type="WwiseState" uid="uid://cphdfnv6a0vr3" path="res://Wwise/resources/State/{F4E5B0CB-4B45-437A-B57D-9D8A9F586D30}.tres" id="4_boad6"]
+[ext_resource type="WwiseState" path="res://Wwise/resources/State/{F4E5B0CB-4B45-437A-B57D-9D8A9F586D30}.tres" id="4_boad6"]
 [ext_resource type="Script" uid="uid://diuqkxux4k2h1" path="res://player/canvas_layer.gd" id="4_yw30f"]
+[ext_resource type="WwiseBank" uid="uid://bbs8n3pocg234" path="res://Wwise/resources/SoundBank/{2102CC99-02EC-41A3-8CDB-915F825F309F}.tres" id="7_rgyib"]
+[ext_resource type="WwiseEvent" uid="uid://dotmk432hp576" path="res://Wwise/resources/Event/{CB1B5C79-9360-4C71-9B07-4D56E967978E}.tres" id="8_hg6s5"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_g1dw6"]
 radius = 5.0
@@ -120,6 +122,18 @@ autowrap_mode = 3
 
 [node name="WordTimer" type="Timer" parent="CanvasLayer"]
 wait_time = 0.1
+
+[node name="AkBank" type="AkBank" parent="."]
+bank = ExtResource("7_rgyib")
+load_on = 2
+
+[node name="AkEvent3D" type="AkEvent3D" parent="."]
+event = ExtResource("8_hg6s5")
+trigger_on = 2
+
+[node name="AkState" type="AkState" parent="."]
+state = ExtResource("4_boad6")
+trigger_on = 2
 
 [connection signal="reading" from="CameraRotation/Camera3D/HandheldBook" to="CanvasLayer" method="_on_handheld_book_reading"]
 [connection signal="unreading" from="CameraRotation/Camera3D/HandheldBook" to="CanvasLayer" method="_on_handheld_book_unreading"]

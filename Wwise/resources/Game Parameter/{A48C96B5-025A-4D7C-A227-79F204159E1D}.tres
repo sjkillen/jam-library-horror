@@ -1,0 +1,7 @@
+[gd_resource type="WwiseRTPC" format=3 uid="uid://ml617ty0peed"]
+
+[resource]
+name = "intensity"
+id = 2470328564
+guid = "{A48C96B5-025A-4D7C-A227-79F204159E1D}"
+dummy = true

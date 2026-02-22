@@ -1,0 +1,7 @@
+[gd_resource type="WwiseBank" format=3 uid="uid://by4rs8srxbemu"]
+
+[resource]
+name = "sb_monster"
+id = 578108693
+guid = "{D7903F70-2CE3-4AB6-A94A-FE9162323A34}"
+dummy = true

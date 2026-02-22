@@ -1,11 +1,11 @@
 [gd_scene load_steps=10 format=3 uid="uid://c7x2v6hgj430c"]
 
 [ext_resource type="Script" uid="uid://cm6cepsdpemi2" path="res://monster.gd" id="1_s3gyj"]
-[ext_resource type="WwiseBank" uid="uid://bbs8n3pocg234" path="res://Wwise/resources/SoundBank/{2102CC99-02EC-41A3-8CDB-915F825F309F}.tres" id="2_ga5te"]
+[ext_resource type="WwiseBank" uid="uid://by4rs8srxbemu" path="res://Wwise/resources/SoundBank/{D7903F70-2CE3-4AB6-A94A-FE9162323A34}.tres" id="2_8ngjm"]
 [ext_resource type="WwiseEvent" uid="uid://rpt34ybncl0b" path="res://Wwise/resources/Event/{E7CDE3F4-B2BA-4EAF-8282-03A0737B36F2}.tres" id="3_vr0w3"]
-[ext_resource type="WwiseSwitch" uid="uid://c0f1r8u5t1bl4" path="res://Wwise/resources/Switch/{3EB81098-CE7F-4D40-BC40-BEFEB7C19406}.tres" id="4_8ngjm"]
-[ext_resource type="WwiseSwitch" uid="uid://dquhje4ori6fn" path="res://Wwise/resources/Switch/{B151F30A-7156-4674-A00E-7869BAC0C191}.tres" id="5_uhkt7"]
-[ext_resource type="WwiseSwitch" uid="uid://wqkoks8mknpv" path="res://Wwise/resources/Switch/{330245E9-3CD7-4881-BCC1-09A088109B47}.tres" id="6_3r7jw"]
+[ext_resource type="WwiseState" uid="uid://sxn234ann4ex" path="res://Wwise/resources/State/{D2D0E3FA-ACEA-472A-B322-6509A9773519}.tres" id="4_uhkt7"]
+[ext_resource type="WwiseEvent" uid="uid://frtcfs84ta5r" path="res://Wwise/resources/Event/{B63B3566-1FDF-4395-B424-8CB27B18626A}.tres" id="5_3r7jw"]
+[ext_resource type="WwiseEvent" uid="uid://cejdgmfg4825w" path="res://Wwise/resources/Event/{CE512953-B534-4408-ACEB-2373EC984B7B}.tres" id="6_rux75"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_c5q2p"]
 radius = 7.376465
@@ -33,24 +33,24 @@ mesh = SubResource("SphereMesh_mrqeg")
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
 
 [node name="AkBank" type="AkBank" parent="."]
-bank = ExtResource("2_ga5te")
+bank = ExtResource("2_8ngjm")
 load_on = 2
 
 [node name="AkEvent3D" type="AkEvent3D" parent="."]
 event = ExtResource("3_vr0w3")
 trigger_on = 2
+is_environment_aware = true
 
-[node name="AkSwitch" type="AkSwitch" parent="." node_paths=PackedStringArray("game_object")]
-switch = ExtResource("4_8ngjm")
-game_object = NodePath("../AkEvent3D")
+[node name="AkState" type="AkState" parent="."]
+state = ExtResource("4_uhkt7")
 trigger_on = 2
 
-[node name="AkSwitch2" type="AkSwitch" parent="." node_paths=PackedStringArray("game_object")]
-switch = ExtResource("5_uhkt7")
-game_object = NodePath("../AkEvent3D")
+[node name="AkEvent3D2" type="AkEvent3D" parent="."]
+event = ExtResource("5_3r7jw")
 trigger_on = 2
+is_environment_aware = true
 
-[node name="AkSwitch3" type="AkSwitch" parent="." node_paths=PackedStringArray("game_object")]
-switch = ExtResource("6_3r7jw")
-game_object = NodePath("../AkEvent3D")
+[node name="AkEvent3D3" type="AkEvent3D" parent="."]
+event = ExtResource("6_rux75")
 trigger_on = 2
+is_environment_aware = true
