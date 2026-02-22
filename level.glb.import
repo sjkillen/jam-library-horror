@@ -38,6 +38,13 @@ materials/extract=0
 materials/extract_format=0
 materials/extract_path=""
 _subresources={
+"materials": {
+"Env": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://level_material.tres",
+"use_external/path": "uid://bspv6wh0n27m3"
+}
+},
 "nodes": {
 "PATH:MainWallsAndFloors": {
 "generate/physics": true

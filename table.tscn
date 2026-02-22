@@ -1,11 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://2fc5tkev27lx"]
+[gd_scene load_steps=5 format=3 uid="uid://2fc5tkev27lx"]
 
 [ext_resource type="PackedScene" uid="uid://bp1xr5ayeo220" path="res://table.glb" id="1_jd0nb"]
+[ext_resource type="Script" uid="uid://3tqcm5se8esu" path="res://table.gd" id="2_kl0hw"]
+[ext_resource type="PackedScene" uid="uid://c3ixx8rip7wgc" path="res://closed_book.tscn" id="2_v5i0k"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_jd0nb"]
 size = Vector3(10, 10, 10)
 
 [node name="table" instance=ExtResource("1_jd0nb")]
+script = ExtResource("2_kl0hw")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
 
@@ -18,3 +21,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6.591733, 0)
 radius = 15.15
 height = 7.95
 vertices = PackedVector3Array(-5.704494, 0, 4.7035785, 5.758501, 0, 4.679904, 4.7411814, 0, -3.5946574, -4.9779634, 0, -3.7293983)
+
+[node name="ClosedBook" parent="." index="2" instance=ExtResource("2_v5i0k")]
+transform = Transform3D(4.8619814, 3.8197138e-07, -8.738485, 8.738485, -2.1252399e-07, 4.8619814, 0, -10, -4.3711393e-07, 0, 5.120173, 0)

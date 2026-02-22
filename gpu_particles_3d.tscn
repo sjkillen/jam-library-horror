@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://ocjwxfhtbe07"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h6smj"]
+shading_mode = 2
+diffuse_mode = 1
+specular_mode = 2
+disable_receive_shadows = true
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_h6smj"]
+emission_shape = 3
+emission_box_extents = Vector3(30, 10, 0.1)
+inherit_velocity_ratio = -1.1
+direction = Vector3(1, 0.29, 0)
+angular_velocity_min = -87.51002
+angular_velocity_max = 119.33998
+gravity = Vector3(0.05, -0.1, 0)
+
+[sub_resource type="SphereMesh" id="SphereMesh_v5j5c"]
+radius = 0.01
+height = 0.01
+radial_segments = 4
+rings = 1
+
+[node name="GPUParticles3D" type="GPUParticles3D"]
+transform = Transform3D(1, 0, 0, 0, -0.02020953, 0.9997958, 0, -0.9997958, -0.02020953, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_h6smj")
+amount = 10000
+lifetime = 60.0
+preprocess = 60.0
+visibility_aabb = AABB(-4, -4, -4, 8, 40, 8)
+process_material = SubResource("ParticleProcessMaterial_h6smj")
+draw_pass_1 = SubResource("SphereMesh_v5j5c")
