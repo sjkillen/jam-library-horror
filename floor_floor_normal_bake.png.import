@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dh7f50d2716ey"
-path.s3tc="res://.godot/imported/journal_open_normal_bake.png-699775feec9ddd52bcd768e0ffb8ffb3.s3tc.ctex"
+uid="uid://5xdpr0g2ssak"
+path.s3tc="res://.godot/imported/floor_floor_normal_bake.png-4f3a46155d9339c10bcbd6577401e45b.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "b1cb2c16c8d94acfb4e094378dea8585"
+"md5": "cae2729c94afe0c1b1443a24438dbbdb"
 }
 
 [deps]
 
-source_file="res://journal_open_normal_bake.png"
-dest_files=["res://.godot/imported/journal_open_normal_bake.png-699775feec9ddd52bcd768e0ffb8ffb3.s3tc.ctex"]
+source_file="res://floor_floor_normal_bake.png"
+dest_files=["res://.godot/imported/floor_floor_normal_bake.png-4f3a46155d9339c10bcbd6577401e45b.s3tc.ctex"]
 
 [params]
 
@@ -30,7 +30,7 @@ compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=1
-roughness/src_normal="res://journal_open_normal_bake.png"
+roughness/src_normal="res://floor_floor_normal_bake.png"
 process/channel_remap/red=0
 process/channel_remap/green=1
 process/channel_remap/blue=2

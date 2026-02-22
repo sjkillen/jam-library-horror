@@ -20,7 +20,7 @@ void fragment() {
 
 [resource]
 resource_name = "journal_open_material"
-render_priority = 127
+render_priority = 50
 shader = SubResource("Shader_routx")
 shader_parameter/texture_albedo = ExtResource("1_routx")
 shader_parameter/texture_normal = ExtResource("2_f8fky")

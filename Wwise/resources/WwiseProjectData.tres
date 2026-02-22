@@ -128,18 +128,18 @@ guid = "{A5654756-D07A-4549-88C0-B7E9732CA314}"
 id = 2544162710
 
 [sub_resource type="WwiseTreeObject" id="WwiseTreeObject_geu6g"]
-path = "\\Busses\\Default Work Unit\\Main Audio Bus\\bus_stereo"
-type = 2
-name = "bus_stereo"
-guid = "{1E5CC5BC-9969-4872-B315-6FB481983F13}"
-id = 2623433044
-
-[sub_resource type="WwiseTreeObject" id="WwiseTreeObject_5n8hf"]
 path = "\\Busses\\Default Work Unit\\Main Audio Bus\\verb_room"
 type = 1
 name = "verb_room"
 guid = "{7FCFABF3-F681-45A3-9D09-F7F9D92E243B}"
 id = 3881977292
+
+[sub_resource type="WwiseTreeObject" id="WwiseTreeObject_5n8hf"]
+path = "\\Busses\\Default Work Unit\\Main Audio Bus\\bus_stereo"
+type = 2
+name = "bus_stereo"
+guid = "{1E5CC5BC-9969-4872-B315-6FB481983F13}"
+id = 2623433044
 
 [sub_resource type="WwiseTreeObject" id="WwiseTreeObject_tnib1"]
 children = [SubResource("WwiseTreeObject_yyrou"), SubResource("WwiseTreeObject_geu6g"), SubResource("WwiseTreeObject_5n8hf")]

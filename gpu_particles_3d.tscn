@@ -1,9 +1,11 @@
 [gd_scene load_steps=4 format=3 uid="uid://ocjwxfhtbe07"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h6smj"]
+transparency = 1
 shading_mode = 2
 diffuse_mode = 1
 specular_mode = 2
+albedo_color = Color(1, 1, 1, 0.7019608)
 disable_receive_shadows = true
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_h6smj"]
@@ -13,7 +15,7 @@ inherit_velocity_ratio = -1.1
 direction = Vector3(1, 0.29, 0)
 angular_velocity_min = -87.51002
 angular_velocity_max = 119.33998
-gravity = Vector3(0.05, -0.1, 0)
+gravity = Vector3(0.025, -0.05, 0)
 
 [sub_resource type="SphereMesh" id="SphereMesh_v5j5c"]
 radius = 0.01

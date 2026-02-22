@@ -122,6 +122,13 @@ enable_mouse_capture={
 
 rendering_device/driver.windows="d3d12"
 
+[shader_globals]
+
+panic_speed={
+"type": "float",
+"value": 1.0
+}
+
 [wwise]
 
 common_user_settings/root_output_path="res://wwiseSoundbanks"

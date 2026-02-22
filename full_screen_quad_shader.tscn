@@ -1,0 +1,36 @@
+[gd_scene load_steps=9 format=3 uid="uid://bi72ii31whr4e"]
+
+[ext_resource type="Shader" uid="uid://cnwb71awfyl05" path="res://full_screen_quad_shader.gdshader" id="1_vct57"]
+[ext_resource type="Script" uid="uid://do603rwcgju68" path="res://full_screen_quad_shader.gd" id="2_p8yxd"]
+
+[sub_resource type="Curve" id="Curve_p8yxd"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.8682171, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_dst4t"]
+curve = SubResource("Curve_p8yxd")
+
+[sub_resource type="Curve" id="Curve_dst4t"]
+_limits = [0.0, 0.1, 0.0, 1.0]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.09043927, 0.007461764), 0.0, 0.0, 0, 0, Vector2(0.5193798, 0.047642842), 0.0, 0.0, 0, 0, Vector2(0.8940568, 0.0070558935), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 5
+
+[sub_resource type="CurveTexture" id="CurveTexture_hcng8"]
+curve = SubResource("Curve_dst4t")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_p8yxd"]
+render_priority = 127
+shader = ExtResource("1_vct57")
+shader_parameter/vignette_width = 0.4
+shader_parameter/alpha_falloff = SubResource("CurveTexture_dst4t")
+shader_parameter/pulse_curve = SubResource("CurveTexture_hcng8")
+
+[sub_resource type="QuadMesh" id="QuadMesh_dst4t"]
+flip_faces = true
+size = Vector2(2, 2)
+
+[node name="FullScreenQuadShader" type="MeshInstance3D"]
+material_override = SubResource("ShaderMaterial_p8yxd")
+extra_cull_margin = 16384.0
+mesh = SubResource("QuadMesh_dst4t")
+script = ExtResource("2_p8yxd")

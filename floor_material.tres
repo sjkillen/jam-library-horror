@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://keyp25pq4foj"]
+
+[ext_resource type="Texture2D" uid="uid://cspw47ggp8wr0" path="res://floor_floor_bake.png" id="1_3bsq4"]
+[ext_resource type="Texture2D" uid="uid://5xdpr0g2ssak" path="res://floor_floor_normal_bake.png" id="2_yx02u"]
+
+[resource]
+resource_name = "floor_material"
+cull_mode = 2
+albedo_texture = ExtResource("1_3bsq4")
+roughness = 0.5
+normal_enabled = true
+normal_texture = ExtResource("2_yx02u")

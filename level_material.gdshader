@@ -1,5 +1,5 @@
 shader_type spatial;
 
 void fragment() {
-	ALBEDO = vec3(0.);
+	ALBEDO = vec3(1.);
 }
