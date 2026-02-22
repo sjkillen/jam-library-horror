@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://c7x2v6hgj430c"]
+[gd_scene load_steps=9 format=3 uid="uid://c7x2v6hgj430c"]
 
 [ext_resource type="Script" uid="uid://cm6cepsdpemi2" path="res://monster.gd" id="1_s3gyj"]
 [ext_resource type="WwiseBank" uid="uid://by4rs8srxbemu" path="res://Wwise/resources/SoundBank/{D7903F70-2CE3-4AB6-A94A-FE9162323A34}.tres" id="2_8ngjm"]
@@ -6,10 +6,6 @@
 [ext_resource type="WwiseState" uid="uid://sxn234ann4ex" path="res://Wwise/resources/State/{D2D0E3FA-ACEA-472A-B322-6509A9773519}.tres" id="4_uhkt7"]
 [ext_resource type="WwiseEvent" uid="uid://frtcfs84ta5r" path="res://Wwise/resources/Event/{B63B3566-1FDF-4395-B424-8CB27B18626A}.tres" id="5_3r7jw"]
 [ext_resource type="WwiseEvent" uid="uid://cejdgmfg4825w" path="res://Wwise/resources/Event/{CE512953-B534-4408-ACEB-2373EC984B7B}.tres" id="6_rux75"]
-
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_c5q2p"]
-radius = 7.376465
-height = 14.75293
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s3gyj"]
 albedo_color = Color(1, 0, 0, 1)
@@ -21,12 +17,9 @@ height = 10.0
 [node name="Monster" type="CharacterBody3D"]
 script = ExtResource("1_s3gyj")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.2714128, 0)
-shape = SubResource("CapsuleShape3D_c5q2p")
-
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.14494497, 0)
+visible = false
 material_override = SubResource("StandardMaterial3D_s3gyj")
 mesh = SubResource("SphereMesh_mrqeg")
 

@@ -36,6 +36,8 @@ func _physics_process(delta: float) -> void:
 
 	
 	var input_dir := GlobalInput.keyboard_vector()
+	if input_dir == Vector2.ZERO:
+		input_dir = GlobalInput.move_joystick()
 	
 	var direction: Vector3 = (camera_rot.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 	if direction:

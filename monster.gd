@@ -1,25 +1,35 @@
 extends CharacterBody3D
 
-var SPEED: float = 1000.
+var SPEED: float = 10.
 
 @export var player: Player
 @export var path: Path3D
 
+var sleeping = false
+
+func _ready() -> void:
+	while true:
+		await get_tree().create_timer(30).timeout
+		sleeping = not sleeping
+
+
 func _physics_process(_delta: float) -> void:
-	$NavigationAgent3D.target_position = follow_player()
-	var dest: Vector3 = $NavigationAgent3D.get_next_path_position() 
-	
+	if sleeping:
+		return
+	var dest: Vector3 = player.global_position + Vector3(randi_range(3, 6), randi_range(3, 6), randi_range(3, 6))
+	GlobalBooks.monster_pos = global_position
 	velocity = (dest - global_position)
-	velocity.y = 0.0
+	
 	velocity = velocity.normalized() * SPEED
-	#print(velocity)
-	velocity.y = get_gravity().y
+	#velocity.y = get_gravity().y
 	move_and_slide()
 
 
-func follow_player() -> Vector3:
-	$NavigationAgent3D.target_position = player.global_position
-	return $NavigationAgent3D.get_next_path_position() 
+#func follow_player() -> Vector3:
+	#$NavigationAgent3D.target_position = player.global_position
+	#return $NavigationAgent3D.get_next_path_position() 
+	
+	#return player.global_position + Vector3(randi_range(3, 6), randi_range(3, 6), randi_range(3, 6))
 	
 
 

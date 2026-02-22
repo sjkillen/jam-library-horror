@@ -1,0 +1,77 @@
+[gd_scene load_steps=6 format=3 uid="uid://cratyj1pnrcin"]
+
+[ext_resource type="Script" uid="uid://cfiv2vcvgrt5" path="res://button2.gd" id="1_0a7ni"]
+[ext_resource type="PackedScene" uid="uid://1s7kdmdhxiyh" path="res://sofa.tscn" id="1_7a8ye"]
+[ext_resource type="PackedScene" uid="uid://d0d6dwt0efus5" path="res://chair.tscn" id="2_0a7ni"]
+[ext_resource type="PackedScene" uid="uid://ck35dg80qv0q8" path="res://base_spotlight.tscn" id="3_y72e6"]
+
+[sub_resource type="Environment" id="Environment_u2rf6"]
+background_energy_multiplier = 0.0
+ambient_light_energy = 0.0
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.01
+volumetric_fog_length = 300.0
+volumetric_fog_temporal_reprojection_enabled = false
+
+[node name="Intro" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -392.0
+offset_top = 33.0
+offset_right = 392.0
+offset_bottom = 269.5
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 16
+text = "You stay late at the library one night researching the local supernatural folklore. You become aware that the very entity you're researching is here with you. With each new research thread you pursue, the monster seems to adapt and take on the new traits you read about. Be careful and only read what you need to.
+
+Find enough information to complete your research and get out.
+
+(Space or controller button to interact)"
+autowrap_mode = 3
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -28.0
+offset_top = -94.0
+offset_right = 24.0
+offset_bottom = -63.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Begin"
+script = ExtResource("1_0a7ni")
+
+[node name="Node3D" type="Node3D" parent="Button"]
+
+[node name="sofa18" parent="Button/Node3D" instance=ExtResource("1_7a8ye")]
+
+[node name="Camera3D" type="Camera3D" parent="Button/Node3D/sofa18"]
+transform = Transform3D(0.90787995, -0.087842666, 0.40992397, 0, 0.9778016, 0.20953326, -0.4192303, -0.19023104, 0.8877265, 14.666657, 16.490707, 25.328472)
+
+[node name="chair" parent="Button/Node3D" instance=ExtResource("2_0a7ni")]
+transform = Transform3D(1, 0, 0, 0, 0.95164806, -0.30719054, 0, 0.30719054, 0.95164806, 0, 4.4525642, -2.3170776)
+
+[node name="chair3" parent="Button/Node3D" instance=ExtResource("2_0a7ni")]
+transform = Transform3D(-0.9929056, -0.036526952, -0.11315715, 0, 0.9516481, -0.30719054, 0.11890648, -0.30501118, -0.94489664, 0, 10.255192, -0.861969)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Button/Node3D"]
+environment = SubResource("Environment_u2rf6")
+
+[node name="BaseSpotlight" parent="Button/Node3D" instance=ExtResource("3_y72e6")]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -3.0158348, 42.311035, -7.5342064)
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

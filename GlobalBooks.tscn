@@ -1,12 +1,22 @@
-[gd_scene load_steps=7 format=3 uid="uid://dylbqlcsgknd8"]
+[gd_scene load_steps=17 format=3 uid="uid://dylbqlcsgknd8"]
 
 [ext_resource type="Script" uid="uid://bdo3lifdu04wh" path="res://global_books.gd" id="1_837n6"]
 [ext_resource type="Script" uid="uid://crsxl06xww705" path="res://book_chain.gd" id="2_req0x"]
 [ext_resource type="Resource" uid="uid://bdkgk1vylnyph" path="res://book_data/core_intro.tres" id="3_0u0nl"]
 [ext_resource type="Resource" uid="uid://cl26m86j3ht1y" path="res://book_data/perimeter.tres" id="3_1oh4m"]
 [ext_resource type="Resource" uid="uid://dlodsxm74pmym" path="res://book_data/climb.tres" id="4_0u0nl"]
+[ext_resource type="Resource" uid="uid://y53bo4hs7oo7" path="res://book_data/human.tres" id="4_fc10h"]
 [ext_resource type="Resource" uid="uid://b47q0jmjehm2l" path="res://book_data/origins.tres" id="5_fc10h"]
+[ext_resource type="Resource" uid="uid://cks8pwh1hvx3t" path="res://book_data/doors.tres" id="8_tvf2g"]
+[ext_resource type="Resource" uid="uid://dnohs7cdw1skf" path="res://book_data/break.tres" id="9_50q88"]
+[ext_resource type="Resource" uid="uid://do8wbvrqb2sxk" path="res://book_data/stretch.tres" id="10_wrq17"]
+[ext_resource type="Resource" uid="uid://bij00x4dplhl1" path="res://book_data/dissolve.tres" id="11_pdgbi"]
+[ext_resource type="Resource" uid="uid://73mt7qlh825o" path="res://book_data/evolution.tres" id="12_fhrye"]
+[ext_resource type="Resource" uid="uid://cqcgkilm2blos" path="res://book_data/study_areas.tres" id="13_7fdet"]
+[ext_resource type="Resource" uid="uid://c72pfgmtqcacc" path="res://book_data/grind.tres" id="14_x3lao"]
+[ext_resource type="Resource" uid="uid://bqo5knyudu3wo" path="res://book_data/art.tres" id="15_3ampx"]
+[ext_resource type="Resource" uid="uid://my71jq2fwvu4" path="res://book_data/stars.tres" id="16_0ix4r"]
 
 [node name="GlobalBooks" type="Node3D"]
 script = ExtResource("1_837n6")
-story = Array[ExtResource("2_req0x")]([ExtResource("3_0u0nl"), ExtResource("3_1oh4m"), ExtResource("4_0u0nl"), ExtResource("5_fc10h")])
+story = Array[ExtResource("2_req0x")]([ExtResource("3_0u0nl"), ExtResource("4_fc10h"), ExtResource("3_1oh4m"), ExtResource("4_0u0nl"), ExtResource("5_fc10h"), ExtResource("8_tvf2g"), ExtResource("9_50q88"), ExtResource("10_wrq17"), ExtResource("11_pdgbi"), ExtResource("12_fhrye"), ExtResource("13_7fdet"), ExtResource("14_x3lao"), ExtResource("15_3ampx"), ExtResource("16_0ix4r"), null])

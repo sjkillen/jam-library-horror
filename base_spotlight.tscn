@@ -1,7 +1,10 @@
-[gd_scene format=3 uid="uid://ck35dg80qv0q8"]
+[gd_scene load_steps=2 format=3 uid="uid://ck35dg80qv0q8"]
+
+[ext_resource type="Script" uid="uid://bbuft2m64pyya" path="res://base_spotlight.gd" id="1_mstei"]
 
 [node name="BaseSpotlight" type="SpotLight3D"]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0.8686613, 0)
 light_energy = 10.0
 light_volumetric_fog_energy = 1.5
 spot_range = 73.04768
+script = ExtResource("1_mstei")
