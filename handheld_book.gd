@@ -6,6 +6,13 @@ extends Node3D
 @export var max_rotate: float
 @export var move_speed: float
 
+@export var wwise_openBook: WwiseEvent
+@export var wwise_closeBook: WwiseEvent
+
+@export var wwise_isReading_true: WwiseState
+@export var wwise_isReading_false: WwiseState
+
+
 signal reading
 signal unreading
 
@@ -50,10 +57,14 @@ func equip():
 	
 	enabled = true
 	%AnimationPlayer.play("equip")
+	wwise_openBook.post(self)
+	wwise_isReading_true.set_value()
 	await %AnimationPlayer.animation_finished
 
 func unequip():
 	enabled = false
+	wwise_closeBook.post(self)
+	wwise_isReading_false.set_value()
 	%AnimationPlayer.play_backwards("equip")
 	await %AnimationPlayer.animation_finished
 	

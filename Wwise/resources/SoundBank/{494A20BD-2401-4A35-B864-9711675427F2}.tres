@@ -1,0 +1,7 @@
+[gd_resource type="WwiseBank" format=3 uid="uid://b8f1jq3oxxs7y"]
+
+[resource]
+name = "sb_book"
+id = 3319143926
+guid = "{494A20BD-2401-4A35-B864-9711675427F2}"
+dummy = true

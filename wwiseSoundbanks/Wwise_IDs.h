@@ -14,10 +14,13 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_AMB_ROOMTONE_01 = 3409423522U;
+        static const AkUniqueID PLAY_FX_BOOK_CLOSE = 3669637265U;
         static const AkUniqueID PLAY_MONSTER_AMBIENCE = 2841926335U;
         static const AkUniqueID PLAY_MONSTER_FOOTSTEPS_TRIGGER = 4113655641U;
         static const AkUniqueID PLAY_MONSTER_VOICE = 3220761187U;
+        static const AkUniqueID PLAY_PAGE_TURN = 786024383U;
         static const AkUniqueID PLAY_PLAYERFOOTSTEPS = 1805011878U;
+        static const AkUniqueID PLAY_READINGTENSION = 2703007992U;
         static const AkUniqueID PLAY_SOUND_HELMET_TRIGGER = 2806865160U;
         static const AkUniqueID PLAY_TENSIONLAYER = 176160403U;
     } // namespace EVENTS
@@ -149,6 +152,7 @@ namespace AK
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
+        static const AkUniqueID SB_BOOK = 3319143926U;
         static const AkUniqueID SB_MONSTER = 578108693U;
         static const AkUniqueID SB_PLACEHOLDERS = 4245214463U;
     } // namespace BANKS

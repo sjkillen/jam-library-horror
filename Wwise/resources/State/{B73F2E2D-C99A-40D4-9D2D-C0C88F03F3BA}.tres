@@ -1,0 +1,11 @@
+[gd_resource type="WwiseState" load_steps=2 format=3 uid="uid://klfripfv8l8p"]
+
+[ext_resource type="WwiseStateGroup" uid="uid://cr3jeargme7r5" path="res://Wwise/resources/State Group/{15804196-3EEA-4D18-9F8E-BD6201CB8513}.tres" id="1_unbrt"]
+
+[resource]
+group_ref = ExtResource("1_unbrt")
+group_id = 1865477056
+name = "true"
+id = 3053630529
+guid = "{B73F2E2D-C99A-40D4-9D2D-C0C88F03F3BA}"
+dummy = true
