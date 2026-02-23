@@ -10,6 +10,7 @@ func _ready() -> void:
 	story.shuffle()
 	story.push_front(first)
 	await get_tree().create_timer(3).timeout
+	books.shuffle()
 	track()
 	track()
 	track()

@@ -163,11 +163,8 @@ guid = "{7FCFABF3-F681-45A3-9D09-F7F9D92E243B}"
 id = 3881977292
 
 [sub_resource type="WwiseTreeObject" id="WwiseTreeObject_i5cxa"]
-path = "\\Busses\\Default Work Unit\\Main Audio Bus"
 children = [SubResource("WwiseTreeObject_tnib1"), SubResource("WwiseTreeObject_o7sea"), SubResource("WwiseTreeObject_lrto0")]
-type = 2
 name = "Main Audio Bus"
-guid = "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
 id = 2246998526
 
 [sub_resource type="WwiseTreeObject" id="WwiseTreeObject_ptp8y"]
