@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{8D949CF4-D97E-B80F-4953-9D5240E45A0D}",
+    "Hash": "{E1814DC1-26B6-5413-246F-38DEFF7CA2A2}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -180,6 +180,32 @@
         "Name": "true",
         "ObjectPath": "\\States\\Default Work Unit\\is_watched\\true",
         "GUID": "{AA9A1102-DFC4-407B-AEC7-436D5DAFD32E}"
+       }
+      ]
+     },
+     {
+      "Id": "2535049496",
+      "Name": "is_close",
+      "ObjectPath": "\\States\\Default Work Unit\\is_close",
+      "GUID": "{2A24A052-0461-4199-A12F-33D681CBDEDD}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\is_close\\None",
+        "GUID": "{EE00E387-54EA-47B5-86D8-CA3E3C914A52}"
+       },
+       {
+        "Id": "2452206122",
+        "Name": "false",
+        "ObjectPath": "\\States\\Default Work Unit\\is_close\\false",
+        "GUID": "{D2D0E3FA-ACEA-472A-B322-6509A9773519}"
+       },
+       {
+        "Id": "3053630529",
+        "Name": "true",
+        "ObjectPath": "\\States\\Default Work Unit\\is_close\\true",
+        "GUID": "{71245C0E-3DBC-4677-9C25-60580739F5CF}"
        }
       ]
      }
@@ -813,6 +839,6 @@
     ]
    }
   ],
-  "FileHash": "{A7EC4833-0138-C745-BDAD-4E2BDA671402}"
+  "FileHash": "{66A068FE-1C5B-7ACD-ABAB-44EED3F9050A}"
  }
 }

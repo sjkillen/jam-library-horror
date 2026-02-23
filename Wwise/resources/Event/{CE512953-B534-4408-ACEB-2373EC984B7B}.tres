@@ -1,0 +1,8 @@
+[gd_resource type="WwiseEvent" format=3 uid="uid://cejdgmfg4825w"]
+
+[resource]
+is_in_user_defined_sound_bank = true
+name = "Play_monster_voice"
+id = 3220761187
+guid = "{CE512953-B534-4408-ACEB-2373EC984B7B}"
+dummy = true

@@ -1,0 +1,8 @@
+[gd_resource type="WwiseEvent" format=3 uid="uid://frtcfs84ta5r"]
+
+[resource]
+is_in_user_defined_sound_bank = true
+name = "Play_monster_footsteps_trigger"
+id = 4113655641
+guid = "{B63B3566-1FDF-4395-B424-8CB27B18626A}"
+dummy = true

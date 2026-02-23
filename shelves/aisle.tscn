@@ -113,7 +113,7 @@ shape = SubResource("BoxShape3D_y684a")
 [node name="AkGeometry" type="AkGeometry" parent="StaticBody3D"]
 is_solid = true
 acoustic_texture = ExtResource("2_de88l")
-transmission_loss_value = 100.0
+transmission_loss_value = 0.7
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.699009, 10.353901, -0.40133667)
 
 [node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="StaticBody3D"]

@@ -14,15 +14,28 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_AMB_ROOMTONE_01 = 3409423522U;
-        static const AkUniqueID PLAY_FX_ITHUNTS = 182044926U;
         static const AkUniqueID PLAY_MONSTER_AMBIENCE = 2841926335U;
+        static const AkUniqueID PLAY_MONSTER_FOOTSTEPS_TRIGGER = 4113655641U;
+        static const AkUniqueID PLAY_MONSTER_VOICE = 3220761187U;
         static const AkUniqueID PLAY_PLAYERFOOTSTEPS = 1805011878U;
-        static const AkUniqueID PLAY_RANDOMAMB = 3499808837U;
+        static const AkUniqueID PLAY_SOUND_HELMET_TRIGGER = 2806865160U;
         static const AkUniqueID PLAY_TENSIONLAYER = 176160403U;
     } // namespace EVENTS
 
     namespace STATES
     {
+        namespace IS_CLOSE
+        {
+            static const AkUniqueID GROUP = 2535049496U;
+
+            namespace STATE
+            {
+                static const AkUniqueID FALSE = 2452206122U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID TRUE = 3053630529U;
+            } // namespace STATE
+        } // namespace IS_CLOSE
+
         namespace IS_READING
         {
             static const AkUniqueID GROUP = 1865477056U;
@@ -136,6 +149,7 @@ namespace AK
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
+        static const AkUniqueID SB_MONSTER = 578108693U;
         static const AkUniqueID SB_PLACEHOLDERS = 4245214463U;
     } // namespace BANKS
 
