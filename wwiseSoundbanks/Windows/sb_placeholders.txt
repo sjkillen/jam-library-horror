@@ -25,14 +25,14 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	37225274	tensionLayer_01	.cache\AC\{AC879147-589D-2207-9E86-3CA0FAE32946}.wem		\Containers\Default Work Unit\oneshots\tensionLayer_01		7408944
-	55216634	fx_amb_soundHelmet_05	.cache\D6\{D65591DE-B9F9-B798-3C4F-19D71F7E4A27}.wem		\Containers\Default Work Unit\spatialized_ambience\sound_helmet_trigger\randomizer\fx_amb_soundHelmet_05		253548
+	55216634	fx_amb_soundHelmet_05	.cache\AA\{AAD93FFD-23C9-342E-E813-0778F3FF1DC0}.wem		\Containers\Default Work Unit\spatialized_ambience\sound_helmet_trigger\randomizer\fx_amb_soundHelmet_05		253548
 	60417407	amb_roomTone_01	.cache\58\{58AAD78D-D33D-BE2D-C21F-0B062E00884A}.wem		\Containers\Default Work Unit\oneshots\amb_roomTone_01		7382804
-	486694710	fx_amb_soundHelmet_01	.cache\2E\{2E8FDE39-41E1-9F57-915C-B4E7A4B0EC76}.wem		\Containers\Default Work Unit\spatialized_ambience\sound_helmet_trigger\randomizer\fx_amb_soundHelmet_01		117980
-	618773881	fx_amb_soundHelmet_04	.cache\38\{389E5DDD-1807-2EDB-6921-C826D1485529}.wem		\Containers\Default Work Unit\spatialized_ambience\sound_helmet_trigger\randomizer\fx_amb_soundHelmet_04		194604
+	486694710	fx_amb_soundHelmet_01	.cache\91\{91E75BCF-F3DB-0DD6-15E8-6C8288C0C524}.wem		\Containers\Default Work Unit\spatialized_ambience\sound_helmet_trigger\randomizer\fx_amb_soundHelmet_01		117980
+	618773881	fx_amb_soundHelmet_04	.cache\47\{47D801FE-2292-53F1-EFEF-130BF89F0CEE}.wem		\Containers\Default Work Unit\spatialized_ambience\sound_helmet_trigger\randomizer\fx_amb_soundHelmet_04		194604
 	670914415	369837__splicesound__01-32-footsteps-wood-socks-slow-pace	.cache\13\{13079A9B-67AF-BC68-7E5F-EFBA2BD7159A}.wem		\Containers\Default Work Unit\player_sounds\369837__splicesound__01-32-footsteps-wood-socks-slow-pace		1333460
-	833236032	fx_amb_soundHelmet	.cache\03\{038F8706-86E4-6C43-2F58-D6562110B9ED}.wem		\Containers\Default Work Unit\spatialized_ambience\sound_helmet_trigger\randomizer\fx_amb_soundHelmet		194604
-	926444284	fx_amb_soundHelmet_03	.cache\6E\{6E49EDC6-CC7D-8B90-BDF1-9A0161A7719A}.wem		\Containers\Default Work Unit\spatialized_ambience\sound_helmet_trigger\randomizer\fx_amb_soundHelmet_03		324276
-	933279185	fx_amb_soundHelmet_06	.cache\90\{9091587E-AD62-ACDB-6315-70302125CB50}.wem		\Containers\Default Work Unit\spatialized_ambience\sound_helmet_trigger\randomizer\fx_amb_soundHelmet_06		185760
+	833236032	fx_amb_soundHelmet	.cache\C2\{C27C0118-F167-28F4-555A-87F1102B307C}.wem		\Containers\Default Work Unit\spatialized_ambience\sound_helmet_trigger\randomizer\fx_amb_soundHelmet		194604
+	926444284	fx_amb_soundHelmet_03	.cache\7F\{7FC2DDB0-24DB-8023-38F1-B261DAEF538C}.wem		\Containers\Default Work Unit\spatialized_ambience\sound_helmet_trigger\randomizer\fx_amb_soundHelmet_03		324276
+	933279185	fx_amb_soundHelmet_06	.cache\DE\{DE7622C0-C48B-992A-940A-B449AC70CBE9}.wem		\Containers\Default Work Unit\spatialized_ambience\sound_helmet_trigger\randomizer\fx_amb_soundHelmet_06		185760
 	1021045824	fx_amb_soundHelmet_knock	.cache\2E\{2ED20A05-D75A-2DD0-B68C-CECE9D4F400A}.wem		\Containers\Default Work Unit\spatialized_ambience\sound_helmet_trigger\randomizer\fx_amb_soundHelmet_knock		157188
-	1039613726	fx_amb_soundHelmet_02	.cache\80\{802C646F-6CCA-5818-4718-1C72FF95C974}.wem		\Containers\Default Work Unit\spatialized_ambience\sound_helmet_trigger\randomizer\fx_amb_soundHelmet_02		106188
+	1039613726	fx_amb_soundHelmet_02	.cache\18\{18EA083F-DB8A-982A-7164-0E991A58E486}.wem		\Containers\Default Work Unit\spatialized_ambience\sound_helmet_trigger\randomizer\fx_amb_soundHelmet_02		106188
 

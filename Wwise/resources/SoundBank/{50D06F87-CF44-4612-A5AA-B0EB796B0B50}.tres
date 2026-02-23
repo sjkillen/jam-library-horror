@@ -1,0 +1,7 @@
+[gd_resource type="WwiseBank" format=3 uid="uid://dxe8x6khyxvwo"]
+
+[resource]
+name = "sb_lightbulb"
+id = 604383594
+guid = "{50D06F87-CF44-4612-A5AA-B0EB796B0B50}"
+dummy = true

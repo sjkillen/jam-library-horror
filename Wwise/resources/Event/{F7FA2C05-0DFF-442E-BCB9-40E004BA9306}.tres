@@ -1,0 +1,8 @@
+[gd_resource type="WwiseEvent" format=3 uid="uid://d0jxoj7f36s6t"]
+
+[resource]
+is_in_user_defined_sound_bank = true
+name = "Play_fx_amb_lightFlicker"
+id = 905024948
+guid = "{F7FA2C05-0DFF-442E-BCB9-40E004BA9306}"
+dummy = true

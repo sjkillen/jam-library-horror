@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{D7903F70-2CE3-4AB6-A94A-FE9162323A34}",
     "Language": "SFX",
-    "Hash": "{E15D0F36-879A-21D6-B86F-C736005EDFC1}",
+    "Hash": "{36C75949-EF04-E4AB-3063-672E6B947A57}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\sb_monster",
     "ShortName": "sb_monster",
     "Path": "sb_monster.bnk",
@@ -21,7 +21,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_monster_amb_scratching.wav",
-      "CachePath": "8B/{8B52C226-5244-A3EF-526A-7114EA61F21C}.wem"
+      "CachePath": "4C/{4C044BDD-DECD-B3BF-4303-19EE6E4760C9}.wem"
      },
      {
       "Id": "13650685",
@@ -37,7 +37,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_monster_amb_scratching.wav",
-      "CachePath": "4A/{4A6AAA73-3846-B11F-0658-6D3EBC51C174}.wem"
+      "CachePath": "6F/{6F7464AE-C6A2-F73A-D5D2-17CADD62D90B}.wem"
      },
      {
       "Id": "118772610",
@@ -45,7 +45,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_monster_breathing_fast.wav",
-      "CachePath": "A6/{A6C4CC0D-65F0-38C7-F0CF-B9D4B3D43BE4}.wem"
+      "CachePath": "51/{51E38840-A5A8-EC13-F4DB-322C930F0A25}.wem"
      },
      {
       "Id": "121174981",
@@ -53,7 +53,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_monster_breathing_fast.wav",
-      "CachePath": "9C/{9C251A90-4ED8-3A9B-F460-C1D6EEF208BE}.wem"
+      "CachePath": "A0/{A0340849-7C4E-5A36-BDAA-2123D1A837F4}.wem"
      },
      {
       "Id": "122171618",
@@ -61,7 +61,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_monster_amb_bookshelves.wav",
-      "CachePath": "B8/{B87B16AB-2AB9-470C-727E-80F99FBF7A5D}.wem"
+      "CachePath": "02/{025C6AB7-8809-D0DF-33FF-D4E939E7EFF9}.wem"
      },
      {
       "Id": "124018109",
@@ -69,7 +69,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_monster_speech_clip_01.wav",
-      "CachePath": "7D/{7DB89153-1764-FBA5-423C-8934894D7EEC}.wem"
+      "CachePath": "EC/{EC54E3E0-25F8-E155-E214-2F495A8A13FB}.wem"
      },
      {
       "Id": "133880655",
@@ -77,7 +77,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_monster_breathing_slow.wav",
-      "CachePath": "20/{20BC5C05-B443-EF3A-423D-FF081F0429DE}.wem"
+      "CachePath": "42/{4287DF26-65ED-BEF7-CE61-D86FFE366A5A}.wem"
      },
      {
       "Id": "152779598",
@@ -85,7 +85,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_monster_breathing_fast.wav",
-      "CachePath": "B3/{B38D371C-1E54-6CC5-52EF-6BBA4A387F3D}.wem"
+      "CachePath": "3A/{3AA26E41-359D-C089-A34B-F8D626C59B97}.wem"
      },
      {
       "Id": "207127875",
@@ -93,7 +93,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_monster_breathing_slow.wav",
-      "CachePath": "11/{11DCD83B-E926-DB75-54DA-8E5C86E9F17A}.wem"
+      "CachePath": "0D/{0D6E5F7F-75D7-7E2B-74D4-6C6391D95E6E}.wem"
      },
      {
       "Id": "224960433",
@@ -101,7 +101,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_monster_footstep_creak.wav",
-      "CachePath": "38/{380D3658-05FC-264B-01A8-2413436A3F7E}.wem"
+      "CachePath": "62/{62B6AA6A-6DA0-AA80-1C0C-0C5AC52810FD}.wem"
      },
      {
       "Id": "286099685",
@@ -109,7 +109,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_monster_breathing_fast.wav",
-      "CachePath": "F8/{F8DA2ADA-3A8C-708D-4F12-3BC8984023C6}.wem"
+      "CachePath": "07/{07B32F58-5157-57B8-3D1A-76F7EC332604}.wem"
      },
      {
       "Id": "305064000",
@@ -117,7 +117,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_monster_footstep_base.wav",
-      "CachePath": "B7/{B773D39B-0186-647D-030C-E44CEAF707A9}.wem"
+      "CachePath": "82/{82C93BC4-DE55-85FC-70C6-FFA08C1F2159}.wem"
      },
      {
       "Id": "317882073",
@@ -125,7 +125,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_monster_amb_scratching.wav",
-      "CachePath": "F2/{F2981612-EC18-3894-71C4-D6B8723DFFC2}.wem"
+      "CachePath": "CC/{CC4C1A99-D877-7B95-CA60-84C7D9FE1535}.wem"
      },
      {
       "Id": "325047495",
@@ -133,7 +133,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_monster_speech_clip_01.wav",
-      "CachePath": "18/{1803827E-F63A-C721-6157-B10773BE7F45}.wem"
+      "CachePath": "A2/{A294586D-91D8-CE13-E48D-1B578BE86D25}.wem"
      },
      {
       "Id": "330732959",
@@ -141,7 +141,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_monster_breathing_fast.wav",
-      "CachePath": "30/{30A291EE-17DE-6BDB-50E6-AC65ABF6E719}.wem"
+      "CachePath": "47/{479D3602-8D15-32C3-FCD2-6C8B82826A9B}.wem"
      },
      {
       "Id": "331917736",
@@ -149,7 +149,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_monster_breathing_slow.wav",
-      "CachePath": "16/{164428D8-C02E-8CE9-F87A-EF723D09D9E2}.wem"
+      "CachePath": "E2/{E2422ADE-FDAA-8ED1-F419-316CDCDBE664}.wem"
      },
      {
       "Id": "332642241",
@@ -165,7 +165,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_monster_speech_clip_02.wav",
-      "CachePath": "0C/{0CC8D743-725F-D897-43FD-73745EF9C649}.wem"
+      "CachePath": "21/{21B093C0-EDB9-86D2-BC2D-E786F3CC5D14}.wem"
      },
      {
       "Id": "336556825",
@@ -173,7 +173,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_monster_breathing_fast.wav",
-      "CachePath": "40/{40E73BB6-A7F4-C621-076E-488688B452D6}.wem"
+      "CachePath": "EE/{EE6384CD-713E-88CD-35C9-BEFEFC168DBE}.wem"
      },
      {
       "Id": "342361755",
@@ -181,7 +181,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_monster_footstep_creak.wav",
-      "CachePath": "66/{66CE9219-D210-E6EA-7862-DA7FF28E0080}.wem"
+      "CachePath": "3E/{3EAD06A6-C6D9-FB5F-C8BC-2FB878733C89}.wem"
      },
      {
       "Id": "361497288",
@@ -189,7 +189,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_monster_footstep_creak.wav",
-      "CachePath": "DC/{DC4DFFED-9E77-214E-F3B1-10102B0FBFA6}.wem"
+      "CachePath": "C4/{C4671D87-812D-DE9F-E7D5-1A5274A36060}.wem"
      },
      {
       "Id": "370661128",
@@ -197,7 +197,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_monster_amb_bookshelves.wav",
-      "CachePath": "3F/{3F308757-F3B5-503F-5464-454ADB60665A}.wem"
+      "CachePath": "9A/{9A80A11F-6FB5-3DFD-6E1D-1A6B2B59796A}.wem"
      },
      {
       "Id": "421844407",
@@ -205,7 +205,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_monster_breathing_slow.wav",
-      "CachePath": "1E/{1E7B1791-B695-5CF3-1FBF-63FF9076A7DD}.wem"
+      "CachePath": "F7/{F72A075B-AC7D-7F44-BCFF-2BC3C8C2D552}.wem"
      },
      {
       "Id": "453441135",
@@ -221,7 +221,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_monster_speech_clip_01.wav",
-      "CachePath": "77/{77E05680-620A-BEF6-D4EB-1C517AFAF92D}.wem"
+      "CachePath": "50/{50FEE332-C3F9-BCED-ADF0-07E6CBF8EF88}.wem"
      },
      {
       "Id": "529133015",
@@ -229,7 +229,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_monster_speech_clip_02.wav",
-      "CachePath": "72/{721E5038-DF9A-7D7F-8116-E4248F70791A}.wem"
+      "CachePath": "03/{03987F6C-F48A-3975-EF94-C49EEBC5A39E}.wem"
      },
      {
       "Id": "532801641",
@@ -237,7 +237,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_monster_speech_clip_02.wav",
-      "CachePath": "D5/{D588C4AC-2A8E-CD56-8F6A-F1E12CFEE9D0}.wem"
+      "CachePath": "BF/{BF1A00A1-0918-C556-D096-E69A7E91D0B6}.wem"
      },
      {
       "Id": "562768225",
@@ -245,7 +245,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_monster_breathing_slow.wav",
-      "CachePath": "17/{1747C4F3-93D1-D2C9-B2B7-5A9105A4C1A2}.wem"
+      "CachePath": "75/{755CCF3F-9B38-AC23-F83D-FD417C762C8C}.wem"
      },
      {
       "Id": "572563371",
@@ -253,7 +253,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_monster_speech_clip_01.wav",
-      "CachePath": "A7/{A77E8D6E-8F88-00B8-08B5-564F7FFB87C1}.wem"
+      "CachePath": "D6/{D63A3242-B79D-6DC0-7AB8-499A4887484C}.wem"
      },
      {
       "Id": "601951204",
@@ -261,7 +261,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_monster_breathing_slow.wav",
-      "CachePath": "01/{0199821C-6420-C221-457D-BD5C38E7006B}.wem"
+      "CachePath": "65/{65AD8FC0-DEF4-D561-D0C4-DA8D64777637}.wem"
      },
      {
       "Id": "613847741",
@@ -269,7 +269,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_monster_footstep_creak.wav",
-      "CachePath": "3B/{3B4FE5F0-94E6-1586-C9BB-C2F63CA00858}.wem"
+      "CachePath": "BD/{BDA5E44E-77E9-1177-9F3A-C369BC90D8B1}.wem"
      },
      {
       "Id": "634554934",
@@ -277,7 +277,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_monster_speech_clip_01.wav",
-      "CachePath": "E9/{E90B6B5A-B346-D7C5-FCDF-9B89D480A069}.wem"
+      "CachePath": "92/{927949C8-5646-84D4-44B6-AEAD6127A559}.wem"
      },
      {
       "Id": "649109986",
@@ -285,7 +285,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_monster_breathing_fast.wav",
-      "CachePath": "B9/{B99CBFF6-A2F9-3597-3CC0-4D0FFBA367EB}.wem"
+      "CachePath": "17/{17C0417D-FDF8-EC9C-84CA-A98659091D89}.wem"
      },
      {
       "Id": "651209360",
@@ -293,7 +293,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_monster_footstep_base.wav",
-      "CachePath": "0C/{0C132015-95A2-9334-15A7-7945B154C888}.wem"
+      "CachePath": "35/{3502F285-9664-5E64-8FE3-398C5BFB9A25}.wem"
      },
      {
       "Id": "655010058",
@@ -301,7 +301,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_monster_footstep_base.wav",
-      "CachePath": "68/{68A5CFF3-B12B-E851-12A7-FFDC39E186F4}.wem"
+      "CachePath": "8B/{8B524635-2949-466E-5804-A6491A7FFFB3}.wem"
      },
      {
       "Id": "700369849",
@@ -309,7 +309,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_monster_speech_clip_02.wav",
-      "CachePath": "BC/{BCEFC850-6653-CF88-6030-2A87EFDB58DD}.wem"
+      "CachePath": "61/{61113A0D-BBDF-5B49-BE96-9DA12857B151}.wem"
      },
      {
       "Id": "722273314",
@@ -317,7 +317,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_monster_breathing_fast.wav",
-      "CachePath": "69/{69CE5B01-31BA-2F31-3D2B-5BDB4B7F7A41}.wem"
+      "CachePath": "10/{109C1B8B-96DE-2A45-9920-644FA2383A2A}.wem"
      },
      {
       "Id": "742477449",
@@ -325,7 +325,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_monster_breathing_fast.wav",
-      "CachePath": "D9/{D9A4DAEE-5B04-185C-EE27-650C9C0721C2}.wem"
+      "CachePath": "72/{72B0B842-9957-F01B-3377-A8ED2AEB729B}.wem"
      },
      {
       "Id": "756044200",
@@ -333,7 +333,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_monster_footstep_base.wav",
-      "CachePath": "B4/{B47A3035-BADD-08F8-7BA3-8ABDA6A6A445}.wem"
+      "CachePath": "A5/{A5FFA5E2-85A3-C31B-24E8-6506B28611F9}.wem"
      },
      {
       "Id": "768930041",
@@ -341,7 +341,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_monster_amb_bookshelves.wav",
-      "CachePath": "4D/{4DBE96D2-38A0-17E3-2D93-1F20198FDBB3}.wem"
+      "CachePath": "2A/{2AF23A2B-379D-F00E-044C-9EDF86AE46A0}.wem"
      },
      {
       "Id": "791413312",
@@ -349,7 +349,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_monster_footstep_base.wav",
-      "CachePath": "9E/{9E79CFED-6685-4AD8-9A0E-92F1AE739654}.wem"
+      "CachePath": "77/{77B6B1D9-F59C-FD79-65C2-685F4DB1935D}.wem"
      },
      {
       "Id": "803121609",
@@ -357,7 +357,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_monster_footstep_base.wav",
-      "CachePath": "01/{01D67D00-E428-F24F-79C2-12FE03BEC8D1}.wem"
+      "CachePath": "D9/{D9FDAC43-2D3A-5D02-9F9D-886888C5ED4D}.wem"
      },
      {
       "Id": "845698418",
@@ -365,7 +365,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_monster_speech_clip_01.wav",
-      "CachePath": "AC/{AC86F705-D2E6-760E-A268-6F1051DB4B51}.wem"
+      "CachePath": "04/{04F1430A-1DB2-3B31-857D-108AE9A1CF15}.wem"
      },
      {
       "Id": "855214397",
@@ -373,7 +373,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_monster_footstep_creak.wav",
-      "CachePath": "4A/{4A733434-2062-2474-D041-21B9C8F348B3}.wem"
+      "CachePath": "F5/{F5E18B65-82DD-C3A1-3A60-0311D0649010}.wem"
      },
      {
       "Id": "870187216",
@@ -381,7 +381,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_monster_footstep_creak.wav",
-      "CachePath": "91/{9148D5C5-E39B-3BAE-746F-29DDF4ED1905}.wem"
+      "CachePath": "97/{97E6697F-E15A-D222-DCDC-C3F26A7EA5B9}.wem"
      },
      {
       "Id": "899365198",
@@ -389,7 +389,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_monster_amb_bookshelves.wav",
-      "CachePath": "8F/{8FF6FD73-35C6-D389-F127-62C6954AFFEA}.wem"
+      "CachePath": "DA/{DAD5D971-1C75-28E5-3283-27A855609A34}.wem"
      },
      {
       "Id": "1011644127",
@@ -397,7 +397,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_monster_breathing_fast.wav",
-      "CachePath": "B0/{B0994F6C-56ED-B431-1670-B248B143FFFD}.wem"
+      "CachePath": "87/{8718FAAD-BA7B-74A0-CF60-7E4C8733ABC4}.wem"
      },
      {
       "Id": "1055425708",
@@ -405,7 +405,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_monster_amb_bookshelves.wav",
-      "CachePath": "FC/{FC678A39-75C0-C3F3-B621-69E82306E579}.wem"
+      "CachePath": "74/{74375E1B-3054-2303-0863-489E5234B42D}.wem"
      },
      {
       "Id": "1058134712",
@@ -413,7 +413,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_monster_breathing_slow.wav",
-      "CachePath": "76/{76D0F585-C18E-C0B8-AA6D-6AF241E2104C}.wem"
+      "CachePath": "80/{80FA2AFB-30AA-293E-2953-C26BE366986C}.wem"
      },
      {
       "Id": "1063081536",
@@ -421,7 +421,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_monster_breathing_fast.wav",
-      "CachePath": "29/{29A9F2C1-E4E4-7C8F-18A8-63E3A2A682A1}.wem"
+      "CachePath": "7B/{7BABD59F-E055-1BBC-CB26-0360EC1466F8}.wem"
      },
      {
       "Id": "1070188668",
@@ -429,7 +429,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_monster_breathing_fast.wav",
-      "CachePath": "CB/{CB059996-B5A6-779F-A342-DD35523F1E2A}.wem"
+      "CachePath": "09/{09FB453A-CC9D-E212-2C11-F0B50AE3B19D}.wem"
      }
     ],
     "Plugins": {
@@ -761,6 +761,6 @@
     ]
    }
   ],
-  "FileHash": "{2AF2F22D-DF21-31B9-DE25-33C64569F435}"
+  "FileHash": "{B242D1AA-59AF-9AD8-0D08-BC5B8DDF4CBE}"
  }
 }

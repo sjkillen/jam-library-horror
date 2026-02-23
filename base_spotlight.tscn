@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://ck35dg80qv0q8"]
+[gd_scene load_steps=4 format=3 uid="uid://ck35dg80qv0q8"]
 
 [ext_resource type="Script" uid="uid://bbuft2m64pyya" path="res://base_spotlight.gd" id="1_mstei"]
+[ext_resource type="WwiseBank" uid="uid://dxe8x6khyxvwo" path="res://Wwise/resources/SoundBank/{50D06F87-CF44-4612-A5AA-B0EB796B0B50}.tres" id="2_0u848"]
+[ext_resource type="WwiseEvent" uid="uid://d0jxoj7f36s6t" path="res://Wwise/resources/Event/{F7FA2C05-0DFF-442E-BCB9-40E004BA9306}.tres" id="3_pcp85"]
 
 [node name="BaseSpotlight" type="SpotLight3D"]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0.8686613, 0)
@@ -8,3 +10,11 @@ light_energy = 10.0
 light_volumetric_fog_energy = 1.5
 spot_range = 73.04768
 script = ExtResource("1_mstei")
+
+[node name="AkBank" type="AkBank" parent="."]
+bank = ExtResource("2_0u848")
+load_on = 2
+
+[node name="AkEvent3D" type="AkEvent3D" parent="."]
+event = ExtResource("3_pcp85")
+trigger_on = 2

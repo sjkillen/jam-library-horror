@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{494A20BD-2401-4A35-B864-9711675427F2}",
     "Language": "SFX",
-    "Hash": "{B4A29B73-4227-9209-A01B-A7E7A0C788FB}",
+    "Hash": "{A48D02EA-002F-AA2A-0D5F-E517479F28C9}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\sb_book",
     "ShortName": "sb_book",
     "Path": "sb_book.bnk",
@@ -21,7 +21,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "195795__ondondvo__closing-book.wav",
-      "CachePath": "E1/{E1E10C61-46CF-618F-29BD-A10F881A007D}.wem"
+      "CachePath": "1A/{1ADFC58B-466D-786E-82FA-70A8848BC94E}.wem"
      },
      {
       "Id": "516770998",
@@ -37,7 +37,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_pageTurn.wav",
-      "CachePath": "58/{581FA431-24E6-C4A3-6912-B2471EC62D1F}.wem"
+      "CachePath": "43/{43D85F27-06AE-5ABE-5B39-206E3D78A88E}.wem"
      }
     ],
     "Events": [
@@ -75,6 +75,6 @@
     ]
    }
   ],
-  "FileHash": "{86FCC943-CB1D-D52B-5B17-548DB4BE147B}"
+  "FileHash": "{F93BCE7B-E4F8-E8EE-33C4-F16BE059120B}"
  }
 }

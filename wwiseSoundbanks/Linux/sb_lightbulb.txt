@@ -1,0 +1,9 @@
+Event	ID	Name			Wwise Object Path	Notes
+	905024948	Play_fx_amb_lightFlicker			\Default Work Unit\Play_fx_amb_lightFlicker	
+
+Effect plug-ins	ID	Name	Type				Notes
+	3657550167	New_Parametric_EQ	Wwise Parametric EQ			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	684387998	fx_amb_lightFlicker	.cache\D7\{D7796E70-E39A-AB41-28DA-90F64EFD9372}.wem		\Containers\Default Work Unit\spatialized_ambience\fx_amb_lightFlicker		5946128
+

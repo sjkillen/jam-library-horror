@@ -1,0 +1,73 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Linux",
+  "BasePlatform": "Linux",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "604383594",
+    "Type": "User",
+    "GUID": "{50D06F87-CF44-4612-A5AA-B0EB796B0B50}",
+    "Language": "SFX",
+    "Hash": "{A8A33B8B-2851-ECE7-4548-B8EF4CF7BBB0}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\sb_lightbulb",
+    "ShortName": "sb_lightbulb",
+    "Path": "sb_lightbulb.bnk",
+    "Media": [
+     {
+      "Id": "684387998",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "202612__ludwigmueller__fxlm-neon-lights-flicker-bathroom.wav",
+      "CachePath": "D7/{D7796E70-E39A-AB41-28DA-90F64EFD9372}.wem"
+     }
+    ],
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "3657550167",
+       "Name": "New_Parametric_EQ",
+       "ObjectPath": "\\Effects\\Default Work Unit\\New_Parametric_EQ",
+       "GUID": "{7A03B058-395C-4759-963C-682B96153AAD}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
+      }
+     ]
+    },
+    "Events": [
+     {
+      "Id": "905024948",
+      "Name": "Play_fx_amb_lightFlicker",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_fx_amb_lightFlicker",
+      "GUID": "{F7FA2C05-0DFF-442E-BCB9-40E004BA9306}",
+      "MaxAttenuation": "100",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "684387998"
+       }
+      ],
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "3657550167"
+        }
+       ]
+      },
+      "AuxBusRefs": [
+       {
+        "Id": "3881977292",
+        "Name": "verb_room",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\verb_room",
+        "GUID": "{7FCFABF3-F681-45A3-9D09-F7F9D92E243B}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{D1E55278-D29A-EABC-5B81-266110F4A985}"
+ }
+}

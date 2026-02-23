@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_AMB_ROOMTONE_01 = 3409423522U;
+        static const AkUniqueID PLAY_FX_AMB_LIGHTFLICKER = 905024948U;
         static const AkUniqueID PLAY_FX_BOOK_CLOSE = 3669637265U;
         static const AkUniqueID PLAY_MONSTER_AMBIENCE = 2841926335U;
         static const AkUniqueID PLAY_MONSTER_FOOTSTEPS_TRIGGER = 4113655641U;
@@ -153,6 +154,7 @@ namespace AK
     {
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID SB_BOOK = 3319143926U;
+        static const AkUniqueID SB_LIGHTBULB = 604383594U;
         static const AkUniqueID SB_MONSTER = 578108693U;
         static const AkUniqueID SB_PLACEHOLDERS = 4245214463U;
     } // namespace BANKS

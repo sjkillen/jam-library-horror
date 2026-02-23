@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{2102CC99-02EC-41A3-8CDB-915F825F309F}",
     "Language": "SFX",
-    "Hash": "{81BEBFF6-8A1B-54EE-205F-00CABBCC906D}",
+    "Hash": "{2AECF1C9-CA57-64BF-F832-AACE4284D560}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\sb_placeholders",
     "ShortName": "sb_placeholders",
     "Path": "sb_placeholders.bnk",
@@ -29,7 +29,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_amb_soundHelmet.wav",
-      "CachePath": "D6/{D65591DE-B9F9-B798-3C4F-19D71F7E4A27}.wem"
+      "CachePath": "AA/{AAD93FFD-23C9-342E-E813-0778F3FF1DC0}.wem"
      },
      {
       "Id": "60417407",
@@ -45,7 +45,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_amb_soundHelmet.wav",
-      "CachePath": "2E/{2E8FDE39-41E1-9F57-915C-B4E7A4B0EC76}.wem"
+      "CachePath": "91/{91E75BCF-F3DB-0DD6-15E8-6C8288C0C524}.wem"
      },
      {
       "Id": "618773881",
@@ -53,7 +53,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_amb_soundHelmet.wav",
-      "CachePath": "38/{389E5DDD-1807-2EDB-6921-C826D1485529}.wem"
+      "CachePath": "47/{47D801FE-2292-53F1-EFEF-130BF89F0CEE}.wem"
      },
      {
       "Id": "670914415",
@@ -69,7 +69,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_amb_soundHelmet.wav",
-      "CachePath": "03/{038F8706-86E4-6C43-2F58-D6562110B9ED}.wem"
+      "CachePath": "C2/{C27C0118-F167-28F4-555A-87F1102B307C}.wem"
      },
      {
       "Id": "926444284",
@@ -77,7 +77,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_amb_soundHelmet.wav",
-      "CachePath": "6E/{6E49EDC6-CC7D-8B90-BDF1-9A0161A7719A}.wem"
+      "CachePath": "7F/{7FC2DDB0-24DB-8023-38F1-B261DAEF538C}.wem"
      },
      {
       "Id": "933279185",
@@ -85,7 +85,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_amb_soundHelmet.wav",
-      "CachePath": "90/{9091587E-AD62-ACDB-6315-70302125CB50}.wem"
+      "CachePath": "DE/{DE7622C0-C48B-992A-940A-B449AC70CBE9}.wem"
      },
      {
       "Id": "1021045824",
@@ -101,7 +101,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fx_amb_soundHelmet.wav",
-      "CachePath": "80/{802C646F-6CCA-5818-4718-1C72FF95C974}.wem"
+      "CachePath": "18/{18EA083F-DB8A-982A-7164-0E991A58E486}.wem"
      }
     ],
     "Plugins": {
@@ -240,6 +240,6 @@
     ]
    }
   ],
-  "FileHash": "{3140EA42-2C41-29A7-D149-753E3EBE7792}"
+  "FileHash": "{BDD0ED8F-5FB2-4951-0D5D-850F6AD11E88}"
  }
 }

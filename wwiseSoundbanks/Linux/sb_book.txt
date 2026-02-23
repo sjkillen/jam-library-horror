@@ -3,7 +3,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3669637265	Play_fx_book_close			\Default Work Unit\Play_fx_book_close	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	110655365	fx_book_close	.cache\E1\{E1E10C61-46CF-618F-29BD-A10F881A007D}.wem		\Containers\Default Work Unit\oneshots\fx_book_close		12378
+	110655365	fx_book_close	.cache\1A\{1ADFC58B-466D-786E-82FA-70A8848BC94E}.wem		\Containers\Default Work Unit\oneshots\fx_book_close		12378
 	516770998	fx_pageTurn_01	.cache\08\{082B7C9D-FA63-0DF7-DCF4-68745FAB44C3}.wem		\Containers\Default Work Unit\oneshots\page_turn\fx_pageTurn_01		422220
-	701518084	fx_pageTurn	.cache\58\{581FA431-24E6-C4A3-6912-B2471EC62D1F}.wem		\Containers\Default Work Unit\oneshots\page_turn\fx_pageTurn		353984
+	701518084	fx_pageTurn	.cache\43\{43D85F27-06AE-5ABE-5B39-206E3D78A88E}.wem		\Containers\Default Work Unit\oneshots\page_turn\fx_pageTurn		353984
 
