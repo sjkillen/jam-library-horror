@@ -10,6 +10,7 @@ config_version=5
 
 [application]
 
+config/name="Bibliography"
 run/main_scene="uid://cratyj1pnrcin"
 config/features=PackedStringArray("4.5")
 

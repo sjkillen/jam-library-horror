@@ -19,4 +19,4 @@
 
 [node name="GlobalBooks" type="Node3D"]
 script = ExtResource("1_837n6")
-story = Array[ExtResource("2_req0x")]([ExtResource("3_0u0nl"), ExtResource("4_fc10h"), ExtResource("3_1oh4m"), ExtResource("4_0u0nl"), ExtResource("5_fc10h"), ExtResource("8_tvf2g"), ExtResource("9_50q88"), ExtResource("10_wrq17"), ExtResource("11_pdgbi"), ExtResource("12_fhrye"), ExtResource("13_7fdet"), ExtResource("14_x3lao"), ExtResource("15_3ampx"), ExtResource("16_0ix4r"), null])
+story = Array[ExtResource("2_req0x")]([ExtResource("3_0u0nl"), ExtResource("4_fc10h"), ExtResource("3_1oh4m"), ExtResource("4_0u0nl"), ExtResource("5_fc10h"), ExtResource("8_tvf2g"), ExtResource("9_50q88"), ExtResource("10_wrq17"), ExtResource("11_pdgbi"), ExtResource("12_fhrye"), ExtResource("13_7fdet"), ExtResource("14_x3lao"), ExtResource("15_3ampx"), ExtResource("16_0ix4r")])
