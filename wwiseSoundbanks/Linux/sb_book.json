@@ -1,0 +1,80 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Linux",
+  "BasePlatform": "Linux",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "3319143926",
+    "Type": "User",
+    "GUID": "{494A20BD-2401-4A35-B864-9711675427F2}",
+    "Language": "SFX",
+    "Hash": "{B4A29B73-4227-9209-A01B-A7E7A0C788FB}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\sb_book",
+    "ShortName": "sb_book",
+    "Path": "sb_book.bnk",
+    "Media": [
+     {
+      "Id": "110655365",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "195795__ondondvo__closing-book.wav",
+      "CachePath": "E1/{E1E10C61-46CF-618F-29BD-A10F881A007D}.wem"
+     },
+     {
+      "Id": "516770998",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "fx_pageTurn.wav",
+      "CachePath": "08/{082B7C9D-FA63-0DF7-DCF4-68745FAB44C3}.wem"
+     },
+     {
+      "Id": "701518084",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "fx_pageTurn.wav",
+      "CachePath": "58/{581FA431-24E6-C4A3-6912-B2471EC62D1F}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3669637265",
+      "Name": "Play_fx_book_close",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_fx_book_close",
+      "GUID": "{A31BFC0A-CBC4-4F3D-B1F7-D85D0667AC4C}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.16591012",
+      "DurationMax": "0.16591012",
+      "MediaRefs": [
+       {
+        "Id": "110655365"
+       }
+      ]
+     },
+     {
+      "Id": "786024383",
+      "Name": "Play_page_turn",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_page_turn",
+      "GUID": "{C9EA6D9C-609D-4498-8A94-A1D62E0656E4}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.8431728",
+      "DurationMax": "2.1985557",
+      "MediaRefs": [
+       {
+        "Id": "516770998"
+       },
+       {
+        "Id": "701518084"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{86FCC943-CB1D-D52B-5B17-548DB4BE147B}"
+ }
+}

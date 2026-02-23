@@ -1,0 +1,7 @@
+[gd_resource type="WwiseStateGroup" format=3 uid="uid://cr3jeargme7r5"]
+
+[resource]
+name = "is_reading"
+id = 1865477056
+guid = "{15804196-3EEA-4D18-9F8E-BD6201CB8513}"
+dummy = true

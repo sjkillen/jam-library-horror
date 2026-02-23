@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{2102CC99-02EC-41A3-8CDB-915F825F309F}",
     "Language": "SFX",
-    "Hash": "{02796EE5-99DB-19AF-FBDD-AA8AF475D551}",
+    "Hash": "{81BEBFF6-8A1B-54EE-205F-00CABBCC906D}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\sb_placeholders",
     "ShortName": "sb_placeholders",
     "Path": "sb_placeholders.bnk",
@@ -158,6 +158,18 @@
       ]
      },
      {
+      "Id": "2703007992",
+      "Name": "Play_readingTension",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_readingTension",
+      "GUID": "{3AFB0434-0E77-4E1B-B069-4E2CADD229FD}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "37225274"
+       }
+      ]
+     },
+     {
       "Id": "2806865160",
       "Name": "Play_sound_helmet_trigger",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_sound_helmet_trigger",
@@ -228,6 +240,6 @@
     ]
    }
   ],
-  "FileHash": "{E1AF8714-0110-3E05-245C-E849FBB289C7}"
+  "FileHash": "{3140EA42-2C41-29A7-D149-753E3EBE7792}"
  }
 }

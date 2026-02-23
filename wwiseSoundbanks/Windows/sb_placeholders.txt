@@ -1,16 +1,21 @@
 Event	ID	Name			Wwise Object Path	Notes
 	176160403	Play_tensionLayer			\Default Work Unit\Play_tensionLayer	
 	1805011878	Play_playerFootsteps			\Default Work Unit\Play_playerFootsteps	
+	2703007992	Play_readingTension			\Default Work Unit\Play_readingTension	
 	2806865160	Play_sound_helmet_trigger			\Default Work Unit\Play_sound_helmet_trigger	
 	3409423522	Play_amb_roomTone_01			\Default Work Unit\Play_amb_roomTone_01	
 
 State Group	ID	Name			Wwise Object Path	Notes
 	499154297	is_walking			\Default Work Unit\is_walking	
+	1865477056	is_reading			\Default Work Unit\is_reading	
 
 State	ID	Name	State Group			Notes
 	748895195	None	is_walking			
 	2452206122	false	is_walking			
 	3053630529	true	is_walking			
+	748895195	None	is_reading			
+	2452206122	false	is_reading			
+	3053630529	true	is_reading			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	2470328564	intensity			\Default Work Unit\intensity	
@@ -19,7 +24,7 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	710365912	Silence	Wwise Silence		\Containers\Default Work Unit\spatialized_ambience\sound_helmet_trigger\delay\Silence	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	37225274	tensionLayer	.cache\AC\{AC879147-589D-2207-9E86-3CA0FAE32946}.wem		\Containers\Default Work Unit\oneshots\tensionLayer		7408944
+	37225274	tensionLayer_01	.cache\AC\{AC879147-589D-2207-9E86-3CA0FAE32946}.wem		\Containers\Default Work Unit\oneshots\tensionLayer_01		7408944
 	55216634	fx_amb_soundHelmet_05	.cache\D6\{D65591DE-B9F9-B798-3C4F-19D71F7E4A27}.wem		\Containers\Default Work Unit\spatialized_ambience\sound_helmet_trigger\randomizer\fx_amb_soundHelmet_05		253548
 	60417407	amb_roomTone_01	.cache\58\{58AAD78D-D33D-BE2D-C21F-0B062E00884A}.wem		\Containers\Default Work Unit\oneshots\amb_roomTone_01		7382804
 	486694710	fx_amb_soundHelmet_01	.cache\2E\{2E8FDE39-41E1-9F57-915C-B4E7A4B0EC76}.wem		\Containers\Default Work Unit\spatialized_ambience\sound_helmet_trigger\randomizer\fx_amb_soundHelmet_01		117980
