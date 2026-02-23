@@ -3,6 +3,7 @@ extends Node
 const MOUSE_SENSITIVITY := 0.1
 const CONTROLLER_SENSITIVITY := 2.3
 
+@warning_ignore("unused_signal")
 signal move_neutral
 
 
